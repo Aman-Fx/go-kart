@@ -5,6 +5,7 @@ import AboutSection from "../components/AboutSection";
 import CommitteeSection from "../components/CommitteeSection";
 import VedioSection from "../components/VedioSection";
 import TesttimonialSection from "../components/TesttimonialSection";
+import GallerySection from "../components/GallerySection";
 
 const HomePage = () => {
   return (
@@ -29,6 +30,9 @@ const HomePage = () => {
       </div>
       <div className="sticky top-0">
         <TesttimonialSection />
+      </div>
+      <div className="sticky top-0">
+        <GallerySection />
       </div>
     </div>
   );
