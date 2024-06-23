@@ -134,7 +134,7 @@ const NavContent = () => {
 
   return (
     <>
-      {navItems?.map((i, index) =>
+      {navItems?.map((i) =>
         i.childs ? (
           <div className="relative group uppercase" key={i.id}>
             <span
@@ -161,13 +161,13 @@ const NavContent = () => {
             {/* for bigger screen */}
             <ul className="absolute top-full left-0 bg-black bg-opacity-85 p-2 hidden md:group-hover:block w-auto text-nowrap rounded-lg">
               {i?.childs.map((child_item, child_Index) => (
-                <li key={child_item?.childId}>
+                <li key={child_item?.childId}> 
                   <a
                     href={child_item?.route}
-                    className={`block text-secondary hover:text-accent transition-colors duration-700  p-2 l ${
+                    className={`block text-secondary hover:text-NeonBlue transition-colors duration-700  p-2 l ${
                       child_Index + 1 == i?.childs?.length
                         ? ""
-                        : "border-b-2 border-dashed  border-black hover:border-neutral"
+                        : "border-b border-dashed  border-black hover:border-NeonBlue"
                     }`}
                   >
                     {child_item?.childItemName}
@@ -184,7 +184,7 @@ const NavContent = () => {
               {i?.childs.map((child_item, child_Index) => (
                 <li
                   key={child_item?.childId}
-                  className="text-accent transition duration-1000  p-2 border-b-2 border-dashed border-neutral w-1/2 mx-auto"
+                  className="text-NeonBlue transition duration-1000  p-2 border-b-2 border-dashed border-neutral w-1/2 mx-auto"
                 >
                   <a href={child_item?.route} className="block">
                     {child_item?.childItemName}
