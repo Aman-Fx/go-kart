@@ -37,19 +37,19 @@ const CommitteeSection = () => {
   ];
 
   return (
-    <div className="relative bg-gradient-to-r from-gray-950 via-gray-950 to-black text-white py-20 px-8 h-screen">
-      <div className="flex items-center mb-0">
+    <div className="relative bg-gradient-to-r from-black via-gray-950 to-gray-950 text-white pb-20 px-8 min-h-screen">
+      <div className="flex items-center mb-5">
         <CustomRightArrow />
-        <h2 className="text-4xl font-bold text-center font-header me-4">
+        <h2 className="text-xl md:text-4xl font-header me-4">
           Organizing committee
         </h2>
-        <hr className=" flex-grow  border-0 bg-gradient-to-r from-primary via-gray-950 to-black p-px  rounded-3xl" />
+        <hr className="flex-grow  border-0 bg-gradient-to-r from-primary via-gray-950 to-gray-950 p-px  rounded-3xl" />
       </div>
-      <div className="text-2xl mb-20 font-body tracking-wider text-neutral px-4">
+      <div className="text-base md:text-lg font-body leading-relaxed text-neutral px-4 md:mb-20 mb-8"> 
         A team of young, experienced and creative individuals responsible for
         conducting India’s Biggest Karting Event
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10 mb-10">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:mb-20 mb-8">
         {memberData?.map((i) => (
           <ImageCard
             key={i?.id}
@@ -60,7 +60,7 @@ const CommitteeSection = () => {
           />
         ))}
       </div>
-      <div className="text-center mb-20">
+      <div className="text-center">
         <ThemeButton label="View all"/>
       </div>
     </div>
@@ -71,7 +71,7 @@ export default CommitteeSection;
 
 const ImageCard = ({ image, title, description, link }) => {
   return (
-    <div className="group w-full max-w-80 relative rounded-xl  shadow-none transition-shadow duration-700 cursor-pointer hover:shadow-lg hover:shadow-gray-800 overflow-hidden border border-gray-800">
+    <div className="group w-full max-w-80 relative rounded-xl shadow-none transition-shadow duration-700 cursor-pointer hover:shadow-lg hover:shadow-gray-800 hover:border-gray-800 overflow-hidden border border-gray-800">
       <div className="h-72 w-full overflow-hidden">
         <img
           src={image}
@@ -80,8 +80,8 @@ const ImageCard = ({ image, title, description, link }) => {
         />
       </div>
       <div className="p-5 font-body tracking-wider text-xl">
-        <div className="flex justify-between items-center">
-          <div className="text-secondary group-hover:text-NeonBlue">
+        <div className="flex justify-between items-center mb-0.5">
+          <div className="text-secondary group-hover:text-NeonBlue tracking-wider md:text-base text-sm">
             {title}
           </div>
           <div className="flex items-center gap-3">
@@ -103,7 +103,7 @@ const ImageCard = ({ image, title, description, link }) => {
           </div>
         </div>
 
-        <div className="truncate text-lg text-neutral group-hover:text-secondary">
+        <div className="text-neutral group-hover:text-secondary md:text-sm text-xs">
           {description}
         </div>
       </div>

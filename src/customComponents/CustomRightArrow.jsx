@@ -4,7 +4,7 @@ const CustomRightArrow = ({color="primary"}) => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
       fill="currentColor"
-      className={` size-14 text-${color}`}
+      className={` md:size-14 size-10 text-${color}`}
     >
       <path
         fillRule="evenodd"

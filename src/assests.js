@@ -1,6 +1,7 @@
 export const assests = {
   global: {
     ick_logo: "./basics/Ick-logo.png",
+    footerImg: './basics/trackImg.jpg'
   },
   heroSection: {
     backGroundVedio: "./hero/karting-vedio.mp4",
@@ -33,5 +34,10 @@ export const assests = {
     img_6: "./gallery/img_6.jpg",
     img_7: "./gallery/img_7.jpg",
     img_8: "./gallery/img_8.jpg",
+  },
+  support: {
+    img_1: "./support/bscoer.jpg",
+    img_2: "./support/sinhgad_Institutes.jpg",
+    img_3: "./support/tm.jpg",
   },
 };

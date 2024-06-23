@@ -1,4 +1,5 @@
 import { assests } from "../assests";
+import ThemeButton from "../customComponents/ThemeButton";
 
 const HeroSection = () => {
   return (
@@ -10,19 +11,18 @@ const HeroSection = () => {
         loop
         muted
       ></video>
-      <div className="relative h-full bg-black bg-opacity-50 text-white p-8 flex items-center">
+      <div className="relative h-full bg-black bg-opacity-50 text-secondary p-8 flex items-center">
         <div className="flex flex-col">
-          <h1 className="md:text-5xl text-2xl font-header mb-4 leading-relaxed">
-            Welcome to the <br />{" "}
-            <span className="text-primary">Ultimate Kart</span> <br />
+          <h1 className="font-header text-4xl md:text-5xl mb-4">
+            Welcome to the<br /> <span className="text-primary">Ultimate Kart</span> <br />
             Racing Challenge
           </h1>
-          <p className="md:text-xl text-lg font-body mb-8">
+          <p className="font-body text-lg md:text-xl mb-8">
             Experience the thrill and excitement of high-speed kart racing.
           </p>
-          <button className="px-6 py-3 w-fit rounded-lg shadow-md bg-black transition duration-300 font-header">
-            Join the Race
-          </button>
+          <div>
+            <ThemeButton label="Join the race" />
+          </div>
         </div>
       </div>
     </section>

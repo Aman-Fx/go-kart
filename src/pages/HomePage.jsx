@@ -6,6 +6,8 @@ import CommitteeSection from "../components/CommitteeSection";
 import VedioSection from "../components/VedioSection";
 import TesttimonialSection from "../components/TesttimonialSection";
 import GallerySection from "../components/GallerySection";
+import SupportSection from "../components/SupportSection";
+import Footer from "../components/Footer"; 
 
 const HomePage = () => {
   return (
@@ -16,23 +18,29 @@ const HomePage = () => {
       <div className="sticky top-0 h-screen w-full">
         <HeroSection />
       </div>
-      <div className="sticky top-0">
+      <div className="">
         <SeasonSection />
       </div>
-      <div className="sticky top-0">
+      <div className="">
         <AboutSection />
       </div>
-      <div className="sticky top-0">
+      <div className="">
         <CommitteeSection />
       </div>
-      <div className="sticky top-0">
+      <div className="">
         <VedioSection />
       </div>
-      <div className="sticky top-0">
+      <div className="">
         <TesttimonialSection />
       </div>
-      <div className="sticky top-0">
+      <div className="">
         <GallerySection />
+      </div>
+      <div className="">
+        <SupportSection />
+      </div>
+      <div className="relative">
+        <Footer />
       </div>
     </div>
   );

@@ -8,19 +8,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="md:bg-black md:bg-opacity-75 p-8 font-body ">
+    <nav className="bg-black md:bg-opacity-75 p-8 font-body text-white text-base hover:text-primary-red transition duration-300 font-normal ">
       <div className="container mx-auto flex items-center justify-between">
         <div></div>
-        {/* <div className="text-white text-3xl font-header">
-          Racing Cart Challenge
-        </div> */}
-        <div className="hidden md:flex items-center space-x-6 :">
+        <div className="hidden md:flex items-center space-x-5 :">
           <NavContent />
         </div>
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
-            className="text-white focus:outline-none"
+            className="text-secondary focus:outline-none"
           >
             <svg
               className="w-6 h-6"
@@ -139,9 +136,9 @@ const NavContent = () => {
     <>
       {navItems?.map((i, index) =>
         i.childs ? (
-          <div className="relative group text-xl uppercase" key={i.id}>
+          <div className="relative group uppercase" key={i.id}>
             <span
-              className="text-white hover:text-primary transition duration-300 flex items-center gap-x-2 cursor-pointer"
+              className="text-secondary hover:text-primary transition duration-300 flex items-center gap-x-2 cursor-pointer"
               onClick={toggleChildMenu}
             >
               <span>{i?.itemName}</span>
@@ -162,12 +159,16 @@ const NavContent = () => {
               </svg>
             </span>
             {/* for bigger screen */}
-            <ul className="absolute top-full left-0 bg-black bg-opacity-85 p-2 hidden md:group-hover:block w-auto text-nowrap rounded-lg text-base">
+            <ul className="absolute top-full left-0 bg-black bg-opacity-85 p-2 hidden md:group-hover:block w-auto text-nowrap rounded-lg">
               {i?.childs.map((child_item, child_Index) => (
                 <li key={child_item?.childId}>
                   <a
                     href={child_item?.route}
-                    className={`block text-white hover:text-accent transition-colors duration-700  p-2 l ${(child_Index + 1) == i?.childs?.length ? '' : 'border-b-2 border-dashed  border-black hover:border-neutral'}`}
+                    className={`block text-secondary hover:text-accent transition-colors duration-700  p-2 l ${
+                      child_Index + 1 == i?.childs?.length
+                        ? ""
+                        : "border-b-2 border-dashed  border-black hover:border-neutral"
+                    }`}
                   >
                     {child_item?.childItemName}
                   </a>
@@ -175,13 +176,17 @@ const NavContent = () => {
               ))}
             </ul>
             {/* for smaller screen */}
-            <ul className={`top-full left-0 text-center bg-black p-2  ${isChildMenu ? 'md:hidden block ' : 'hidden'}  w-auto text-nowrap rounded-lg text-base`}>
+            <ul
+              className={`top-full left-0 text-center bg-black p-2  ${
+                isChildMenu ? "md:hidden block " : "hidden"
+              }  w-auto text-nowrap rounded-lg`}
+            >
               {i?.childs.map((child_item, child_Index) => (
-                <li key={child_item?.childId} className="text-accent transition duration-1000  p-2 border-b-2 border-dashed border-neutral w-1/2 mx-auto">
-                  <a
-                    href={child_item?.route}
-                    className="block"
-                  >
+                <li
+                  key={child_item?.childId}
+                  className="text-accent transition duration-1000  p-2 border-b-2 border-dashed border-neutral w-1/2 mx-auto"
+                >
+                  <a href={child_item?.route} className="block">
                     {child_item?.childItemName}
                   </a>
                 </li>
@@ -191,7 +196,7 @@ const NavContent = () => {
         ) : (
           <a
             href={i?.route}
-            className="text-white hover:text-primary transition duration-300 text-xl uppercase"
+            className="text-secondary hover:text-primary transition duration-300 uppercase"
             key={i.id}
           >
             {i?.itemName}

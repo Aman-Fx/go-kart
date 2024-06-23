@@ -25,19 +25,19 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="relative bg-gradient-to-r from-black via-gray-950 to-gray-950 text-white py-20 px-8 h-screen "
+      className="relative bg-gradient-to-r from-black via-gray-950 to-gray-950 text-white pb-20 px-8 min-h-screen"
     >
       <div className="relative mx-auto">
-        <div className="flex items-center mb-12">
-          <CustomRightArrow /> 
-          <h2 className="text-4xl font-bold text-center font-header me-4">
+        <div className="flex items-center md:mb-12 mb-5">
+          <CustomRightArrow />
+          <h2 className="text-xl md:text-4xl text-center font-header me-4">
             About events
           </h2>
           <hr className=" flex-grow  border-0 bg-gradient-to-r from-primary via-gray-950 to-gray-950 p-px  rounded-3xl" />
         </div>
-        <div className="flex flex-col md:flex-row items-start justify-between">
-          <div className="md:w-1/2 px-4 mb-8 md:mb-0 ">
-            <p className="text-2xl mb-6 font-body tracking-wider text-neutral">
+        <div className="flex lg:flex-row flex-col items-start gap-5 justify-between">
+          <div className="px-4 mb-8 lg:mb-0 lg:w-1/2">
+            <p className="text-base md:text-lg mb-8 font-body leading-relaxed text-neutral">
               IKC is an intercollegiate engineering design competition for
               undergraduate and graduate engineering students. The object of the
               competition is to implement good engineering practices, design
@@ -48,9 +48,9 @@ const AboutSection = () => {
               a vehicle considering the few sets of rules applied by organizing
               committee.
             </p>
-            <ThemeButton />
+            <ThemeButton label="View all" />
           </div>
-          <div className="flex flex-col md:flex-row justify-between items-center gap-10 ">
+          <div className="grid grid-cols-2 gap-5 mx-auto">
             {cardData?.map((i) => (
               <ImageCard
                 key={i?.id}
@@ -62,9 +62,6 @@ const AboutSection = () => {
             ))}
           </div>
         </div>
-        {/* <div className="absolute bottom-0 left-0 top-full">
-          <img src={assests.aboutSection.smallKart} className="w-1/2" />
-        </div> */}
       </div>
     </section>
   );
@@ -74,17 +71,21 @@ export default AboutSection;
 
 const ImageCard = ({ image, title, description, link }) => {
   return (
-    <div className="group w-full max-w-80 relative rounded-xl  shadow-none transition-shadow duration-700 cursor-pointer hover:shadow-lg hover:shadow-gray-800 overflow-hidden border border-gray-800">
-      <div className="h-72 w-full overflow-hidden">
+    <div className="group w-full max-w-80 relative rounded-xl  shadow-none transition duration-700 cursor-pointer hover:shadow-lg hover:shadow-gray-800 hover:border-gray-800 overflow-hidden border border-gray-800">
+      <div className="md:h-72 w-full overflow-hidden">
         <img
           src={image}
           alt="image"
           className="transition-all duration-700 group-hover:scale-110 ease-in-out"
         />
       </div>
-      <div className="p-5 font-body tracking-wider text-xl">
-        <div className="text-secondary group-hover:text-NeonBlue">{title}</div>
-        <div className="truncate text-lg text-neutral group-hover:text-secondary">{description}</div>
+      <div className="p-5 font-body ">
+        <div className="text-secondary group-hover:text-NeonBlue tracking-wider md:text-base text-sm mb-0.5 truncate">
+          {title}
+        </div>
+        <div className="truncate overflow-hidden  text-neutral group-hover:text-secondary md:text-sm text-xs">
+          {description}
+        </div>
       </div>
     </div>
   );

@@ -3,21 +3,17 @@ import CustomRightArrow from "../customComponents/CustomRightArrow";
 
 const TesttimonialSection = () => {
   return (
-    <div className="relative bg-gradient-to-b from-black via-gray-950 to-black text-white py-20 px-8 h-screen">
+    <section className="relative bg-gradient-to-r from-black via-gray-950 to-gray-950 text-white pb-20 px-8 min-h-screen">
       <div className="flex items-center mb-20">
         <CustomRightArrow />
-        <h2 className="text-4xl font-bold text-center font-header me-4">
-          Testimonial
-        </h2>
-        <hr className=" flex-grow  border-0 bg-gradient-to-r from-primary via-gray-950 to-black p-px  rounded-3xl" />
+        <h2 className="text-xl md:text-4xl font-header me-4">Testimonial</h2>
+        <hr className=" flex-grow  border-0 bg-gradient-to-r from-primary via-gray-950 to-gray-950 p-px  rounded-3xl" />
       </div>
       {/* Testimonial section */}
-      <div className="absolute inset-y-1/3 w-full">
-        <div className=" flex items-center justify-center">
-          <TestimonialCard />
-        </div>
+      <div className="">
+        <TestimonialCard />
       </div>
-    </div>
+    </section>
   );
 };
 
@@ -25,21 +21,22 @@ export default TesttimonialSection;
 
 const TestimonialCard = ({ name, content, profile }) => {
   return (
-    <div className="group w-full max-w-80 relative font-body tracking-wider shadow-none transition-shadow duration-700 cursor-pointer">
-      <div className="w-full absolute -top-5">
-        <div className="bg-black w-10 h-10 rounded-full mx-auto border border-gray-800 hover:shadow-lg hover:shadow-gray-800">
-          <img
-            src={assests.aboutSection.smallKart}
-            alt=""
-            className="object-cover "
-          />
-        </div>
+    <>
+        <div className="flex flex-wrap justify-center items-center gap-10 px-4">
+          <div className="md:max-w-96 w-full group cursor-pointer bg-gray-950 rounded-2xl shadow-xl shadow-background border border-background transition-all duration-700 hover:shadow-lg hover:shadow-gray-800 hover:border-gray-800 p-6 relative text-center">
+            <img
+              src={assests.gallery.img_6}
+              alt="User Name"
+              className="md:w-20 w-14 rounded-full absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            />
+            <h3 className="mt-11 font-header  md:text-lg text-base font-bold text-NeonBlue">
+              Rohit Gaikwad
+            </h3>
+            <p className="text-sm text-neutral group-hover:text-secondary mt-4 italic ">
+              "Best Organising and technical team Perfect management"
+            </p>
+          </div>
       </div>
-      <div className="transition-all duration-700 text-lg  text-secondary hover:shadow-lg hover:shadow-gray-800 overflow-hidden border border-gray-800 p-5 pt-10 rounded-xl">
-        <div>Best Organising and technical team Perfect management</div>
-        <hr className="border border-gray-800 my-5" />
-        <div className="text-center text-sm">- Rohit Gaikwad</div>
-      </div>
-    </div>
+    </>
   );
 };

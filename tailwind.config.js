@@ -13,7 +13,17 @@ export default {
       },
       fontFamily: {
         header: ["Audiowide", "sans-serif"],
-        body: ["Teko", "sans-serif"],
+        // body: ["Teko", "sans-serif"],
+        body: ["Montserrat", "sans-serif"],
+      },
+      animation: {
+        "infinite-scroll": "infinite-scroll 25s linear infinite",
+      },
+      keyframes: {
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
       },
     },
   },

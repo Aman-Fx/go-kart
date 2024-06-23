@@ -99,41 +99,58 @@ const SeasonSection = () => {
     },
   ];
   return (
-    <section className="relative h-screen  bg-gradient-to-b from-black via-gray-950 to-black py-20 px-8 flex flex-row justify-between">
-      <div className="">
+    <section className="relative bg-gradient-to-r from-black via-gray-950 to-gray-950 py-20 px-8 flex xl:flex-row flex-col justify-between min-h-screen">
+      <div className="md:max-w-lg xl:h-screen xl:sticky top-0 mx-auto">
         <img
           src={assests.seasonSection.person}
           alt="A man"
-          className="h-full"
+          className="w-full h-full object-cover"
         />
       </div>
-      <div className="flex flex-col gap-y-3 w-3/5 my-4 overflow-y-scroll scrollbar-hide">
+      <div className="flex flex-col gap-y-3 my-4">
         {events?.map((event, index) => {
           return (
             <Fragment key={index}>
-              <div className="grid grid-cols-[1fr_auto_1fr] gap-x-3 items-center mx-auto">
-                {event.direction == "lft" ? (
-                  <EventCard
-                    heading={event.data.heading}
-                    content={event.data.subHeading}
-                    year={event.year}
-                  />
-                ) : (
-                  <div />
-                )}
+              {/* bigger screen */}
+              <div className="sm:block hidden">
+                <div className="grid grid-cols-[1fr_auto_1fr] gap-x-3 items-center mx-auto">
+                  {event.direction == "lft" ? (
+                    <EventCard
+                      heading={event.data.heading}
+                      content={event.data.subHeading}
+                      year={event.year}
+                    />
+                  ) : (
+                    <div />
+                  )}
 
-                <Pillar />
+                  <Pillar />
 
-                {event.direction == "ryt" ? (
-                  <EventCard
-                    heading={event.data.heading}
-                    content={event.data.subHeading}
-                    year={event.year}
-                  />
-                ) : (
-                  <div />
-                )}
+                  {event.direction == "ryt" ? (
+                    <EventCard
+                      heading={event.data.heading}
+                      content={event.data.subHeading}
+                      year={event.year}
+                    />
+                  ) : (
+                    <div />
+                  )}
+                </div>
               </div>
+              {/* Smaller screen */}
+              <div className="block sm:hidden">
+                <div className="grid grid-flow-row-dense  gap-x-3 items-center mx-auto">
+                  <Pillar />
+                  <div className="col-span-2">
+                    <EventCard
+                      heading={event.data.heading}
+                      content={event.data.subHeading}
+                      year={event.year}
+                    />
+                  </div>
+                </div>
+              </div>
+
               {index < events?.length - 1 && <Circle />}
             </Fragment>
           );
@@ -146,40 +163,31 @@ const SeasonSection = () => {
 export default SeasonSection;
 
 const Circle = () => (
-  <div className=" bg-gradient-to-b from-background to-neutral  rounded-full w-4 h-4 mx-auto"></div>
+  <div className=" border border-NeonBlue rounded-full w-4 h-4 sm:mx-auto mx-3 shadow-sm shadow-NeonBlue"></div>
 );
 
 const Pillar = () => (
-  <div className="w-0.5 h-full bg-gradient-to-b from-background via-neutral to-neutral rounded-t-full rounded-b-full mx-5"></div>
+  <div className="w-px h-full bg-gradient-to-b from-gray-950 via-primary to-gray-950 rounded-t-full rounded-b-full mx-5"></div>
 );
 
 const EventCard = ({ heading, content, year }) => {
   return (
-    <>
-      <div className="relative bg-gradient-to-r from-black to-slate-900 p-6 border-2 border-neutral shadow-sm shadow-neutral hover:shadow-lg rounded-lg  md:w-80 w-auto transform transition duration-500 hover:scale-105 ">
-        <div className="flex items-center justify-between mb-4">
-          <span className="text-primary md:text-3xl text-xl font-body font-bold">
-            {" "}
-            {year ?? "year"}
-          </span>
-
-          <CustomLottie
-            lottieJson={flagAnimation}
-            className={"w-20"}
-            loop={true}
-          />
-        </div>
-        <h2 className="text-accent md:text-3xl text-lg font-header mb-4">
-          {heading ?? "heading"}
-        </h2>
-        <ul className="text-white md:text-lg text-xs font-body md:list-disc list-inside">
-          {content?.map((i) => (
-            <li className="tracking-wider" key={i}>
-              {i}
-            </li>
-          ))}
-        </ul>
+    <div className="p-6 bg-gray-950 rounded-lg shadow-xl shadow-background border border-background md:w-80 w-full transition duration-700 cursor-pointer hover:shadow-lg hover:shadow-gray-800 hover:border-gray-800">
+      <div className="flex items-center">
+        <span className="text-neutral font-header font-bold md:text-base text-sm">
+          {year ?? "year"}
+        </span>
       </div>
-    </>
+      <h3 className="text-base md:text-2xl font-header font-semibold text-NeonBlue mb-2 mt-2">
+        {heading ?? "heading"}
+      </h3>
+      <ul className="text-white md:text-sm text-xs font-body list-disc list-inside">
+        {content?.map((i) => (
+          <li className="mb-2" key={i}>
+            {i}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
