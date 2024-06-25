@@ -99,8 +99,8 @@ const SeasonSection = () => {
     },
   ];
   return (
-    <section className="relative bg-gradient-to-r from-black via-gray-950 to-gray-950 py-20 px-8 flex xl:flex-row flex-col justify-between min-h-screen">
-      <div className="md:max-w-lg xl:h-screen xl:sticky top-0 mx-auto">
+    <section className="relative bg-gradient-to-r from-black via-gray-950 to-gray-950 py-20 px-8 flex xl:flex-row flex-col justify-between min-h-dvh">
+      <div className="md:max-w-lg xl:h-dvh xl:sticky top-0 mx-auto">
         <img
           src={assests.seasonSection.person}
           alt="A man"

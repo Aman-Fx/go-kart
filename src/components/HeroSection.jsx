@@ -3,7 +3,7 @@ import ThemeButton from "../customComponents/ThemeButton";
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-dvh overflow-hidden">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src={assests.heroSection.backGroundVedio}

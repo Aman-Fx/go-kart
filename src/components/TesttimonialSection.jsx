@@ -3,7 +3,7 @@ import CustomRightArrow from "../customComponents/CustomRightArrow";
 
 const TesttimonialSection = () => {
   return (
-    <section className="relative bg-gradient-to-r from-black via-gray-950 to-gray-950 text-white pb-20 px-8 min-h-screen flex flex-col">
+    <section className="relative bg-gradient-to-r from-black via-gray-950 to-gray-950 text-white pb-20 px-8 min-h-dvh flex flex-col">
       <div className="flex items-center mb-20">
         <CustomRightArrow />
         <h2 className="text-xl md:text-4xl font-header me-4">Testimonial</h2>
