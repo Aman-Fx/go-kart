@@ -7,7 +7,8 @@ import VedioSection from "../components/VedioSection";
 import TesttimonialSection from "../components/TesttimonialSection";
 import GallerySection from "../components/GallerySection";
 import SupportSection from "../components/SupportSection";
-import Footer from "../components/Footer"; 
+import Footer from "../components/Footer";
+import ImageSlider from "../components/ImageSlider";
 
 const HomePage = () => {
   return (
@@ -23,6 +24,9 @@ const HomePage = () => {
       </div>
       <div className="">
         <AboutSection />
+      </div>
+      <div className="">
+        <ImageSlider />
       </div>
       <div className="">
         <CommitteeSection />
