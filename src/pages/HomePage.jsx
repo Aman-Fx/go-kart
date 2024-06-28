@@ -16,7 +16,7 @@ const HomePage = () => {
       <div className="fixed top-0 w-full z-50">
         <Navbar />
       </div>
-      <div className="sticky top-0 h-dvh w-full">
+      <div className=" h-dvh w-full">
         <HeroSection />
       </div>
       <div className="">
