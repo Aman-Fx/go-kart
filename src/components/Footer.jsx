@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-8 sm:gap-6">
             <div>
               <h2 className="md:mb-6 mb-4 md:text-base text-sm text-white uppercase">
-                Quick Links
+                Quick Links 
               </h2>
               <ul className="text-neutral font-medium [&_li]:md:mb-4 [&_li]:mb-2 md:text-sm text-xs">
                 <li>

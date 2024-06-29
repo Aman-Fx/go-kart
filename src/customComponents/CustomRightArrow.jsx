@@ -1,10 +1,14 @@
-const CustomRightArrow = ({color="primary"}) => {
+const CustomRightArrow = ({
+  color = "primary",
+  size = "md:size-14 size-10",
+  className,
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
       fill="currentColor"
-      className={` md:size-14 size-10 text-${color}`}
+      className={`${size} text-${color} ${className}`}
     >
       <path
         fillRule="evenodd"

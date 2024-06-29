@@ -9,6 +9,8 @@ export const assests = {
   seasonSection: {
     tyre: "./season/tyre.png",
     person: "./season/aPerson.png",
+    quadBiking: "./season/quad-bike-png.png",
+    dirtBiking: "./season/dirt-bikingPng.jpg",
   },
   aboutSection: {
     smallKart: "./about/smallKart.png",
@@ -34,6 +36,7 @@ export const assests = {
     img_6: "./gallery/img_6.jpg",
     img_7: "./gallery/img_7.jpg",
     img_8: "./gallery/img_8.jpg",
+    img_9: "./gallery/img_9.jpg",
   },
   support: {
     img_1: "./support/bscoer.jpg",

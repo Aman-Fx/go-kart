@@ -14,8 +14,8 @@ const VedioSection = () => {
       <div className="flex flex-wrap justify-center md:items-center gap-10 px-4 h-dvh">
         <div className="md:w-[560px] sm:h-[315px] w-full rounded-2xl shadow-xl shadow-background transition duration-700 cursor-pointer hover:shadow-lg hover:shadow-gray-800 overflow-hidden">
           <iframe
-            className="h-full w-full"
-            src="https://www.youtube.com/embed/QnxW-JQ5jZM?si=jl89RnFlh4sc23H2&amp;controls=0"
+            className=" aspect-video w-full h-full"
+            src="https://www.youtube.com/embed/PyBbTqoLjwg?si=NbS5ENbvPoItGdO9"
             title="YouTube video player"
             frameBorder="0"
             referrerPolicy="strict-origin-when-cross-origin"
@@ -24,7 +24,7 @@ const VedioSection = () => {
         </div>
         <div className="md:w-[560px] sm:h-[315px] w-full rounded-2xl shadow-xl shadow-background transition duration-700 cursor-pointer hover:shadow-lg hover:shadow-gray-800 overflow-hidden">
           <iframe
-            className=" h-full w-full"
+            className="aspect-video h-full w-full"
             src="https://www.youtube.com/embed/v1hTix2ZwEU?si=M_aHQaMz2LZ0yYrM&amp;controls=0"
             title="YouTube video player"
             frameBorder="0"

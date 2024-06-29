@@ -62,71 +62,56 @@ const NavContent = () => {
       id: 1,
     },
     {
-      itemName: "About Event",
+      itemName: "About us",
       route: "#about",
       childs: null,
       id: 2,
     },
     {
-      itemName: "Season",
+      itemName: "Events",
       route: "#season",
       id: 3,
       childs: [
         {
-          childItemName: "Season 1",
-          route: "season_1",
+          childItemName: "Go-karting",
+          route: "go-karting",
           childId: 1,
         },
 
         {
-          childItemName: "Season 2",
-          route: "season_2",
+          childItemName: "E-bike",
+          route: "e-bike",
           childId: 2,
         },
         {
-          childItemName: "Season 3",
-          route: "season_3",
+          childItemName: "Quad bike & ATV",
+          route: "quad-bike-atv",
           childId: 3,
-        },
-        {
-          childItemName: "Season 4",
-          route: "season_4",
-          childId: 4,
-        },
-        {
-          childItemName: "Season 5",
-          route: "season_5",
-          childId: 5,
-        },
-        {
-          childItemName: "Season 6",
-          route: "season_6",
-          childId: 6,
         },
       ],
     },
     {
-      itemName: "MOTOR SPORT STORE",
-      route: "#motor_sport_store",
+      itemName: "Registration",
+      route: "registration",
       childs: null,
       id: 4,
     },
 
     {
-      itemName: "Team Register",
-      route: "#team_register",
+      itemName: "Downloads",
+      route: "downloads",
       childs: null,
       id: 5,
     },
     {
-      itemName: "Team login",
-      route: "#team_login",
+      itemName: "Gallery",
+      route: "gallery",
       childs: null,
       id: 6,
     },
     {
-      itemName: "Event Media",
-      route: "#event_media",
+      itemName: "Contact us",
+      route: "Contact-us",
       childs: null,
       id: 7,
     },
@@ -161,7 +146,7 @@ const NavContent = () => {
             {/* for bigger screen */}
             <ul className="absolute top-full left-0 bg-black bg-opacity-85 p-2 hidden md:group-hover:block w-auto text-nowrap rounded-lg">
               {i?.childs.map((child_item, child_Index) => (
-                <li key={child_item?.childId}> 
+                <li key={child_item?.childId}>
                   <a
                     href={child_item?.route}
                     className={`block text-secondary hover:text-NeonBlue transition-colors duration-700  p-2 l ${

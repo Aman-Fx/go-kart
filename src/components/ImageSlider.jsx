@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { assests } from "../assests";
+import CustomRightArrow from "../customComponents/CustomRightArrow";
 
 const ImageSlider = () => {
   const images = Object.values(assests.gallery);
@@ -27,43 +28,37 @@ const ImageSlider = () => {
 
   return (
     <>
-      <div className="relative w-full" data-carousel="slide">
-        <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-          <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img
-              src="/docs/images/carousel/carousel-4.svg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="..."
-            />
-          </div>
-
+      <div className="h-dvh py-20 flex  items-center bg-gradient-to-r from-black via-gray-950 to-gray-950" data-carousel="slide">
+        <div className="relative w-full max-w-5xl h-full mx-auto shadow-xl shadow-background hover:shadow-gray-800 hover:border-gray-800">
           {images.map((image, index) => (
-            <div
+            <img
               key={index}
-              className={`duration-700 ease-in-out 
-                ${index === currentIndex ? "opacity-100" : "opacity-0"}
-                `}
-            >
-              <img
-                src={image}
-                alt={`Slide ${index}`}
-                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              />
-            </div>
+              src={image}
+              alt={`Slide ${index}`}
+              className={`duration-700 ease-in-out absolute object-fill h-full w-full rounded-xl 
+                  ${index === currentIndex ? "opacity-100" : "opacity-0"}
+                  `}
+            />
           ))}
+          <button
+            onClick={goToPrevious}
+            className="group absolute left-0 top-1/2 transform -translate-y-1/2 p-1 rounded-full focus:outline-none shadow-sm hover:shadow-black bg-white bg-opacity-25 transition duration-700 mx-5"
+          >
+            <CustomRightArrow
+              size="md:size-7 size-5"
+              className={"rotate-180 group-hover:text-black transition duration-700"}
+            />
+          </button>
+          <button
+            onClick={goToNext}
+            className="group absolute right-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-25 p-1 rounded-full focus:outline-none transition duration-700 mx-5"
+          >
+            <CustomRightArrow
+              size="md:size-7 size-5"
+              className={"group-hover:text-black transition duration-700"}
+            />
+          </button>
         </div>
-        <button
-          onClick={goToPrevious}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-1 rounded-full focus:outline-none"
-        >
-          &#10094;
-        </button>
-        <button
-          onClick={goToNext}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-1 rounded-full focus:outline-none"
-        >
-          &#10095;
-        </button>
       </div>
     </>
   );

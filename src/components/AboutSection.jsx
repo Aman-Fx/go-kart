@@ -1,4 +1,5 @@
 import { assests } from "../assests";
+import { aboutUs } from "../constants/ConstantData";
 import CustomRightArrow from "../customComponents/CustomRightArrow";
 import ThemeButton from "../customComponents/ThemeButton";
 
@@ -38,15 +39,7 @@ const AboutSection = () => {
         <div className="flex lg:flex-row flex-col items-start gap-5 justify-between">
           <div className="px-4 mb-8 lg:mb-0 lg:w-1/2">
             <p className="text-base md:text-lg mb-8 font-body leading-relaxed text-neutral">
-              IKC is an intercollegiate engineering design competition for
-              undergraduate and graduate engineering students. The object of the
-              competition is to implement good engineering practices, design
-              projects and their related research work.Each participating
-              student will learn, innovate and gain the experience of team work,
-              leadership and the technical skill. The students must function as
-              a team to design, engineer, build, test, promote and compete with
-              a vehicle considering the few sets of rules applied by organizing
-              committee.
+              {aboutUs}
             </p>
             <ThemeButton label="View all" />
           </div>

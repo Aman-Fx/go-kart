@@ -14,7 +14,7 @@ const GallerySection = () => {
         <hr className=" flex-grow  border-0 bg-gradient-to-r from-primary via-gray-950 to-gray-950 p-px  rounded-3xl" />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mb-20 ">
-        {images?.map((image) => (
+        {images?.slice(0, 4)?.map((image) => (
           <div key={image} className="group hover:shadow-lg hover:shadow-gray-800 overflow-hidden rounded-lg">
             <img className="h-auto max-w-full  transition-all duration-700 group-hover:scale-110 ease-in-out" src={image} alt="" />
           </div>

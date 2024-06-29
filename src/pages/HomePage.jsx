@@ -9,6 +9,8 @@ import GallerySection from "../components/GallerySection";
 import SupportSection from "../components/SupportSection";
 import Footer from "../components/Footer";
 import ImageSlider from "../components/ImageSlider";
+import GalleryPage from './GalleryPage'
+import ContactUsPage from './ContactUsPage'
 
 const HomePage = () => {
   return (
@@ -45,6 +47,13 @@ const HomePage = () => {
       </div>
       <div className="relative">
         <Footer />
+      </div>
+      {/* // to be called on route */}
+      <div className = 'relative'>
+        <GalleryPage/>
+      </div>
+      <div className = 'relative'>
+        <ContactUsPage/>
       </div>
     </div>
   );
