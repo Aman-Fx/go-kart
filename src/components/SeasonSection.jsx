@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { assests } from "../assests";
 import CustomRightArrow from "../customComponents/CustomRightArrow";
-import { kartEvents, upcommingEvents } from "../constants/ConstantData";
+import { kartEvents, upcommingEvents } from "../constants";
 import ThemeButton from "../customComponents/ThemeButton";
 
 const SeasonSection = () => {
@@ -142,7 +142,7 @@ const UpcomingEventCard = ({ image, title }) => {
           {title}
         </div>
         <div className="text-neutral group-hover:text-secondary md:text-sm text-xs">
-        comming soon
+          comming soon
         </div>
       </div>
     </div>

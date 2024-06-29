@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import { assests } from "../assests";
+import { ROUTES } from "../constants";
 
 const Footer = () => {
   return (
@@ -14,7 +16,7 @@ const Footer = () => {
               />
             </div>
             <div>
-              IKC is an intercollegiate engineering design 
+              IKC is an intercollegiate engineering design
               <br className="md:block hidden" />competition for undergraduate and graduate
               <br className="md:block hidden" /> engineering students.
             </div>
@@ -22,23 +24,23 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-8 sm:gap-6">
             <div>
               <h2 className="md:mb-6 mb-4 md:text-base text-sm text-white uppercase">
-                Quick Links 
+                Quick Links
               </h2>
               <ul className="text-neutral font-medium [&_li]:md:mb-4 [&_li]:mb-2 md:text-sm text-xs">
                 <li>
-                  <a href="/" className="hover:underline">
+                  <Link to={ROUTES.home} className="hover:underline">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/about" className="hover:underline">
+                  <Link to={ROUTES.aboutUs} className="hover:underline">
                     About us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/contact" className="hover:underline">
+                  <Link to={ROUTES.contactUs} className="hover:underline">
                     Contact us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -53,7 +55,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/about" className="hover:underline">
+                  <a href="/" className="hover:underline">
                     Indian Karting championship
                   </a>
                 </li>
@@ -65,9 +67,9 @@ const Footer = () => {
         {/* Bottom line */}
         <div className="text-gray-500 flex md:items-center md:flex-row flex-col gap-4 sm:justify-between">
           <span className="text-sm">
-            © 2023{" "}
+            © 2024&nbsp;
             <a href="/" className="hover:underline">
-              Indian Karting
+              Hindustan Motor Sports
             </a>
             . All Rights Reserved.
           </span>
@@ -96,7 +98,7 @@ const Footer = () => {
             </a>
             <div>|</div>
             <a
-              href="mailto:info@indkc.com"
+              // href="mailto:info@indkc.com"
               target="_blank"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-400 gap-1 flex items-center"
             >
@@ -117,12 +119,12 @@ const Footer = () => {
                 />
               </svg>
 
-              <div>info@indkc.com</div>
+              <div>hindustanmotorsports@gmail.com</div>
             </a>
           </div>
           <div className="flex items-center gap-3">
             {/* faceBook */}
-            <a
+            {/* <a
               href="https://www.facebook.com/officialikc"
               target="_blank"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
@@ -140,10 +142,10 @@ const Footer = () => {
                   clipRule="evenodd"
                 />
               </svg>
-            </a>
+            </a> */}
             {/* Instagram */}
             <a
-              href="https://www.instagram.com/indiankarting_ikc/"
+              href="https://www.instagram.com/hindustanmotorsports?igsh=MTZvcXV2ZnQ1cmNpdQ%3D%3D&utm_source=qr"
               target="_blank"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
@@ -164,7 +166,7 @@ const Footer = () => {
             </a>
             {/* Youtube */}
             <a
-              href="https://www.youtube.com/c/SPAARKINDIA"
+              href="https://youtube.com/@hindustanmotorsports2761?si=iSdtHojt9ivTt6Hk"
               target="_blank"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >

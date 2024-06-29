@@ -1,5 +1,5 @@
-import React from "react";
-import { aboutUs } from "../constants/ConstantData";
+
+import { aboutUs } from "../constants";
 
 const AboutUsPage = () => {
   return (
@@ -19,10 +19,10 @@ const AboutUsPage = () => {
 
           <div className="2xl:pl-16 text-secondary">
             <h2 className="text-3xl font-header leading-tight text-primary sm:text-4xl lg:text-5xl lg:leading-tight">
-            About Us
+              About Us
             </h2>
             <p className="text-xl leading-relaxed  mt-9">
-             {aboutUs.discription}
+              {aboutUs.discription}
             </p>
           </div>
         </div>

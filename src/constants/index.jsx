@@ -170,3 +170,84 @@ export const contactDetails = [
     isClickable: false,
   },
 ];
+export const ROUTES = {
+  home: "/",
+  aboutUs: "/about-us",
+  season: "/season",
+  goKart: "/events/go-kart",
+  eBike: "/events/e-bike",
+  quadBikeATV: "/events/quad-bike-atv",
+  registration: "/registration",
+  downloads: "/downloads",
+  gallery: "/gallery",
+  contactUs: "/contact-us",
+  notFound: "*",
+}
+
+export const navItems = [
+  {
+    itemName: "Home",
+    route: ROUTES.home,
+    children: null,
+    id: 1,
+  },
+  {
+    itemName: "About us",
+    route: ROUTES.aboutUs,
+    children: null,
+    id: 2,
+  },
+  {
+    itemName: "Events",
+    id: 3,
+    children: [
+      {
+        childItemName: "Go-kart",
+        route: ROUTES.goKart,
+        childId: 1,
+        id: 4,
+      },
+
+      {
+        childItemName: "E-bike",
+        route: ROUTES.eBike,
+        childId: 2,
+        id: 5,
+      },
+      {
+        childItemName: "Quad bike & ATV",
+        route: ROUTES.quadBikeATV,
+        childId: 3,
+        id: 6,
+      },
+    ],
+  },
+  {
+    itemName: "Registration",
+    route: ROUTES.registration,
+    children: null,
+    id: 7,
+  },
+
+  {
+    itemName: "Downloads",
+    route: ROUTES.downloads,
+    children: null,
+    id: 8,
+  },
+  {
+    itemName: "Gallery",
+    route: ROUTES.gallery,
+    children: null,
+    id: 9,
+  },
+  {
+    itemName: "Contact us",
+    route: ROUTES.contactUs,
+    children: null,
+    id: 10,
+  },
+];
+
+
+

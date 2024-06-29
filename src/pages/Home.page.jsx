@@ -1,24 +1,19 @@
-import Navbar from "../components/Navbar";
-import HeroSection from "../components/HeroSection";
-import SeasonSection from "../components/SeasonSection";
 import AboutSection from "../components/AboutSection";
 import CommitteeSection from "../components/CommitteeSection";
-import VedioSection from "../components/VedioSection";
-import TesttimonialSection from "../components/TesttimonialSection";
 import GallerySection from "../components/GallerySection";
-import SupportSection from "../components/SupportSection";
-import Footer from "../components/Footer";
+import HeroSection from "../components/HeroSection";
 import ImageSlider from "../components/ImageSlider";
-import GalleryPage from './GalleryPage'
-import ContactUsPage from './ContactUsPage'
-import AboutUsPage from "./AboutUsPage";
+import SeasonSection from "../components/SeasonSection";
+import SupportSection from "../components/SupportSection";
+import VedioSection from "../components/VedioSection";
+import GalleryPage from './Gallery.page';
 
 const HomePage = () => {
   return (
     <div className="relative">
-      <div className="fixed top-0 w-full z-50">
+      {/* <div className="fixed top-0 w-full z-50">
         <Navbar />
-      </div>
+      </div> */}
       <div className="top-0 h-dvh w-full z-1">
         <HeroSection />
       </div>
@@ -37,28 +32,28 @@ const HomePage = () => {
       <div className="">
         <VedioSection />
       </div>
-      <div className="">
+      {/* <div className="">
         <TesttimonialSection />
-      </div>
+      </div> */}
       <div className="">
         <GallerySection />
       </div>
       <div className="">
         <SupportSection />
       </div>
-      <div className="relative">
+      {/* <div className="relative">
         <Footer />
-      </div>
+      </div> */}
       {/* // to be called on route */}
-      <div className = 'relative'>
-        <GalleryPage/>
+      <div className='relative'>
+        <GalleryPage />
       </div>
-      <div className = 'relative'>
-        <ContactUsPage/>
+      {/* <div className='relative'>
+        <ContactUsPage />
       </div>
-      <div className = 'relative'>
-        <AboutUsPage/>
-      </div>
+      <div className='relative'>
+        <AboutUsPage />
+      </div> */}
 
     </div>
   );

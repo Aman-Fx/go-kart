@@ -1,5 +1,5 @@
 import { assests } from "../assests";
-import { aboutUs } from "../constants/ConstantData";
+import { aboutUs } from "../constants";
 import CustomRightArrow from "../customComponents/CustomRightArrow";
 import ThemeButton from "../customComponents/ThemeButton";
 

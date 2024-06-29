@@ -1,4 +1,4 @@
-import { contactDetails } from "../constants/ConstantData";
+import { contactDetails } from "../constants";
 import ThemeButton from "../customComponents/ThemeButton";
 
 const ContactUsPage = () => {
