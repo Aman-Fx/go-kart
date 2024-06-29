@@ -14,12 +14,12 @@ const VideoSection = () => {
       <div className="flex flex-wrap justify-center md:items-center gap-10 px-4 h-dvh">
         <div className="md:w-[560px] sm:h-[315px] w-full rounded-2xl shadow-xl shadow-background transition duration-700 cursor-pointer hover:shadow-lg hover:shadow-gray-800 overflow-hidden">
           <iframe
-            className=" aspect-video w-full h-full"
+            className="aspect-video w-full h-full"
             src="https://www.youtube.com/embed/PyBbTqoLjwg?si=NbS5ENbvPoItGdO9"
             title="YouTube video player"
             frameBorder="0"
             referrerPolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
         <div className="md:w-[560px] sm:h-[315px] w-full rounded-2xl shadow-xl shadow-background transition duration-700 cursor-pointer hover:shadow-lg hover:shadow-gray-800 overflow-hidden">
@@ -29,7 +29,7 @@ const VideoSection = () => {
             title="YouTube video player"
             frameBorder="0"
             referrerPolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       </div>
