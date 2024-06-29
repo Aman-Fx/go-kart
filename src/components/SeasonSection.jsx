@@ -96,7 +96,7 @@ const Pillar = () => (
 
 const EventCard = ({ heading, content, year, CommingSoon }) => {
   return (
-    <div className="min-h-[250px] p-6 bg-gray-950 rounded-lg shadow-xl shadow-background border border-background md:w-80 w-full transition duration-700 cursor-pointer hover:shadow-lg hover:shadow-gray-800 hover:border-gray-800 flex flex-col">
+    <div className="min-h-[250px] p-6 bg-gray-950 rounded-lg shadow-xl shadow-background border-5 border-gray-950 md:w-80 w-full transition duration-700 cursor-pointer hover:shadow-lg hover:shadow-gray-800 hover:border-gray-800 flex flex-col">
       <div className=" items-center">
         <span className="text-neutral font-header font-bold md:text-base text-sm">
           {year ?? "year"}

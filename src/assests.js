@@ -1,7 +1,8 @@
 export const assests = {
   global: {
     ick_logo: "./basics/Ick-logo.png",
-    footerImg: './basics/trackImg.jpg'
+    footerImg: "./basics/trackImg.jpg",
+    hindustanMotorsportsLogo: "./basics/hindustan-motorsports.png" 
   },
   heroSection: {
     backGroundVedio: "./hero/karting-vedio.mp4",

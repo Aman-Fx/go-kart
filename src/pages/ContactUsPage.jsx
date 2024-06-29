@@ -1,72 +1,126 @@
-import CustomRightArrow from "../customComponents/CustomRightArrow";
+import { contactDetails } from "../constants/ConstantData";
+import ThemeButton from "../customComponents/ThemeButton";
 
 const ContactUsPage = () => {
   return (
-    <section className="bg-black min-h-dvh flex items-center font-body text-white py-20">
-      <div className="container mx-auto text-center">
-        <div className="flex items-center md:mb-12 mb-5">
-          <CustomRightArrow />
-          <h2 className="text-xl md:text-4xl text-center font-header me-4">
-            Get in touch
-          </h2>
-          <hr className=" flex-grow  border-0 bg-gradient-to-r from-primary via-gray-950 to-gray-950 p-px  rounded-3xl" />
-        </div>
-        {/* content */}
-        <div className="container mx-auto p-4">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-            <div className="md:col-span-3 p-4 text-start md:text-sm text-xs">
-              {/* Content for the 60% section */}
+    <section className="py-10 bg-gradient-to-r from-black via-gray-950 to-gray-950 sm:py-16 lg:py-24 font-body">
+      <div className="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:items-stretch md:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-10">
+          <div className="flex flex-col justify-between lg:py-5">
+            <div>
+              <h2 className="text-3xl font-bold  text-white sm:text-4xl  lg:text-5xl">
+                Let's Get in Touch
+              </h2>
+              <p className="max-w-xl mx-auto mt-4 text-base  text-white">
+                Contact us
+              </p>
+
+              <img
+                className="relative z-10 max-w-xs mx-auto -mb-16 md:hidden"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/curve-line-mobile.svg"
+                alt=""
+              />
+
+              <img
+                className="hidden w-full translate-x-24 translate-y-8 md:block"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/curve-line.svg"
+                alt=""
+              />
+            </div>
+
+            <div className="hidden md:mt-auto md:block">
+              {contactDetails?.map((i) => (
+                <a
+                  key={i?.id}
+                  className="flex items-center gap-5 group cursor-pointer w-fit p-3 mb-5"
+                  href={i?.link}
+                  target="_blank"
+                >
+                  <div className=" w-10 h-10 relative ">
+                    <div className="w-full h-full rounded-full z-0 custom-shadow relative animate-spin-slow"></div>
+                    <div className=" flex items-center justify-center bg-gradient-to-r from-black via-gray-950 to-gray-950  w-full h-full rounded-2xl absolute top-0 left-0  z-10 group-hover:scale-110">
+                      <span className="text-neutral group-hover:text-secondary">
+                        {i?.icon}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className=" text-neutral">{i?.title}</div>
+                    <div className=" text-secondary">{i?.discription}</div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          <div className="lg:pl-12 my-auto">
+            <div className="overflow-hidden bg-gray-950 rounded-lg shadow-xl shadow-background border border-background font-body ">
+              <div className="p-6 sm:p-10">
+                {/* <h3 className="text-3xl font-semibold text-secondary">
+                  Get a free quote
+                </h3> */}
+                {/* <p className="mt-4 text-base text-gray-600">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
+                  amet sint.
+                </p> */}
+
+                <form action="#" method="POST" className="mt-4">
+                  <div className="space-y-6">
+                    <div>
+                      <label
+                        htmlFor=""
+                        className="text-base font-medium text-neutral"
+                      >
+                        {" "}
+                        Your name{" "}
+                      </label>
+                      <div className="mt-2.5 relative">
+                        <input
+                          type="text"
+                          name=""
+                          id=""
+                          placeholder="Enter your full name"
+                          className="block w-full px-4 py-4 text-neutral placeholder-gray-500 transition-all duration-200 bg-gray-950 border border-gray-800 rounded-md focus:outline-none focus:ring-gray-700 focus:border-gray-700 caret-gray-700"
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <ThemeButton label="Submit" width="full" />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div className="md:hidden">
+            {contactDetails?.map((i) => (
               <a
-                className="flex items-center gap-5 group cursor-pointer w-fit p-3"
-                href="mailto:hindustanmotorsports@gmail.com"
+                key={i?.id}
+                className="flex items-center gap-5 group cursor-pointer w-fit p-3 mb-5"
+                href={i?.link}
                 target="_blank"
               >
-                <div className=" w-10 h-10 relative ">
-                  <div className="w-full h-full blur-sm rounded-2xl z-0 custom-shadow relative animate-spin-slow"></div>
+                <div className=" md:size-10 size-8 relative ">
+                  <div className="w-full h-full rounded-full z-0 custom-shadow relative animate-spin-slow"></div>
                   <div className=" flex items-center justify-center bg-gradient-to-r from-black via-gray-950 to-gray-950  w-full h-full rounded-2xl absolute top-0 left-0  z-10 group-hover:scale-110">
                     <span className="text-neutral group-hover:text-secondary">
-                      <svg
-                        className="h-full "
-                        aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeWidth="1.7"
-                          d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"
-                        />
-                      </svg>
+                      {i?.icon}
                     </span>
                   </div>
                 </div>
 
-                <div>
-                  <div className=" text-neutral">Email Address</div>
-                  <div className=" text-secondary">
-                    hindustanmotorsports@gmail.com
-                  </div>
+                <div className="md:text-base text-xs">
+                  <div className=" text-neutral">{i?.title}</div>
+                  <div className=" text-secondary">{i?.discription}</div>
                 </div>
               </a>
-            </div>
-            <div className="md:col-span-2 bg-neutral p-4 order-1 md:order-none">
-              {/* Content for the 40% section */}
-              <h2 className="text-2xl font-bold text-secondary">
-                Side Content
-              </h2>
-              <p className="text-secondary">
-                This section takes 40% of the screen on larger screens and
-                reorders on small screens.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </div>
-      {/* new ui */}
     </section>
   );
 };

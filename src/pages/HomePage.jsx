@@ -11,6 +11,7 @@ import Footer from "../components/Footer";
 import ImageSlider from "../components/ImageSlider";
 import GalleryPage from './GalleryPage'
 import ContactUsPage from './ContactUsPage'
+import AboutUsPage from "./AboutUsPage";
 
 const HomePage = () => {
   return (
@@ -55,6 +56,10 @@ const HomePage = () => {
       <div className = 'relative'>
         <ContactUsPage/>
       </div>
+      <div className = 'relative'>
+        <AboutUsPage/>
+      </div>
+
     </div>
   );
 };
