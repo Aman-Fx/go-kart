@@ -75,7 +75,7 @@ const NavContent = () => {
             className={`${pathname === i?.route ? `text-primary` : "text-secondary"} hover:text-primary transition duration-300 uppercase`}
             key={i.id}
           >
-            {console.log(i?.route, pathname, pathname === i?.route)}
+
             {i?.itemName}
           </Link>
         )

@@ -22,7 +22,7 @@ const AboutUsPage = () => {
               About Us
             </h2>
             <p className="text-xl leading-relaxed  mt-9">
-              {aboutUs.discription}
+              {aboutUs.description}
             </p>
           </div>
         </div>

@@ -39,7 +39,7 @@ const AboutSection = () => {
         <div className="flex lg:flex-row flex-col items-start gap-5 justify-between">
           <div className="px-4 mb-8 lg:mb-0 lg:w-1/2">
             <p className="text-base md:text-lg mb-8 font-body leading-relaxed text-neutral">
-              {aboutUs.discription}
+              {aboutUs.description}
             </p>
             <ThemeButton label="View all" />
           </div>

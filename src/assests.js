@@ -5,7 +5,7 @@ export const assests = {
     hindustanMotorsportsLogo: "./basics/hindustan-motorsports.png" 
   },
   heroSection: {
-    backGroundVedio: "./hero/karting-vedio.mp4",
+    backGroundVideo: "./hero/karting-Video.mp4",
   },
   seasonSection: {
     tyre: "./season/tyre.png",

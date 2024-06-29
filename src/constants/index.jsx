@@ -90,7 +90,7 @@ export const upcommingEvents = [
 ];
 
 export const aboutUs = {
-  discription:
+  description:
     "Hindustan Motorsports was established back in 2015,We have been one of the trusted and prominent motorsports company. We don’t just organize events,We craft a legacy of thrilling races,our events are a celebration of skill,innovation and relentless pursuit of excellence.Join us on the track for an unparalleled racing experience that goes beyond competition.We are not just a firm, we are a community united by a passion for motorsports.",
   companyLogo: assests.global.hindustanMotorsportsLogo,
 };
@@ -103,7 +103,7 @@ export const contactDetails = [
   {
     id: 1,
     title: "Email Address",
-    discription: "hindustanmotorsports@gmail.com",
+    description: "hindustanmotorsports@gmail.com",
     icon: (
       <svg
         className="h-full sm:size-[24px] size-[16px]"
@@ -126,7 +126,7 @@ export const contactDetails = [
   {
     id: 2,
     title: "Call Us",
-    discription: "+91 9244961751 , +91 6267 336 735",
+    description: "+91 9244961751 , +91 6267 336 735",
     icon: (
       <svg
         className="h-full sm:size-[24px] size-[16px]"
@@ -149,7 +149,7 @@ export const contactDetails = [
   {
     id: 3,
     title: "Address",
-    discription: "Faridabad , Haryana",
+    description: "Faridabad , Haryana",
     icon: (
       <svg
         className="h-full sm:size-[24px] size-[16px]"

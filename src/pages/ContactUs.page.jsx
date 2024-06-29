@@ -9,7 +9,7 @@ const ContactUsPage = () => {
           <div className="flex flex-col justify-between lg:py-5">
             <div>
               <h2 className="text-3xl font-bold  text-white sm:text-4xl  lg:text-5xl">
-                Let's Get in Touch
+                Let&lsquo;s  Get in Touch
               </h2>
               <p className="max-w-xl mx-auto mt-4 text-base  text-white">
                 Contact us
@@ -47,7 +47,7 @@ const ContactUsPage = () => {
 
                   <div>
                     <div className=" text-neutral">{i?.title}</div>
-                    <div className=" text-secondary">{i?.discription}</div>
+                    <div className=" text-secondary">{i?.description}</div>
                   </div>
                 </a>
               ))}
@@ -65,15 +65,15 @@ const ContactUsPage = () => {
                   amet sint.
                 </p> */}
 
-                <form action="#" method="POST" className="mt-4">
+                <form onSubmit={(e) => e.preventDefault()} className="mt-4">
                   <div className="space-y-6">
                     <div>
                       <label
                         htmlFor=""
                         className="text-base font-medium text-neutral"
                       >
-                        {" "}
-                        Your name{" "}
+
+                        Your name
                       </label>
                       <div className="mt-2.5 relative">
                         <input
@@ -81,11 +81,30 @@ const ContactUsPage = () => {
                           name=""
                           id=""
                           placeholder="Enter your full name"
-                          className="block w-full px-4 py-4 text-neutral placeholder-gray-500 transition-all duration-200 bg-gray-950 border border-gray-800 rounded-md focus:outline-none focus:ring-gray-700 focus:border-gray-700 caret-gray-700"
+                          className="block w-full px-4 py-4 text-neutral placeholder-gray-500 transition-all duration-200 bg-gray-950 border border-gray-800 rounded-md focus:outline-none focus:ring-gray-700 focus:border-gray-700"
                         />
                       </div>
                     </div>
+                    <div>
+                      <label
+                        htmlFor=""
+                        className="text-base font-medium text-neutral"
+                      >
 
+                        Your Message
+                      </label>
+                      <div className="mt-2.5 relative">
+                        <textarea
+                          type="text"
+                          rows="5"
+                          name=""
+                          id=""
+                          placeholder="Your thoughts here ..."
+                          className="block w-full px-4 py-4 text-neutral placeholder-gray-500 transition-all duration-200 bg-gray-950 border border-gray-800 rounded-md focus:outline-none focus:ring-gray-700 focus:border-gray-700"
+
+                        />
+                      </div>
+                    </div>
                     <div>
                       <ThemeButton label="Submit" width="full" />
                     </div>
@@ -114,7 +133,7 @@ const ContactUsPage = () => {
 
                 <div className="md:text-base text-xs">
                   <div className=" text-neutral">{i?.title}</div>
-                  <div className=" text-secondary">{i?.discription}</div>
+                  <div className=" text-secondary">{i?.description}</div>
                 </div>
               </a>
             ))}

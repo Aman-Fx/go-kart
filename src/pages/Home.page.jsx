@@ -5,8 +5,8 @@ import HeroSection from "../components/HeroSection";
 import ImageSlider from "../components/ImageSlider";
 import SeasonSection from "../components/SeasonSection";
 import SupportSection from "../components/SupportSection";
-import VedioSection from "../components/VedioSection";
 import GalleryPage from './Gallery.page';
+import VideoSection from '../components/VedioSection';
 
 const HomePage = () => {
   return (
@@ -30,7 +30,7 @@ const HomePage = () => {
         <CommitteeSection />
       </div>
       <div className="">
-        <VedioSection />
+        <VideoSection />
       </div>
       {/* <div className="">
         <TesttimonialSection />
