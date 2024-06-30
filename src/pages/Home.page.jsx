@@ -12,6 +12,9 @@ const HomePage = () => {
         <HeroSection />
       </div>
       <div className="">
+        <GallerySection />
+      </div>
+      <div className="">
         <SeasonSection />
       </div>
       {/* <div className="">
@@ -27,9 +30,7 @@ const HomePage = () => {
         <VideoSection />
       </div>
 
-      <div className="">
-        <GallerySection />
-      </div>
+
       <div className="">
         <SupportSection />
       </div>

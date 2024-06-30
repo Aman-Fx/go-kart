@@ -10,7 +10,7 @@ body {
   width: 100%;
 }
 body {
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 /* globals.css or any CSS file */

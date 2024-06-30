@@ -17,7 +17,10 @@ const RegistrationPage = () => {
             Get Your Registration for <br />the INDIA'S BIGGEST STUDENT'S KARTING CHAMPIONSHIP!
           </div>
           <div className="">
-            <ThemeButton label="Register now" />
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdaRvHE3hqrYnTrXJPp004VM1mwE762R3UfQo7WiPJzWnURiQ/viewform" target="_blank">
+
+              <ThemeButton label="Register now" />
+            </a>
           </div>
         </div>
       </div>

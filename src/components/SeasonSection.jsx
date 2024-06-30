@@ -86,7 +86,7 @@ const SeasonSection = () => {
           })}
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:mb-20 mb-8">
+      <div className="flex flex-col md:flex-row justify-around items-center gap-10 md:mb-20 mb-8">
         {upcommingEvents?.map((i) => (
           <UpcomingEventCard key={i?.id} title={i?.name} image={i?.image} />
         ))}
