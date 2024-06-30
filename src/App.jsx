@@ -11,6 +11,7 @@ import EBikePage from './pages/EBike.page';
 import GoKartPage from './pages/GoKart.page';
 import QuadBikePage from './pages/QuadBike.page';
 import NotFoundPage from "./pages/NotFound.page";
+import RegistrationPage from "./pages/RegisterNow.page";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Route path={ROUTES.eBike} element={<EBikePage />} />
           <Route path={ROUTES.goKart} element={<GoKartPage />} />
           <Route path={ROUTES.quadBikeATV} element={<QuadBikePage />} />
+          <Route path={ROUTES.registration} element={<RegistrationPage />} />
           {/* <Route path="contact-us" element={<ContactUsPage />} /> */}
           {/* add more routes here */}
           {/* <Route path="route-name" element={<YourComponent />} /> */}

@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section className="relative h-dvh overflow-hidden">
       <video
         className="absolute top-0 left-0 w-full h-full object-fill"
-        src={assests.heroSection.backGroundVideo}
+        src={assests.heroSection.backGroundVedio}
         autoPlay
         loop
         muted

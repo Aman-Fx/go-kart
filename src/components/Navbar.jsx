@@ -72,6 +72,7 @@ const NavContent = () => {
         ) : (
           <Link
             to={i?.route}
+            target= {i?.externalRoute ? '_blank': '_self'}
             className={`${pathname === i?.route ? `text-primary` : "text-secondary"} hover:text-primary transition duration-300 uppercase`}
             key={i.id}
           >

@@ -179,10 +179,12 @@ export const ROUTES = {
   quadBikeATV: "/events/quad-bike-atv",
   registration: "/registration",
   downloads: "/downloads",
+  training: "/training",
+  store: "https://www.vintagevision.co.in/",
   gallery: "/gallery",
   contactUs: "/contact-us",
   notFound: "*",
-}
+};
 
 export const navItems = [
   {
@@ -190,12 +192,14 @@ export const navItems = [
     route: ROUTES.home,
     children: null,
     id: 1,
+    externalRoute: false,
   },
   {
     itemName: "About us",
     route: ROUTES.aboutUs,
     children: null,
     id: 2,
+    externalRoute: false,
   },
   {
     itemName: "Events",
@@ -227,6 +231,7 @@ export const navItems = [
     route: ROUTES.registration,
     children: null,
     id: 7,
+    externalRoute: false,
   },
 
   {
@@ -234,20 +239,34 @@ export const navItems = [
     route: ROUTES.downloads,
     children: null,
     id: 8,
+    externalRoute: false,
+  },
+  {
+    itemName: "Training",
+    route: ROUTES.training,
+    children: null,
+    id: 9,
+    externalRoute: false,
+  },
+  {
+    itemName: "Store",
+    route: ROUTES.store,
+    children: null,
+    id: 10,
+    externalRoute: true,
   },
   {
     itemName: "Gallery",
     route: ROUTES.gallery,
     children: null,
-    id: 9,
+    id: 12,
+    externalRoute: false,
   },
   {
     itemName: "Contact us",
     route: ROUTES.contactUs,
     children: null,
-    id: 10,
+    id: 12,
+    externalRoute: false,
   },
 ];
-
-
-

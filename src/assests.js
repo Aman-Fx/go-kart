@@ -2,10 +2,12 @@ export const assests = {
   global: {
     ick_logo: "./basics/Ick-logo.png",
     footerImg: "./basics/trackImg.jpg",
-    hindustanMotorsportsLogo: "./basics/hindustan-motorsports.png" 
+    hindustanMotorsportsLogo: "./basics/hindustan-motorsports.png",
+    dotPattern: "/basics/dots-pattern.svg",
+    hfkcLogo: '/basics/hfkc.png'
   },
   heroSection: {
-    backGroundVideo: "./hero/karting-video.mp4",
+    backGroundVedio: "./hero/karting-video.mp4",
   },
   seasonSection: {
     tyre: "./season/tyre.png",
@@ -44,4 +46,7 @@ export const assests = {
     img_2: "./support/sinhgad_Institutes.jpg",
     img_3: "./support/tm.jpg",
   },
+  background: {
+    RegistrationPage: './background/registration-bg.png'
+  }
 };

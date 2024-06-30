@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-black via-black to-black border-t border-gray-900 font-body ">
       <div className="mx-auto w-full px-8 py-6 lg:py-8">
-        <div className="md:flex md:justify-between items-center">
+        <div className="md:flex md:justify-between items-center gap-3">
           <div className="text-neutral md:text-base text-sm flex md:flex-row flex-col md:items-center gap-3 mb-6">
             <div>
               <img
@@ -15,10 +15,11 @@ const Footer = () => {
                 alt="Indian Karting Logo"
               />
             </div>
+
             <div>
-              IKC is an intercollegiate engineering design
-              <br className="md:block hidden" />competition for undergraduate and graduate
-              <br className="md:block hidden" /> engineering students.
+              We are not just a firm, <br  />
+              we are a community united by
+              <br className="md:block hidden" /> a passion for motorsports.
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6">
@@ -65,17 +66,18 @@ const Footer = () => {
         </div>
         <hr className="my-6 sm:mx-auto border-gray-900 lg:my-8" />
         {/* Bottom line */}
-        <div className="text-gray-500 flex md:items-center md:flex-row flex-col gap-4 sm:justify-between">
+        <div className="text-gray-500 flex lg:items-center md:items-start md:flex-row flex-col gap-4 sm:justify-between">
           <span className="text-sm">
             © 2024&nbsp;
             <a href="/" className="hover:underline">
-              Hindustan Motor Sports
-            </a>
-            . All Rights Reserved.
+              Hindustan Motor Sports.
+            </a>{" "}
+            <br className="lg:hidden " />
+            All Rights Reserved.
           </span>
-          <div className="flex gap-3 items-center md:text-sm text-xs">
+          <div className="flex gap-3 sm:flex-row flex-col md:items-center md:text-sm text-xs">
             <a
-              href="tel:8788746228"
+              href="tel:9244961751"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-400 flex items-center gap-1"
             >
               <svg
@@ -94,9 +96,9 @@ const Footer = () => {
                 />
               </svg>
 
-              <div>878-874-6228</div>
+              <div>924-496-1751</div>
             </a>
-            <div>|</div>
+            <div className="sm:block hidden">|</div>
             <a
               // href="mailto:info@indkc.com"
               target="_blank"
@@ -119,7 +121,7 @@ const Footer = () => {
                 />
               </svg>
 
-              <div>hindustanmotorsports@gmail.com</div>
+              <div className="break-all">hindustanmotorsports@gmail.com</div>
             </a>
           </div>
           <div className="flex items-center gap-3">
