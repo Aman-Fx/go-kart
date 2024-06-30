@@ -1,7 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { navItems } from "../constants";
 
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname])
+
+  return null
+}
 
 const NavContent = () => {
   const [isChildMenu, setIsChildMenu] = useState(false);
@@ -9,18 +18,21 @@ const NavContent = () => {
     setIsChildMenu(!isChildMenu);
   };
   const { pathname } = useLocation();
-  const isRouteActive = (i) => pathname === i.route || pathname.includes(i.route);
+  const isRouteActive = (route) =>
+    pathname === route
+
 
   return (
     <>
       {navItems?.map((i) =>
-        i.children ? (
-          <div className="relative group uppercase" key={i.id}>
+        i?.children ? (
+          <div className="relative group uppercase" key={i.id + Math.random()}>
             <span
               className="text-secondary hover:text-primary transition duration-300 flex items-center gap-x-2 cursor-pointer"
               onClick={toggleChildMenu}
             >
-              <span className={isRouteActive(i) ? `text-primary` : ""}>{i?.itemName}</span>
+
+              <span className={pathname.includes(i?.itemName.toLowerCase()) ? `text-primary` : ""}>{i?.itemName}</span>
 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +55,7 @@ const NavContent = () => {
                 <li key={child_item?.childId}>
                   <Link
                     to={child_item?.route}
-                    className={`block text-secondary hover:text-NeonBlue transition-colors duration-700  p-2 l ${child_Index + 1 == i?.children?.length
+                    className={`block ${isRouteActive(child_item?.route) ? `text-primary` : "text-secondary"} hover:text-NeonBlue transition-colors duration-700  p-2 l ${child_Index + 1 == i?.children?.length
                       ? ""
                       : "border-b border-dashed  border-black hover:border-NeonBlue"
                       }`}
@@ -61,7 +73,7 @@ const NavContent = () => {
               {i?.children.map((child_item) => (
                 <li
                   key={child_item?.childId}
-                  className="text-NeonBlue transition duration-1000  p-2 border-b-2 border-dashed border-neutral w-1/2 mx-auto"
+                  className={`${isRouteActive(child_item?.route) ? `text-primary` : "text-NeonBlue"} transition duration-1000  p-2 border-b-2 border-dashed border-neutral w-1/2 mx-auto`}
                 >
                   <Link to={child_item?.route} className="block">
                     {child_item?.childItemName}
@@ -74,10 +86,9 @@ const NavContent = () => {
           <Link
             to={i?.route}
             target={i?.externalRoute ? '_blank' : '_self'}
-            className={`${pathname === i?.route ? `text-primary` : "text-secondary"} hover:text-primary transition duration-300 uppercase`}
-            key={i.id}
+            className={`${isRouteActive(i?.route) ? `text-primary` : "text-secondary"} hover:text-primary transition duration-300 uppercase`}
+            key={i.id + Math.random()}
           >
-
             {i?.itemName}
           </Link>
         )
@@ -92,14 +103,9 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
-
-
-
-
-
   return (
     <nav className="bg-black md:bg-opacity-75 p-8 font-body text-white text-base hover:text-primary-red transition duration-300 font-normal ">
+      <ScrollToTop />
       <div className="container mx-auto flex items-center justify-between">
         <div></div>
         <div className="hidden md:flex items-center space-x-5 :">

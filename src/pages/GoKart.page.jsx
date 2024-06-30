@@ -1,7 +1,8 @@
 import { kartEvents } from "../constants";
 import ThemeButton from "../customComponents/ThemeButton";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import SeasonPage from "./Season.page";
+import { useLocation } from "react-router-dom";
 
 
 const SeasonCard = ({ year, heading, content, img, handleKartEvent, id }) => {
@@ -42,12 +43,19 @@ const SeasonCard = ({ year, heading, content, img, handleKartEvent, id }) => {
 
 function GoKartPage() {
   const [selectedIndex, setSelectedIndex] = useState(-1);
+  const { state } = useLocation();
+
+  useEffect(() => {
+    setSelectedIndex(state?.id ?? -1);
+  }, [state])
+
+
   const handleKartEvent = (index) => {
     setSelectedIndex(index);
   };
   return (
     <>
-      {selectedIndex >= 0 ? <SeasonPage id={selectedIndex} handleKartEvent={handleKartEvent} /> : <section className={`py-24 px-8 relative bg-gradient-to-r from-black via-gray-950 to-gray-950`}>
+      {selectedIndex >= 0 ? <SeasonPage id={selectedIndex} handleKartEvent={handleKartEvent} isHome={state?.isHome} /> : <section className={`py-24 px-8 relative bg-gradient-to-r from-black via-gray-950 to-gray-950`}>
         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-10">
           {kartEvents?.map((item, index) => (
             <SeasonCard

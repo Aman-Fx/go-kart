@@ -1,14 +1,14 @@
 import { Fragment } from "react";
 import { assets } from "../assets";
 import CustomRightArrow from "../customComponents/CustomRightArrow";
-import { kartEvents, upcommingEvents } from "../constants";
+import { ROUTES, kartEvents, upcommingEvents } from "../constants";
 import ThemeButton from "../customComponents/ThemeButton";
 import { useNavigate } from "react-router-dom";
 
 const SeasonSection = () => {
   const navigate = useNavigate();
   const handleNavigate = (id) => {
-    navigate(id);
+    navigate(ROUTES.goKart, { state: { id, isHome: true } });
   }
   return (
     <section className="relative bg-gradient-to-r from-black via-gray-950 to-gray-950 py-20 px-8 min-h-dvh">
@@ -73,6 +73,8 @@ const SeasonSection = () => {
                         content={event.data.subHeading}
                         year={event.year}
                         image={event.img}
+                        id={index}
+                        handleKartEvent={handleNavigate}
                       />
                     </div>
                   </div>
@@ -103,7 +105,7 @@ const Pillar = () => (
   <div className="w-px h-full bg-gradient-to-b from-gray-950 via-primary to-gray-950 rounded-t-full rounded-b-full mx-5"></div>
 );
 
-const EventCard = ({ heading, content, year, CommingSoon, handleKartEvent }) => {
+const EventCard = ({ heading, content, year, CommingSoon, id, handleKartEvent }) => {
 
   return (
     <div className="min-h-[250px] p-6 bg-gray-950 rounded-lg shadow-xl shadow-background border-5 border-gray-950 md:w-80 w-full transition duration-700 cursor-pointer hover:shadow-lg hover:shadow-gray-800 hover:border-gray-800 flex flex-col">
@@ -124,7 +126,7 @@ const EventCard = ({ heading, content, year, CommingSoon, handleKartEvent }) => 
         ))}
       </ul>
       <div className="mx-auto mt-auto">
-        <ThemeButton label="learn more" onClick={() => handleKartEvent(-1)} />
+        <ThemeButton label="learn more" onClick={() => handleKartEvent(id)} />
       </div>
     </div>
   );

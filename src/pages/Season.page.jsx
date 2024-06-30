@@ -1,15 +1,15 @@
-// import { assets } from "../assets";
-
+import { useNavigate } from "react-router-dom";
 import { assets } from "../assets";
-import { kartEvents } from "../constants";
+import { ROUTES, kartEvents } from "../constants";
 import ThemeButton from "../customComponents/ThemeButton";
 
-function SeasonPage({ id, handleKartEvent }) {
+function SeasonPage({ id, handleKartEvent, isHome = false }) {
+  const navigate = useNavigate();
   return (
     <>
       <section className="bg-gradient-to-r from-black via-gray-950 to-gray-950 py-24 flex items-center font-body min-h-dvh">
         {<div className="mx-auto mt-auto">
-          <ThemeButton label="Go Back" onClick={() => handleKartEvent(-1)} />
+          <ThemeButton label="Go Back" onClick={() => isHome ? navigate(ROUTES.home) : handleKartEvent(-1)} />
         </div>}
         <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8 flex-grow">
           <div className="grid grid-cols-1 md:items-center  md:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-10">
