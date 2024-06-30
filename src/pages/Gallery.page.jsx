@@ -8,6 +8,7 @@ const GalleryPage = () => {
           {images.map((src, index) => (
             <div key={index} className="mb-5 rounded-lg overflow-hidden break-inside-avoid shadow-xl shadow-background">
               <img
+                loading="lazy"
                 src={src}
                 alt={`Gallery Image ${index + 1}`}
                 className="w-full"

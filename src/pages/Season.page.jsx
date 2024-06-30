@@ -37,6 +37,7 @@ function SeasonPage({ id, handleKartEvent, isHome = false }) {
 
             <div className="overflow-hidden rounded-2xl size-fit p-10">
               <img
+                loading="lazy"
                 className="size-full aspect-auto"
                 src={assets.global.hfkcLogo}
                 alt="null"

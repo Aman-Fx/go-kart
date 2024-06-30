@@ -5,6 +5,7 @@ function DownloadsPage() {
   return (
     <section className="relative h-dvh overflow-hidden bg-black">
       <img
+        loading="lazy"
         className="absolute top-0 left-0 w-full h-full object-fill"
         src={assets.background.DownloadPage}
       />

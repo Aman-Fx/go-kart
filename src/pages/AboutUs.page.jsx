@@ -8,12 +8,14 @@ const AboutUsPage = () => {
         <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 md:gap-y-12 gap-y-5">
           <div className="relative lg:mb-12">
             <img
+              loading="lazy"
               className="absolute -right-0 -bottom-8 xl:-bottom-12 xl:-right-4 text-white"
               src={assets.global.dotPattern}
               alt="null"
             />
             <div className="md:pl-12 md:pr-6">
-              <img className="relative" src={aboutUs.companyLogo} alt="" />
+              <img
+                loading="lazy" className="relative" src={aboutUs.companyLogo} alt="" />
             </div>
           </div>
 

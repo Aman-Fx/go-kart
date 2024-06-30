@@ -22,6 +22,7 @@ const SeasonSection = () => {
       <div className="flex xl:flex-row flex-col justify-between md:mb-20 mb-8">
         <div className="md:max-w-lg xl:h-dvh xl:sticky top-0 mx-auto">
           <img
+            loading="lazy"
             src={assets.seasonSection.person}
             alt="A man"
             className="w-full h-full object-cover"
@@ -137,6 +138,7 @@ const UpcomingEventCard = ({ image, title }) => {
     <div className="group w-full max-w-80 relative rounded-xl shadow-none transition-shadow duration-700 cursor-pointer ">
       <div className="h-72 w-full ">
         <img
+          loading="lazy"
           src={image}
           alt="image"
           className="transition-all duration-700 group-hover:scale-110 ease-in-out"

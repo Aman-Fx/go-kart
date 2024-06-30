@@ -32,6 +32,7 @@ const ImageSlider = () => {
         <div className="relative w-full max-w-5xl h-full mx-auto shadow-xl shadow-background hover:shadow-gray-800 hover:border-gray-800">
           {images.map((image, index) => (
             <img
+              loading="lazy"
               key={index}
               src={image}
               alt={`Slide ${index}`}

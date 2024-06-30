@@ -21,6 +21,7 @@ const SeasonCard = ({ year, heading, content, img, handleKartEvent, id }) => {
 
       <div className="mb-5">
         <img
+          loading="lazy"
           src={img}
           className="md:h-28 h-24 w-auto"
           alt="Indian Karting Logo"

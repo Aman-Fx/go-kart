@@ -10,6 +10,7 @@ const Footer = () => {
           <div className="text-neutral md:text-base text-sm flex md:flex-row flex-col md:items-center gap-3 mb-6">
             <div>
               <img
+                loading="lazy"
                 src={assets.global.hindustanMotorsportsLogo}
                 className="md:h-28 h-24 w-auto"
                 alt="Indian Karting Logo"

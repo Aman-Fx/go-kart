@@ -16,12 +16,14 @@ const ContactUsPage = () => {
               </p>
 
               <img
+                loading="lazy"
                 className="relative z-10 max-w-xs mx-auto -mb-16 md:hidden"
                 src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/curve-line-mobile.svg"
                 alt=""
               />
 
               <img
+                loading="lazy"
                 className="hidden w-full translate-x-24 translate-y-8 md:block"
                 src="https://cdn.rareblocks.xyz/collection/celebration/images/contact/4/curve-line.svg"
                 alt=""
