@@ -4,7 +4,7 @@ export const assets = {
     footerImg: "./basics/trackImg.jpg",
     hindustanMotorsportsLogo: "./basics/hindustan-motorsports.png",
     dotPattern: "/basics/dots-pattern.svg",
-    hfkcLogo: "/basics/hfkc.png",
+    hfkcLogo: '/basics/hfkc.png'
   },
   heroSection: {
     backGroundVideo: "./hero/karting-video.mp4",
@@ -14,6 +14,8 @@ export const assets = {
     person: "./season/aPerson.png",
     quadBiking: "./season/quad-bike-png.png",
     dirtBiking: "./season/dirt-bikingPng.jpg",
+    hfkcLogout: "/season/hfkc.png",
+    issSeason: "/season/ISS-series.png",
   },
   aboutSection: {
     smallKart: "./about/smallKart.png",
@@ -42,34 +44,11 @@ export const assets = {
     img_9: "./gallery/img_9.jpg",
   },
   support: {
-    mitLogo: "./support/mitLogo.png",
-    brcLogo: "./support/brc.png",
-    destinytionLogo: "./support/Destinytion.png",
-    dewizeIoLogo: "./support/DewizeIo.png",
-    redRabbitLogo: "./support/RedRabbit.png",
-    renforcerLogo: "./support/Renforcer.png",
-    rpEventsLogo: "./support/RpEvents.png",
-    venagoLogo: "./support/Venago.png",
-    vintageVisionLogo: "./support/VintageVision.png",
+    img_1: "./support/bscoer.jpg",
+    img_2: "./support/sinhgad_Institutes.jpg",
+    img_3: "./support/tm.jpg",
   },
   background: {
-    RegistrationPage: "./background/registration-bg.png",
-    DownloadPage: "./background/downloads-bg.png",
-  },
-
-  bannerImages: {
-    img_1: "./banner/HFKC-Banner.png",
-    img_2: "./banner/Iss5Banner.jpg",
-    img_3: "/public/banner/groupPhoto.jpg",
-    img_4: "public/banner/closeUpShot.jpg",
-    img_5: "public/banner/closeUpShot2.jpg",
-    img_6: "public/banner/DarkCloseUpShot.jpg",
-    img_7: "public/banner/GroupCloseUp.jpg",
-    img_8: "public/banner/GroupCloseUp2.jpg",
-    img_9: "public/banner/groupPhoto.jpg",
-    img_10: "public/banner/highSaturationSingle.jpg",
-    img_11: "public/banner/KartAndCar.jpg",
-    img_12: "public/banner/KartAndCar2.jpg",
-    img_13: "public/banner/redBullGate.jpg",
-  },
+    RegistrationPage: './background/registration-bg.png'
+  }
 };

@@ -4,6 +4,7 @@ import { assets } from "../assets";
 export const kartEvents = [
   {
     year: "Sept 2018",
+    img: assets.seasonSection.issSeason,
     data: {
       id: 1,
       heading: "Season 1",
@@ -19,6 +20,7 @@ export const kartEvents = [
   {
     year: "July 2019",
     direction: "lft",
+    img: assets.seasonSection.issSeason,
     data: {
       id: 2,
       heading: "Season 2",
@@ -33,6 +35,7 @@ export const kartEvents = [
   {
     year: "Jan 2020",
     direction: "ryt",
+    img: assets.seasonSection.hfkcLogout,
     data: {
       id: 3,
       heading: "Season 3",
@@ -47,6 +50,7 @@ export const kartEvents = [
   {
     year: "July 2024",
     direction: "lft",
+    img: assets.seasonSection.issSeason,
     data: {
       id: 4,
       heading: "Season 4",
@@ -55,13 +59,21 @@ export const kartEvents = [
         "NO. OF TEAMS :- 26",
         "PRIZE MONEY :- 3.8 LAKHS",
         "CATEGORIES – 130CC, 160CC, E-KART",
+        "REGISTRATION FEE-20,000 INR",
+        "FINAL EVENT- JULY,2024",
+        "LIVE SCORING",
+        "PROFESSIONALS FROM LEADING AUTOMOTIVE COMPANIES & MOTORSPORTS CLUB",
+        "TOUGHESET DYNAMIC EVENTS",
+        "EDM NIGHT",
+        "PLACEMENT DRIVE",
+        "24X7 TECHNICAL ASSISTANCE",
       ],
     },
   },
   {
     year: "Jan 2025",
     direction: "ryt",
-    commingSoon: true,
+    img: assets.seasonSection.hfkcLogout,
 
     data: {
       id: 5,
