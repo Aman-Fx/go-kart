@@ -5,13 +5,13 @@ import ContactUsPage from "./pages/ContactUs.page";
 import GalleryPage from "./pages/Gallery.page";
 import HomePage from "./pages/Home.page";
 import SeasonPage from "./pages/Season.page";
-import { ROUTES } from "./constants";
 import DownloadsPage from "./pages/Downloads.page";
 import EBikePage from './pages/EBike.page';
 import GoKartPage from './pages/GoKart.page';
 import QuadBikePage from './pages/QuadBike.page';
 import NotFoundPage from "./pages/NotFound.page";
 import RegistrationPage from "./pages/RegisterNow.page";
+import { ROUTES } from "./constants";
 
 const App = () => {
   return (

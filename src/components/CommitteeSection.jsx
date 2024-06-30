@@ -1,4 +1,4 @@
-import { assests } from "../assests";
+import { assets } from "../assets";
 import CustomRightArrow from "../customComponents/CustomRightArrow";
 import ThemeButton from "../customComponents/ThemeButton";
 
@@ -7,7 +7,7 @@ const CommitteeSection = () => {
     {
       id: 1,
       name: "Aniket Mind",
-      profileImg: assests.committeeSection.Aniket,
+      profileImg: assets.committeeSection.Aniket,
       designation: "Director",
       count: 10,
       dribble: "#",
@@ -17,7 +17,7 @@ const CommitteeSection = () => {
     {
       id: 2,
       name: "Azmat Hussain",
-      profileImg: assests.committeeSection.Azmat,
+      profileImg: assets.committeeSection.Azmat,
       designation: "Convenor",
       count: 10,
       dribble: "#",
@@ -27,7 +27,7 @@ const CommitteeSection = () => {
     {
       id: 2,
       name: "Abhishek Karanjule",
-      profileImg: assests.committeeSection.Abhishek,
+      profileImg: assets.committeeSection.Abhishek,
       designation: "Technical Head",
       count: 10,
       dribble: "#",
@@ -45,7 +45,7 @@ const CommitteeSection = () => {
         </h2>
         <hr className="flex-grow  border-0 bg-gradient-to-r from-primary via-gray-950 to-gray-950 p-px  rounded-3xl" />
       </div>
-      <div className="text-base md:text-lg font-body leading-relaxed text-neutral px-4 md:mb-20 mb-8"> 
+      <div className="text-base md:text-lg font-body leading-relaxed text-neutral px-4 md:mb-20 mb-8">
         A team of young, experienced and creative individuals responsible for
         conducting India’s Biggest Karting Event
       </div>
@@ -61,7 +61,7 @@ const CommitteeSection = () => {
         ))}
       </div>
       <div className="text-center">
-        <ThemeButton label="View all"/>
+        <ThemeButton label="View all" />
       </div>
     </div>
   );
@@ -86,17 +86,17 @@ const ImageCard = ({ image, title, description, link }) => {
           </div>
           <div className="flex items-center gap-3">
             <img
-              src={assests.socialIcons.dribble}
+              src={assets.socialIcons.dribble}
               alt="Dribble"
               className="w-5 h-5 duration-200 hover:scale-125 ease-in-out"
             />
             <img
-              src={assests.socialIcons.linkedIn}
+              src={assets.socialIcons.linkedIn}
               alt="LinkedIn"
               className="w-5 h-5 duration-200 hover:scale-125 ease-in-out"
             />
             <img
-              src={assests.socialIcons.facebook}
+              src={assets.socialIcons.facebook}
               alt="facebook"
               className="w-5 h-5 duration-200 hover:scale-125 ease-in-out"
             />

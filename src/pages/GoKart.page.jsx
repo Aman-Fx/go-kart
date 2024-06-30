@@ -1,4 +1,4 @@
-import { assests } from "../assests";
+import { assets } from "../assets";
 
 function GoKartPage() {
   return (
@@ -28,7 +28,7 @@ function GoKartPage() {
             <div className="overflow-hidden rounded-2xl size-fit p-10">
               <img
                 className="size-full aspect-auto"
-                src={assests.global.hfkcLogo}
+                src={assets.global.hfkcLogo}
                 alt="null"
               />
             </div>

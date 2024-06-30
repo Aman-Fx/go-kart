@@ -11,6 +11,7 @@ body {
 }
 body {
   overflow-x: hidden;
+  
 }
 
 /* globals.css or any CSS file */
@@ -107,3 +108,13 @@ body {
   padding-right: 30px;
   padding-left: 30px;
 } */
+
+::-webkit-scrollbar{
+width: 0.3rem;
+}
+::-webkit-scrollbar-track{
+  background-color: #000;
+}::-webkit-scrollbar-thumb{
+  background: #e50914;
+  border-radius: 1rem;
+}

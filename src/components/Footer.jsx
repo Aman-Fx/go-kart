@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { assests } from "../assests";
+import { assets } from "../assets";
 import { ROUTES } from "../constants";
 
 const Footer = () => {
@@ -10,15 +10,15 @@ const Footer = () => {
           <div className="text-neutral md:text-base text-sm flex md:flex-row flex-col md:items-center gap-3 mb-6">
             <div>
               <img
-                src={assests.global.hindustanMotorsportsLogo}
+                src={assets.global.hindustanMotorsportsLogo}
                 className="md:h-28 h-24 w-auto"
                 alt="Indian Karting Logo"
               />
             </div>
 
             <div>
-              We are not just a firm, <br  />
-              we are a community united by
+              We are not just a firm, <br />
+              We are a community united by
               <br className="md:block hidden" /> a passion for motorsports.
             </div>
           </div>

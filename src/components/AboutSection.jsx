@@ -1,4 +1,4 @@
-import { assests } from "../assests";
+import { assets } from "../assets";
 import { aboutUs } from "../constants";
 import CustomRightArrow from "../customComponents/CustomRightArrow";
 import ThemeButton from "../customComponents/ThemeButton";
@@ -7,7 +7,7 @@ const AboutSection = () => {
   const cardData = [
     {
       title: "Nexus Motorsport",
-      image: assests.aboutSection.NexusMotoSport,
+      image: assets.aboutSection.NexusMotoSport,
       link: "#",
       description:
         "Indian Karting championship is India’s biggest karting challenge and known for providing 100% satisfaction in terms of transparency, racing atmosphere as well as best in class management.",
@@ -15,7 +15,7 @@ const AboutSection = () => {
     },
     {
       title: "Indian Karting championship",
-      image: assests.aboutSection.IndianKarting,
+      image: assets.aboutSection.IndianKarting,
       link: "#",
       description:
         "The 5th Edition is launched with the vision of shaping the young emerging undergraduates with great learning experience and to improvise the current scenario of motorsport in India and introduce rear world of motorsport to young minds",

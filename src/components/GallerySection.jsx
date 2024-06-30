@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import { assests } from "../assests";
+import { assets } from "../assets";
 import CustomRightArrow from "../customComponents/CustomRightArrow";
 import { ROUTES } from "../constants";
 
 const GallerySection = () => {
-  const images = Object.values(assests.gallery);
+  const images = Object.values(assets.gallery);
   const navigate = useNavigate();
   const slicedImages = images.slice(0, 4);
 
@@ -25,14 +25,12 @@ const GallerySection = () => {
                   : null
               }
               key={image}
-              className={`group hover:shadow-lg hover:shadow-gray-800 overflow-hidden rounded-lg relative ${
-                slicedImages?.length == index + 1 ? " cursor-pointer" : ""
-              }`}
+              className={`group hover:shadow-lg hover:shadow-gray-800 overflow-hidden rounded-lg relative ${slicedImages?.length == index + 1 ? " cursor-pointer" : ""
+                }`}
             >
               <img
-                className={`h-auto max-w-full  transition-all duration-700 group-hover:scale-110 ease-in-out transform  ${
-                  slicedImages?.length == index + 1 ? "blur-sm " : ""
-                }`}
+                className={`h-auto max-w-full  transition-all duration-700 group-hover:scale-110 ease-in-out transform  ${slicedImages?.length == index + 1 ? "blur-sm " : ""
+                  }`}
                 src={image}
                 alt=""
               />

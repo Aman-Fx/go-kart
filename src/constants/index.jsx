@@ -1,4 +1,4 @@
-import { assests } from "../assests";
+import { assets } from "../assets";
 
 // go kart events
 export const kartEvents = [
@@ -79,24 +79,24 @@ export const kartEvents = [
 export const upcommingEvents = [
   {
     id: 1,
-    image: assests.seasonSection.dirtBiking,
+    image: assets.seasonSection.dirtBiking,
     name: "Drit bike campionship",
   },
   {
     id: 2,
-    image: assests.seasonSection.quadBiking,
+    image: assets.seasonSection.quadBiking,
     name: "Quad bike campionship",
   },
 ];
 
 export const aboutUs = {
   description:
-    "Hindustan Motorsports was established back in 2015,We have been one of the trusted and prominent motorsports company. We don’t just organize events,We craft a legacy of thrilling races,our events are a celebration of skill,innovation and relentless pursuit of excellence.Join us on the track for an unparalleled racing experience that goes beyond competition.We are not just a firm, we are a community united by a passion for motorsports.",
-  companyLogo: assests.global.hindustanMotorsportsLogo,
+    "Hindustan Motorsports was established back in 2015,We have been one of the trusted and prominent motorsports company. We don’t just organize events,We craft a legacy of thrilling races,our events are a celebration of skill,innovation and relentless pursuit of excellence.Join us on the track for an unparalleled racing experience that goes beyond competition.We are not just a firm, We are a community united by a passion for motorsports.",
+  companyLogo: assets.global.hindustanMotorsportsLogo,
 };
 
 // for gallary image
-export const images = Object.values(assests.gallery);
+export const images = Object.values(assets.gallery);
 
 // For get in touch
 export const contactDetails = [

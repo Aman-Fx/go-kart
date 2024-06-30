@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { assests } from "../assests";
+import { assets } from "../assets";
 import CustomRightArrow from "../customComponents/CustomRightArrow";
 
 const ImageSlider = () => {
-  const images = Object.values(assests.bannerImages);
+  const images = Object.values(assets.bannerImages);
 
   const [currentIndex, setCurrentIndex] = useState(0);
 

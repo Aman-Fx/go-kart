@@ -1,4 +1,4 @@
-import { assests } from "../assests";
+import { assets } from "../assets";
 import ThemeButton from "../customComponents/ThemeButton";
 
 function DownloadsPage() {
@@ -6,7 +6,7 @@ function DownloadsPage() {
     <section className="relative h-dvh overflow-hidden bg-black">
       <img
         className="absolute top-0 left-0 w-full h-full object-fill"
-        src={assests.background.DownloadPage}
+        src={assets.background.DownloadPage}
       />
       <div className="relative h-full bg-black bg-opacity-10 text-secondary p-8 flex items-center justify-center">
         <div className="group bg-black bg-opacity-80  flex flex-col items-center md:p-10 p-5 rounded-2xl shadow-md shadow-primary hover:scale-105 hover:-translate-y-3 hover:shadow-NeonBlue transition duration-700">

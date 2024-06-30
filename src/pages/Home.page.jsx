@@ -1,12 +1,9 @@
-import AboutSection from "../components/AboutSection";
-import CommitteeSection from "../components/CommitteeSection";
 import GallerySection from "../components/GallerySection";
 import HeroSection from "../components/HeroSection";
 import ImageSlider from "../components/ImageSlider";
 import SeasonSection from "../components/SeasonSection";
 import SupportSection from "../components/SupportSection";
-import GalleryPage from "./Gallery.page";
-import VideoSection from "../components/VedioSection";
+import VideoSection from '../components/VideoSection';
 
 const HomePage = () => {
   return (

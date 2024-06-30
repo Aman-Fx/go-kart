@@ -1,4 +1,4 @@
-export const assests = {
+export const assets = {
   global: {
     ick_logo: "./basics/Ick-logo.png",
     footerImg: "./basics/trackImg.jpg",
@@ -7,7 +7,7 @@ export const assests = {
     hfkcLogo: "/basics/hfkc.png",
   },
   heroSection: {
-    backGroundVedio: "./hero/karting-video.mp4",
+    backGroundVideo: "./hero/karting-video.mp4",
   },
   seasonSection: {
     tyre: "./season/tyre.png",

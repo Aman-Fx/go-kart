@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { assests } from "../assests";
+import { assets } from "../assets";
 import CustomRightArrow from "../customComponents/CustomRightArrow";
 import { kartEvents, upcommingEvents } from "../constants";
 import ThemeButton from "../customComponents/ThemeButton";
@@ -17,7 +17,7 @@ const SeasonSection = () => {
       <div className="flex xl:flex-row flex-col justify-between md:mb-20 mb-8">
         <div className="md:max-w-lg xl:h-dvh xl:sticky top-0 mx-auto">
           <img
-            src={assests.seasonSection.person}
+            src={assets.seasonSection.person}
             alt="A man"
             className="w-full h-full object-cover"
           />

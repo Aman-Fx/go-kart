@@ -1,4 +1,4 @@
-import { assests } from "../assests";
+import { assets } from "../assets";
 import { aboutUs } from "../constants";
 
 const AboutUsPage = () => {
@@ -9,7 +9,7 @@ const AboutUsPage = () => {
           <div className="relative lg:mb-12">
             <img
               className="absolute -right-0 -bottom-8 xl:-bottom-12 xl:-right-4 text-white"
-              src={assests.global.dotPattern}
+              src={assets.global.dotPattern}
               alt="null"
             />
             <div className="md:pl-12 md:pr-6">

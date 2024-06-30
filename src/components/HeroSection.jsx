@@ -1,4 +1,4 @@
-import { assests } from "../assests";
+import { assets } from "../assets";
 import ThemeButton from "../customComponents/ThemeButton";
 
 const HeroSection = () => {
@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section className="relative h-dvh overflow-hidden">
       <video
         className="absolute top-0 left-0 w-full h-full object-fill"
-        src={assests.heroSection.backGroundVedio}
+        src={assets.heroSection.backGroundVideo}
         autoPlay
         loop
         muted
