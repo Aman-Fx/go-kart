@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import AboutUsPage from "./pages/AboutUs.page";
 import CommonPage from "./pages/Common.page";
 import ContactUsPage from "./pages/ContactUs.page";
@@ -15,7 +15,7 @@ import RegistrationPage from "./pages/RegisterNow.page";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path={ROUTES.home} element={
           <CommonPage />
@@ -34,7 +34,7 @@ const App = () => {
           <Route path={ROUTES.notFound} element={<NotFoundPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
