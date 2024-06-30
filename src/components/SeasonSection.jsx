@@ -3,6 +3,7 @@ import { assets } from "../assets";
 import CustomRightArrow from "../customComponents/CustomRightArrow";
 import { kartEvents, upcommingEvents } from "../constants";
 import ThemeButton from "../customComponents/ThemeButton";
+import { useNavigate } from "react-router-dom";
 
 const SeasonSection = () => {
   return (
@@ -34,7 +35,7 @@ const SeasonSection = () => {
                         heading={event.data.heading}
                         content={event.data.subHeading}
                         year={event.year}
-                        CommingSoon={event?.commingSoon}
+                        image={event.img}
                       />
                     ) : (
                       <div />
@@ -47,7 +48,7 @@ const SeasonSection = () => {
                         heading={event.data.heading}
                         content={event.data.subHeading}
                         year={event.year}
-                        CommingSoon={event?.commingSoon}
+                        image={event.img}
                       />
                     ) : (
                       <div />
@@ -63,7 +64,7 @@ const SeasonSection = () => {
                         heading={event.data.heading}
                         content={event.data.subHeading}
                         year={event.year}
-                        CommingSoon={event?.commingSoon}
+                        image={event.img}
                       />
                     </div>
                   </div>
@@ -95,6 +96,10 @@ const Pillar = () => (
 );
 
 const EventCard = ({ heading, content, year, CommingSoon }) => {
+  const navigate = useNavigate()
+  const handleNavigate = () => {
+    navigate('')
+  }
   return (
     <div className="min-h-[250px] p-6 bg-gray-950 rounded-lg shadow-xl shadow-background border-5 border-gray-950 md:w-80 w-full transition duration-700 cursor-pointer hover:shadow-lg hover:shadow-gray-800 hover:border-gray-800 flex flex-col">
       <div className=" items-center">
@@ -105,24 +110,17 @@ const EventCard = ({ heading, content, year, CommingSoon }) => {
       <h3 className="text-base md:text-2xl font-header font-semibold text-NeonBlue mb-2 mt-2">
         {heading ?? "heading"}
       </h3>
-      {CommingSoon ? (
-        <>
-          <div className="mb-2 tracking-wider text-accent font-header font-bold md:text-base text-sm flex-grow flex items-center justify-center">
-            comming soon . . .
-          </div>
-          <div className="mx-auto mt-auto">
-            <ThemeButton label="learn more" />
-          </div>
-        </>
-      ) : (
-        <ul className="text-white md:text-sm text-xs font-body list-disc list-inside">
-          {content?.map((i) => (
-            <li className="mb-2" key={i}>
-              {i}
-            </li>
-          ))}
-        </ul>
-      )}
+
+      <ul className="text-white text-xs font-body list-disc list-inside mb-5">
+        {content?.slice(0, 4)?.map((i) => (
+          <li className="mb-2" key={i}>
+            {i}
+          </li>
+        ))}
+      </ul>
+      <div className="mx-auto mt-auto">
+        <ThemeButton label="learn more" onClick={() => handleNavigate()} />
+      </div>
     </div>
   );
 };

@@ -6,7 +6,8 @@ import GalleryPage from "./pages/Gallery.page";
 import HomePage from "./pages/Home.page";
 import SeasonPage from "./pages/Season.page";
 import DownloadsPage from "./pages/Downloads.page";
-import EBikePage from './pages/EBike.page';
+// import EBikePage from './pages/EBike.page';
+import ComingSoonPage from './pages/ComingSoon.page';
 import GoKartPage from './pages/GoKart.page';
 import QuadBikePage from './pages/QuadBike.page';
 import NotFoundPage from "./pages/NotFound.page";
@@ -21,15 +22,19 @@ const App = () => {
           <CommonPage />
         } >
           <Route index element={<HomePage />} />
+          {/* <Route index element={<SeasonPage />} /> */}
           <Route path={ROUTES.aboutUs} element={<AboutUsPage />} />
           <Route path={ROUTES.contactUs} element={<ContactUsPage />} />
           <Route path={ROUTES.gallery} element={<GalleryPage />} />
           <Route path={ROUTES.season} element={<SeasonPage />} />
           <Route path={ROUTES.downloads} element={<DownloadsPage />} />
-          <Route path={ROUTES.eBike} element={<EBikePage />} />
+          {/* <Route path={ROUTES.eBike} element={<EBikePage />} /> */}
+          <Route path={ROUTES.eBike} element={<ComingSoonPage />} />
           <Route path={ROUTES.goKart} element={<GoKartPage />} />
-          <Route path={ROUTES.quadBikeATV} element={<QuadBikePage />} />
+          {/* <Route path={ROUTES.quadBikeATV} element={<QuadBikePage />} /> */}
+          <Route path={ROUTES.quadBikeATV} element={<ComingSoonPage />} />
           <Route path={ROUTES.registration} element={<RegistrationPage />} />
+          <Route path={ROUTES.training} element={<ComingSoonPage />} />
           {/* <Route path="contact-us" element={<ContactUsPage />} /> */}
           {/* add more routes here */}
           {/* <Route path="route-name" element={<YourComponent />} /> */}

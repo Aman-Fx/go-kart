@@ -5,6 +5,7 @@ export const assets = {
     hindustanMotorsportsLogo: "./basics/hindustan-motorsports.png",
     dotPattern: "/basics/dots-pattern.svg",
     hfkcLogo: "/basics/hfkc.png",
+    commingSoon: '/basics/comming-soon.jpg'
   },
   heroSection: {
     backGroundVideo: "./hero/karting-video.mp4",
@@ -14,6 +15,8 @@ export const assets = {
     person: "./season/aPerson.png",
     quadBiking: "./season/quad-bike-png.png",
     dirtBiking: "./season/dirt-bikingPng.jpg",
+    hfkcLogo: "/season/hfkc.png",
+    issSeason: "/season/ISS-series.png",
   },
   aboutSection: {
     smallKart: "./about/smallKart.png",
@@ -54,7 +57,7 @@ export const assets = {
   },
   background: {
     RegistrationPage: "./background/registration-bg.png",
-    DownloadPage: "./background/downloads-bg.png",
+    DownloadPage: "./background/downloads.png",
   },
 
   bannerImages: {
