@@ -16,7 +16,7 @@ const GallerySection = () => {
         <hr className=" flex-grow  border-0 bg-gradient-to-r from-primary via-gray-950 to-gray-950 p-px  rounded-3xl" />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5 ">
-      {slicedImages?.map((image, index) => {
+        {slicedImages?.map((image, index) => {
           return (
             <div
               onClick={() =>
@@ -31,9 +31,7 @@ const GallerySection = () => {
             >
               <img
                 className={`h-auto max-w-full  transition-all duration-700 group-hover:scale-110 ease-in-out transform  ${
-                  slicedImages?.length == index + 1
-                    ? "blur-sm "
-                    : ""
+                  slicedImages?.length == index + 1 ? "blur-sm " : ""
                 }`}
                 src={image}
                 alt=""

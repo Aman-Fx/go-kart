@@ -3,7 +3,7 @@ import { assests } from "../assests";
 import CustomRightArrow from "../customComponents/CustomRightArrow";
 
 const ImageSlider = () => {
-  const images = Object.values(assests.gallery);
+  const images = Object.values(assests.bannerImages);
 
   const [currentIndex, setCurrentIndex] = useState(0);
 

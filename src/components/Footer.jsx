@@ -10,8 +10,8 @@ const Footer = () => {
           <div className="text-neutral md:text-base text-sm flex md:flex-row flex-col md:items-center gap-3 mb-6">
             <div>
               <img
-                src={assests.global.ick_logo}
-                className="md:h-28 h-24"
+                src={assests.global.hindustanMotorsportsLogo}
+                className="md:h-28 h-24 w-auto"
                 alt="Indian Karting Logo"
               />
             </div>
@@ -77,7 +77,7 @@ const Footer = () => {
           </span>
           <div className="flex gap-3 sm:flex-row flex-col md:items-center md:text-sm text-xs">
             <a
-              href="tel:9244961751"
+              href="tel:7000180509"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-400 flex items-center gap-1"
             >
               <svg
@@ -96,7 +96,7 @@ const Footer = () => {
                 />
               </svg>
 
-              <div>924-496-1751</div>
+              <div> 700-018-0509</div>
             </a>
             <div className="sm:block hidden">|</div>
             <a

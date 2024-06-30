@@ -37,9 +37,9 @@ const HomePage = () => {
         <SupportSection />
       </div>
 
-      <div className="relative">
+      {/* <div className="relative">
         <GalleryPage />
-      </div>
+      </div> */}
     </div>
   );
 };

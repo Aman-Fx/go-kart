@@ -4,7 +4,7 @@ const CustomAutoScroll = ({ items = [] }) => {
       <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
         {items?.map((i) => (
           <li key={i}>
-            <img src={i} alt={"brand logo"} className="rounded-full contrast-125"/>
+            <img src={i} alt={"brand logo"} className="shadow-black max-w-20 max-h-20 object-fill"/>
           </li>
         ))}
       </ul>
@@ -14,7 +14,7 @@ const CustomAutoScroll = ({ items = [] }) => {
       >
         {items?.map((i) => (
           <li key={i} className="">
-            <img src={i} alt={"brand logo"} className="rounded-full contrast-125 shadow-black  shadow-inner"/>
+            <img src={i} alt={"brand logo"} className="shadow-black max-w-20 max-h-20 object-fill "/>
           </li>
         ))}
       </ul>
