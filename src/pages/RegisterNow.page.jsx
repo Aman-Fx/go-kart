@@ -3,7 +3,7 @@ import ThemeButton from "../customComponents/ThemeButton";
 
 const RegistrationPage = () => {
   return (
-    <section className="relative h-dvh overflow-hidden">
+    <section className="relative h-dvh overflow-hidden bg-background" >
       <img
         className="absolute top-0 left-0 w-full h-full object-fill"
         src={assests.background.RegistrationPage}

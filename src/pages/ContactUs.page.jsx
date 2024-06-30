@@ -3,7 +3,7 @@ import ThemeButton from "../customComponents/ThemeButton";
 
 const ContactUsPage = () => {
   return (
-    <section className="py-10 bg-gradient-to-r from-black via-gray-950 to-gray-950 sm:py-16 lg:py-24 font-body">
+    <section className="bg-gradient-to-r from-black via-gray-950 to-gray-950 py-24 font-body">
       <div className="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:items-stretch md:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-10">
           <div className="flex flex-col justify-between lg:py-5">
