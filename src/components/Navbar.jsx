@@ -9,6 +9,7 @@ const NavContent = () => {
     setIsChildMenu(!isChildMenu);
   };
   const { pathname } = useLocation();
+  const isRouteActive = (i) => pathname === i.route || pathname.includes(i.route);
 
   return (
     <>
@@ -19,7 +20,7 @@ const NavContent = () => {
               className="text-secondary hover:text-primary transition duration-300 flex items-center gap-x-2 cursor-pointer"
               onClick={toggleChildMenu}
             >
-              <span className={pathname === i?.route ? `text-primary` : ""}>{i?.itemName}</span>
+              <span className={isRouteActive(i) ? `text-primary` : ""}>{i?.itemName}</span>
 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +73,7 @@ const NavContent = () => {
         ) : (
           <Link
             to={i?.route}
-            target= {i?.externalRoute ? '_blank': '_self'}
+            target={i?.externalRoute ? '_blank' : '_self'}
             className={`${pathname === i?.route ? `text-primary` : "text-secondary"} hover:text-primary transition duration-300 uppercase`}
             key={i.id}
           >

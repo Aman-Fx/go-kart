@@ -25,7 +25,7 @@ const VideoSection = () => {
         <div className="md:w-[560px] sm:h-[315px] w-full rounded-2xl shadow-xl shadow-background transition duration-700 cursor-pointer hover:shadow-lg hover:shadow-gray-800 overflow-hidden">
           <iframe
             className="aspect-video h-full w-full"
-            src="https://www.youtube.com/embed/iVnBIGALNGA?si=V0djREWb-EE2dxQu"
+            src="https://www.youtube.com/embed/EphHLbmkfss?si=Xh9v1WcNuv9G9eu1"
             title="YouTube video player"
             frameBorder="0"
             referrerPolicy="strict-origin-when-cross-origin"

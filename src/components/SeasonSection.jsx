@@ -6,6 +6,10 @@ import ThemeButton from "../customComponents/ThemeButton";
 import { useNavigate } from "react-router-dom";
 
 const SeasonSection = () => {
+  const navigate = useNavigate();
+  const handleNavigate = (id) => {
+    navigate(id);
+  }
   return (
     <section className="relative bg-gradient-to-r from-black via-gray-950 to-gray-950 py-20 px-8 min-h-dvh">
       <div className="flex items-center md:mb-12 mb-5">
@@ -36,6 +40,8 @@ const SeasonSection = () => {
                         content={event.data.subHeading}
                         year={event.year}
                         image={event.img}
+                        id={index}
+                        handleKartEvent={handleNavigate}
                       />
                     ) : (
                       <div />
@@ -49,6 +55,8 @@ const SeasonSection = () => {
                         content={event.data.subHeading}
                         year={event.year}
                         image={event.img}
+                        id={index}
+                        handleKartEvent={handleNavigate}
                       />
                     ) : (
                       <div />
@@ -95,11 +103,8 @@ const Pillar = () => (
   <div className="w-px h-full bg-gradient-to-b from-gray-950 via-primary to-gray-950 rounded-t-full rounded-b-full mx-5"></div>
 );
 
-const EventCard = ({ heading, content, year, CommingSoon }) => {
-  const navigate = useNavigate()
-  const handleNavigate = () => {
-    navigate('')
-  }
+const EventCard = ({ heading, content, year, CommingSoon, handleKartEvent }) => {
+
   return (
     <div className="min-h-[250px] p-6 bg-gray-950 rounded-lg shadow-xl shadow-background border-5 border-gray-950 md:w-80 w-full transition duration-700 cursor-pointer hover:shadow-lg hover:shadow-gray-800 hover:border-gray-800 flex flex-col">
       <div className=" items-center">
@@ -119,7 +124,7 @@ const EventCard = ({ heading, content, year, CommingSoon }) => {
         ))}
       </ul>
       <div className="mx-auto mt-auto">
-        <ThemeButton label="learn more" onClick={() => handleNavigate()} />
+        <ThemeButton label="learn more" onClick={() => handleKartEvent(-1)} />
       </div>
     </div>
   );
@@ -140,7 +145,7 @@ const UpcomingEventCard = ({ image, title }) => {
           {title}
         </div>
         <div className="text-neutral group-hover:text-secondary md:text-sm text-xs">
-          comming soon
+          coming soon
         </div>
       </div>
     </div>

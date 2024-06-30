@@ -15,8 +15,13 @@ function DownloadsPage() {
           </div>
 
           <div className="flex gap-5 justify-center flex-wrap items-center mx-auto">
-            <ThemeButton label="BROCHURE" />
-            <ThemeButton label="BROCHURE" />
+            <a href="https://drive.google.com/file/d/17oItk-68lWxqY8bhMzx881yGZaMw7I2M/view" target="_blank">
+
+              <ThemeButton label="Rule Book" />
+            </a>
+            <a href="https://drive.google.com/file/d/1FJyB4RkziZ8dPnmPt3QKgbGufYdGR6gD/view" target="_blank">
+              <ThemeButton label="Brochure" />
+            </a>
           </div>
         </div>
       </div>

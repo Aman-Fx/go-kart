@@ -4,7 +4,7 @@ import { assets } from "../assets";
 export const kartEvents = [
   {
     year: "Sept 2018",
-    img: assets.seasonSection.issSeason,
+    img: assets.seasonSection.hfkcLogo,
     data: {
       id: 1,
       heading: "Season 1",
@@ -74,15 +74,14 @@ export const kartEvents = [
     year: "Jan 2025",
     direction: "ryt",
     img: assets.seasonSection.hfkcLogo,
-
     data: {
       id: 5,
       heading: "Season 5",
       subHeading: [
-        "PRIZE MONEY-4.5LAKHS",
-        "VENUE-MOHITE’S RACING ACADEMY,KOLHAPUR",
-        "REGISTRATION FEE-29,500 INR",
-        "FINAL EVENT- JANUARY,2025",
+        "PRIZE MONEY- 5.2LAKHS",
+        "VENUE-RPM International Racing Circuit, BHOPAL",
+        "REGISTRATION FEE-32,500 INR",
+        "FINAL EVENT- 17-19 MARCH,2025",
       ],
     },
   },
@@ -92,12 +91,12 @@ export const upcommingEvents = [
   {
     id: 1,
     image: assets.seasonSection.dirtBiking,
-    name: "Drit bike campionship",
+    name: "E-Bike championship",
   },
   {
     id: 2,
     image: assets.seasonSection.quadBiking,
-    name: "Quad bike campionship",
+    name: "Quad bike championship",
   },
 ];
 
@@ -186,6 +185,7 @@ export const ROUTES = {
   home: "/",
   aboutUs: "/about-us",
   season: "/season",
+  // individualSeason: "/season/:id",
   goKart: "/events/go-kart",
   eBike: "/events/e-bike",
   quadBikeATV: "/events/quad-bike-atv",

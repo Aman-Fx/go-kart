@@ -1,28 +1,11 @@
 import { kartEvents } from "../constants";
 import ThemeButton from "../customComponents/ThemeButton";
+import { useState } from 'react';
+import SeasonPage from "./Season.page";
 
-function GoKartPage() {
-  return (
-    <section className={`py-24 px-8 relative bg-gradient-to-r from-black via-gray-950 to-gray-950`}>
-      <div className="grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-10">
-        {kartEvents?.map((item, index) => (
-          <SeasonCard
-            key={index}
-            year={item?.year}
-            heading={item?.data?.heading}
-            content={item?.data?.subHeading}
-            img={item?.img}
-          />
-        ))}
-      </div>
-    </section>
-  );
-}
 
-export default GoKartPage;
+const SeasonCard = ({ year, heading, content, img, handleKartEvent, id }) => {
 
-const SeasonCard = ({ year, heading, content, img }) => {
-  const handleNavigate = () => {};
   return (
     <div className="min-h-96 p-6 bg-black items-center rounded-2xl transition duration-700 cursor-pointer shadow-lg shadow-gray-800 hover:border-gray-800 flex flex-col">
       <h3 className="text-primary text-xl md:text-3xl text-center font-header mb-2 uppercase">
@@ -51,8 +34,37 @@ const SeasonCard = ({ year, heading, content, img }) => {
         ))}
       </ul>
       <div className="mx-auto mt-auto">
-        <ThemeButton label="learn more" onClick={() => handleNavigate()} />
+        <ThemeButton label="learn more" onClick={() => handleKartEvent(id)} />
       </div>
     </div>
   );
 };
+
+function GoKartPage() {
+  const [selectedIndex, setSelectedIndex] = useState(-1);
+  const handleKartEvent = (index) => {
+    setSelectedIndex(index);
+  };
+  return (
+    <>
+      {selectedIndex >= 0 ? <SeasonPage id={selectedIndex} handleKartEvent={handleKartEvent} /> : <section className={`py-24 px-8 relative bg-gradient-to-r from-black via-gray-950 to-gray-950`}>
+        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-10">
+          {kartEvents?.map((item, index) => (
+            <SeasonCard
+              key={index}
+              id={index}
+              year={item?.year}
+              heading={item?.data?.heading}
+              content={item?.data?.subHeading}
+              img={item?.img}
+              handleKartEvent={handleKartEvent}
+            />
+          ))}
+        </div>
+      </section>}
+    </>
+  );
+}
+
+export default GoKartPage;
+

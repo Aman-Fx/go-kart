@@ -2,17 +2,16 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutUsPage from "./pages/AboutUs.page";
 import CommonPage from "./pages/Common.page";
 import ContactUsPage from "./pages/ContactUs.page";
+import DownloadsPage from "./pages/Downloads.page";
 import GalleryPage from "./pages/Gallery.page";
 import HomePage from "./pages/Home.page";
 import SeasonPage from "./pages/Season.page";
-import DownloadsPage from "./pages/Downloads.page";
 // import EBikePage from './pages/EBike.page';
+import { ROUTES } from "./constants";
 import ComingSoonPage from './pages/ComingSoon.page';
 import GoKartPage from './pages/GoKart.page';
-import QuadBikePage from './pages/QuadBike.page';
 import NotFoundPage from "./pages/NotFound.page";
 import RegistrationPage from "./pages/RegisterNow.page";
-import { ROUTES } from "./constants";
 
 const App = () => {
   return (
@@ -26,11 +25,15 @@ const App = () => {
           <Route path={ROUTES.aboutUs} element={<AboutUsPage />} />
           <Route path={ROUTES.contactUs} element={<ContactUsPage />} />
           <Route path={ROUTES.gallery} element={<GalleryPage />} />
+
+          <Route path={ROUTES.goKart} element={<GoKartPage />} />
+          {/* <Route path={ROUTES.individualSeason} element={<SeasonPage />} /> */}
+
           <Route path={ROUTES.season} element={<SeasonPage />} />
           <Route path={ROUTES.downloads} element={<DownloadsPage />} />
           {/* <Route path={ROUTES.eBike} element={<EBikePage />} /> */}
           <Route path={ROUTES.eBike} element={<ComingSoonPage />} />
-          <Route path={ROUTES.goKart} element={<GoKartPage />} />
+          {/* <Route path={ROUTES.goKart} element={<GoKartPage />} /> */}
           {/* <Route path={ROUTES.quadBikeATV} element={<QuadBikePage />} /> */}
           <Route path={ROUTES.quadBikeATV} element={<ComingSoonPage />} />
           <Route path={ROUTES.registration} element={<RegistrationPage />} />
