@@ -1,8 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { assets } from "../assets";
-import { ROUTES } from "../constants";
+import { ROUTES, kartEvents } from "../constants";
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const handleNavigate = (id) => {
+    navigate(ROUTES.goKart, { state: { id, isHome: true } });
+  }
   return (
     <footer className="bg-gradient-to-b from-black via-black to-black border-t border-gray-900 font-body ">
       <div className="mx-auto w-full px-8 py-6 lg:py-8">
@@ -48,19 +52,18 @@ const Footer = () => {
             </div>
             <div>
               <h2 className="md:mb-6 mb-4 md:text-base text-sm text-white uppercase">
-                Recent Posts
+                Recent Season
               </h2>
+
               <ul className="text-neutral font-medium [&_li]:md:mb-4 [&_li]:mb-2 md:text-sm text-xs">
-                <li>
-                  <a href="/" className="hover:underline">
-                    Nexus Motorsport
-                  </a>
-                </li>
-                <li>
-                  <a href="/" className="hover:underline">
-                    Indian Karting championship
-                  </a>
-                </li>
+                {
+                  kartEvents.slice(kartEvents.length - 4, kartEvents.length - 1).map((item) =>
+                    <li key={Math.random().toString()} onClick={() => handleNavigate(item?.data?.id - 1)} className="hover:underline cursor-pointer">
+                      {item?.data?.heading}
+                    </li>
+                  )
+                }
+
               </ul>
             </div>
           </div>
@@ -190,7 +193,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 };
 

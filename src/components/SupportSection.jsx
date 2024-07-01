@@ -10,7 +10,7 @@ const SupportSection = () => {
         <div className="flex items-center mb-5">
           <CustomRightArrow />
           <h2 className="text-xl md:text-4xl font-header me-4">
-            Support
+            Supported By
           </h2>
           <hr className=" flex-grow border-0 bg-gradient-to-r from-primary via-gray-950 to-gray-950 p-px  rounded-3xl" />
         </div>

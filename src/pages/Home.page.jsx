@@ -12,16 +12,16 @@ const HomePage = () => {
         <HeroSection />
       </div>
       <div className="">
-        <GallerySection />
+        <ImageSlider />
       </div>
       <div className="">
         <SeasonSection />
       </div>
       {/* <div className="">
         <AboutSection />
-      </div> */}
+        </div> */}
       <div className="">
-        <ImageSlider />
+        <GallerySection />
       </div>
       {/* <div className="">
         <CommitteeSection />

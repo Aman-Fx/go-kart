@@ -46,17 +46,12 @@ function GoKartPage() {
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const { state } = useLocation();
 
-  useEffect(() => {
-    setSelectedIndex(state?.id ?? -1);
-  }, [state])
-
-
   const handleKartEvent = (index) => {
     setSelectedIndex(index);
   };
   return (
     <>
-      {selectedIndex >= 0 ? <SeasonPage id={selectedIndex} handleKartEvent={handleKartEvent} isHome={state?.isHome} /> : <section className={`py-24 px-8 relative bg-gradient-to-r from-black via-gray-950 to-gray-950`}>
+      {selectedIndex >= 0 || state?.id ? <SeasonPage id={selectedIndex >= 0 ? selectedIndex : state?.id} handleKartEvent={handleKartEvent} isHome={state?.isHome} /> : <section className={`py-24 px-8 relative bg-gradient-to-r from-black via-gray-950 to-gray-950`}>
         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-10">
           {kartEvents?.map((item, index) => (
             <SeasonCard

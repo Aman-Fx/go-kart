@@ -160,7 +160,7 @@ export const contactDetails = [
   {
     id: 3,
     title: "Address",
-    description: "Faridabad , Haryana",
+    description: "Ujjain , Madhya Pradesh",
     icon: (
       <svg
         className="h-full sm:size-[24px] size-[16px]"

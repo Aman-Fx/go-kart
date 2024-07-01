@@ -40,7 +40,7 @@ function SeasonPage({ id, handleKartEvent, isHome = false }) {
                 <img
                   loading="lazy"
                   className="size-full aspect-auto"
-                  src={assets.global.hfkcLogo}
+                  src={kartEvents[id].img}
                   alt="null"
                 />
               </div>
