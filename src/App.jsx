@@ -8,18 +8,19 @@ import HomePage from "./pages/Home.page";
 import SeasonPage from "./pages/Season.page";
 // import EBikePage from './pages/EBike.page';
 import { ROUTES } from "./constants";
-import ComingSoonPage from './pages/ComingSoon.page';
-import GoKartPage from './pages/GoKart.page';
+import ComingSoonPage from "./pages/ComingSoon.page";
+import GoKartPage from "./pages/GoKart.page";
 import NotFoundPage from "./pages/NotFound.page";
 import RegistrationPage from "./pages/RegisterNow.page";
+import EBikePage from "./pages/EBike.page";
+import QuadBikePage from "./pages/QuadBike.page";
+import TrainingPage from "./pages/Training.page";
 
 const App = () => {
   return (
     <HashRouter>
       <Routes>
-        <Route path={ROUTES.home} element={
-          <CommonPage />
-        } >
+        <Route path={ROUTES.home} element={<CommonPage />}>
           <Route index element={<HomePage />} />
           <Route path={ROUTES.aboutUs} element={<AboutUsPage />} />
           <Route path={ROUTES.contactUs} element={<ContactUsPage />} />
@@ -27,10 +28,10 @@ const App = () => {
           <Route path={ROUTES.goKart} element={<GoKartPage />} />
           <Route path={ROUTES.season} element={<SeasonPage />} />
           <Route path={ROUTES.downloads} element={<DownloadsPage />} />
-          <Route path={ROUTES.eBike} element={<ComingSoonPage />} />
-          <Route path={ROUTES.quadBikeATV} element={<ComingSoonPage />} />
+          <Route path={ROUTES.eBike} element={<EBikePage />} />
+          <Route path={ROUTES.quadBikeATV} element={<QuadBikePage />} />
           <Route path={ROUTES.registration} element={<RegistrationPage />} />
-          <Route path={ROUTES.training} element={<ComingSoonPage />} />
+          <Route path={ROUTES.training} element={<TrainingPage />} />
           <Route path={ROUTES.notFound} element={<NotFoundPage />} />
         </Route>
       </Routes>

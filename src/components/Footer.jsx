@@ -12,7 +12,7 @@ const Footer = () => {
               <img
                 loading="lazy"
                 src={assets.global.hindustanMotorsportsLogo}
-                className="md:h-28 h-24 w-auto"
+                className="md:h-28"
                 alt="Indian Karting Logo"
               />
             </div>

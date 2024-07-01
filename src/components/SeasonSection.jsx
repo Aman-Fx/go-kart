@@ -11,7 +11,7 @@ const SeasonSection = () => {
     navigate(ROUTES.goKart, { state: { id, isHome: true } });
   }
   return (
-    <section className="relative bg-gradient-to-r from-black via-gray-950 to-gray-950 py-20 px-8 min-h-dvh">
+    <section className="relative bg-gradient-to-r from-black via-gray-950 to-gray-950 pb-20 px-8 min-h-dvh">
       <div className="flex items-center md:mb-12 mb-5">
         <CustomRightArrow />
         <h2 className="text-xl md:text-4xl text-white text-center font-header me-4">

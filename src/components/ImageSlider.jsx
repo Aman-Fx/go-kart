@@ -28,8 +28,8 @@ const ImageSlider = () => {
 
   return (
     <>
-      <div className="h-dvh pb-20 flex  items-center bg-gradient-to-r from-black via-gray-950 to-gray-950" data-carousel="slide">
-        <div className="relative w-full max-w-5xl h-full mx-auto shadow-xl shadow-background hover:shadow-gray-800 hover:border-gray-800">
+      <div className="h-dvh  flex  items-center bg-gradient-to-r from-black via-gray-950 to-gray-950" data-carousel="slide">
+        <div className="relative w-full max-w-3xl h-1/2 mx-auto shadow-xl shadow-background hover:shadow-gray-800 hover:border-gray-800">
           {images.map((image, index) => (
             <img
               loading="lazy"
