@@ -137,7 +137,7 @@ export const contactDetails = [
   {
     id: 2,
     title: "Call Us",
-    description: "+91 9244961751 , +91 6267 336 735",
+    description: "+91 700-018-0509",
     icon: (
       <svg
         className="h-full sm:size-[24px] size-[16px]"
