@@ -1,15 +1,15 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { navItems } from "../constants";
 
 function ScrollToTop() {
-  const { pathname } = useLocation()
+  const { pathname } = useLocation();
 
   useEffect(() => {
     if (pathname !== "/") window.scrollTo(0, 0);
-  }, [pathname])
+  }, [pathname]);
 
-  return null
+  return null;
 }
 
 const NavContent = () => {
@@ -18,9 +18,7 @@ const NavContent = () => {
     setIsChildMenu(!isChildMenu);
   };
   const { pathname } = useLocation();
-  const isRouteActive = (route) =>
-    pathname === route
-
+  const isRouteActive = (route) => pathname === route;
 
   return (
     <>
@@ -31,8 +29,15 @@ const NavContent = () => {
               className="text-secondary hover:text-primary transition duration-300 flex items-center gap-x-2 cursor-pointer"
               onClick={toggleChildMenu}
             >
-
-              <span className={pathname.includes(i?.itemName.toLowerCase()) ? `text-primary` : ""}>{i?.itemName}</span>
+              <span
+                className={
+                  pathname.includes(i?.itemName.toLowerCase())
+                    ? `text-primary`
+                    : ""
+                }
+              >
+                {i?.itemName}
+              </span>
 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -55,10 +60,15 @@ const NavContent = () => {
                 <li key={child_item?.childId}>
                   <Link
                     to={child_item?.route}
-                    className={`block ${isRouteActive(child_item?.route) ? `text-primary` : "text-secondary"} hover:text-NeonBlue transition-colors duration-700  p-2 l ${child_Index + 1 == i?.children?.length
-                      ? ""
-                      : "border-b border-dashed  border-black hover:border-NeonBlue"
-                      }`}
+                    className={`block ${
+                      isRouteActive(child_item?.route)
+                        ? `text-primary`
+                        : "text-secondary"
+                    } hover:text-NeonBlue transition-colors duration-700  p-2 l ${
+                      child_Index + 1 == i?.children?.length
+                        ? ""
+                        : "border-b border-dashed  border-black hover:border-NeonBlue"
+                    }`}
                   >
                     {child_item?.childItemName}
                   </Link>
@@ -67,13 +77,18 @@ const NavContent = () => {
             </ul>
             {/* for smaller screen */}
             <ul
-              className={`top-full left-0 text-center bg-black p-2  ${isChildMenu ? "md:hidden block " : "hidden"
-                }  w-auto text-nowrap rounded-lg`}
+              className={`top-full left-0 text-center bg-black p-2  ${
+                isChildMenu ? "md:hidden block " : "hidden"
+              }  w-auto text-nowrap rounded-lg`}
             >
               {i?.children.map((child_item) => (
                 <li
                   key={child_item?.childId}
-                  className={`${isRouteActive(child_item?.route) ? `text-primary` : "text-NeonBlue"} transition duration-1000  p-2 border-b-2 border-dashed border-neutral w-1/2 mx-auto`}
+                  className={`${
+                    isRouteActive(child_item?.route)
+                      ? `text-primary`
+                      : "text-NeonBlue"
+                  } transition duration-1000  p-2 border-b-2 border-dashed border-neutral w-1/2 mx-auto`}
                 >
                   <Link to={child_item?.route} className="block">
                     {child_item?.childItemName}
@@ -85,8 +100,10 @@ const NavContent = () => {
         ) : (
           <Link
             to={i?.route}
-            target={i?.externalRoute ? '_blank' : '_self'}
-            className={`${isRouteActive(i?.route) ? `text-primary` : "text-secondary"} hover:text-primary transition duration-300 uppercase`}
+            target={i?.externalRoute ? "_blank" : "_self"}
+            className={`${
+              isRouteActive(i?.route) ? `text-primary` : "text-secondary"
+            } hover:text-primary transition duration-300 uppercase`}
             key={i.id + Math.random()}
           >
             {i?.itemName}
@@ -99,12 +116,33 @@ const NavContent = () => {
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navRef = useRef();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
+
+  const handleClickOutside = (event) => {
+    if (navRef.current && !navRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
   return (
-    <nav className="bg-black md:bg-opacity-75 p-8 font-body text-white text-base hover:text-primary-red transition duration-300 font-normal ">
+    <nav
+      className="bg-black md:bg-opacity-75 p-8 font-body text-white text-base hover:text-primary-red transition duration-300 font-normal"
+      ref={navRef}
+    >
       <ScrollToTop />
       <div className="container mx-auto flex items-center justify-between">
         <div></div>
@@ -116,20 +154,37 @@ const Navbar = () => {
             onClick={toggleMenu}
             className="text-secondary focus:outline-none"
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
+            {isOpen ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6 hover:text-primary hover:rotate-90 transform transition-transform duration-1000"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            )}
           </button>
         </div>
       </div>
@@ -145,5 +200,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-

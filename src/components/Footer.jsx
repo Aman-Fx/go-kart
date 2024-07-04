@@ -16,7 +16,7 @@ const Footer = () => {
               <img
                 loading="lazy"
                 src={assets.global.hindustanMotorsportsLogo}
-                className="md:h-28"
+                className="h-28  aspect-video"
                 alt="Indian Karting Logo"
               />
             </div>

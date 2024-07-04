@@ -66,7 +66,8 @@ export const assets = {
     quadDesktop: 'public/background/quad-bike-desktop.jpeg',
     quadMobile: 'public/background/quadBike-mobile.jpeg',
     trainingDesktop: 'public/background/training.jpeg',
-    trainingMoile: 'public/background/training-mobile.jpeg'
+    trainingMoile: 'public/background/training-mobile.jpeg',
+
 
   },
 

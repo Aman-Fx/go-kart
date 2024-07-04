@@ -1,5 +1,5 @@
 import { assets } from "../assets";
-import ThemeButton from "../customComponents/ThemeButton";
+import ThemeButton from "../customComponents/ThemeButton"; 
 
 const RegistrationPage = () => {
   return (
