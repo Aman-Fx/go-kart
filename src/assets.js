@@ -59,16 +59,14 @@ export const assets = {
   background: {
     RegistrationPage: "./background/registration-bg.png",
     DownloadPage: "./background/downloads.png",
-    ebikeDesktop: 'public/background/e-bike-comming-soon.jpeg',
-    ebikeMobile: 'public/background/e-bike-mobile.jpeg',
-    errorDesktop: 'public/background/404-desktop.jpeg',
-    errorMobile: 'public/background/404-mobile.jpeg',
-    quadDesktop: 'public/background/quad-bike-desktop.jpeg',
-    quadMobile: 'public/background/quadBike-mobile.jpeg',
-    trainingDesktop: 'public/background/training.jpeg',
-    trainingMoile: 'public/background/training-mobile.jpeg',
-
-
+    ebikeDesktop: './background/e-bike-comming-soon.jpeg',
+    ebikeMobile: './background/e-bike-mobile.jpeg',
+    errorDesktop: './background/404-desktop.jpeg',
+    errorMobile: './background/404-mobile.jpeg',
+    quadDesktop: './background/quad-bike-desktop.jpeg',
+    quadMobile: './background/quadBike-mobile.jpeg',
+    trainingDesktop: './background/training.jpeg',
+    trainingMoile: './background/training-mobile.jpeg',
   },
 
   bannerImages: {

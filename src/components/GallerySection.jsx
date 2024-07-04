@@ -18,33 +18,33 @@ const GallerySection = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5 ">
         {slicedImages?.map((image, index) => {
           return (
-            <div
+            <div 
               onClick={() =>
                 slicedImages?.length == index + 1
                   ? navigate(ROUTES.gallery)
                   : null
               }
               key={image}
-              className={`group hover:shadow-lg hover:shadow-gray-800 overflow-hidden rounded-lg relative ${
+              className={`group max-h-64  max-w-full hover:shadow-lg hover:shadow-gray-800 overflow-hidden rounded-lg relative ${
                 slicedImages?.length == index + 1 ? " cursor-pointer" : ""
               }`}
             >
               <img
                 loading="lazy"
-                className={`h-auto max-w-full  transition-all duration-700 group-hover:scale-110 ease-in-out transform  ${
+                className={`h-full w-full  transition-all duration-700 group-hover:scale-110 ease-in-out transform  ${
                   slicedImages?.length == index + 1 ? "blur-sm " : ""
                 }`}
                 src={image}
                 alt=""
               />
               {slicedImages?.length == index + 1 ? (
-                <div className="absolute inset-0  flex items-center flex-col gap-3 justify-center transition-opacity duration-500">
+                <div className="absolute inset-0  flex items-center flex-col md:gap-3 gap-1 justify-center transition-opacity duration-500">
                   <CustomRightArrow
                     className={
                       "transform transition-transform duration-500 group-hover:-rotate-45 bg-background bg-opacity-25 p-1 rounded-full size-10"
                     }
                   />
-                  <div className="text-xs font-header bg-background px-3 py-2 rounded-full bg-opacity-0 group-hover:bg-opacity-25 ">
+                  <div className="md:text-xs text-[10px] font-header bg-background p-1 px-2 rounded-full bg-opacity-0 group-hover:bg-opacity-25 ">
                     View more
                   </div>
                 </div>
