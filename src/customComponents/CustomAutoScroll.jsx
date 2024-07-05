@@ -5,7 +5,11 @@ const CustomAutoScroll = ({ items = [] }) => {
         {items?.map((i) => (
           <li key={i} className="">
             <img
-              loading="lazy" src={i} alt={"brand logo"} className="max-w-20 max-h-20 " />
+              loading="lazy"
+              src={i}
+              alt={"brand logo"}
+              className="md:max-w-20 md:max-h-20 max-w-10 max-h-10 "
+            />
           </li>
         ))}
       </ul>
@@ -16,7 +20,11 @@ const CustomAutoScroll = ({ items = [] }) => {
         {items?.map((i) => (
           <li key={i} className="drop-shadow-xl ">
             <img
-              loading="lazy" src={i} alt={"brand logo"} className="  max-w-20 max-h-20  " />
+              loading="lazy"
+              src={i}
+              alt={"brand logo"}
+              className="md:max-w-20 md:max-h-20 max-w-10 max-h-10 "
+            />
           </li>
         ))}
       </ul>

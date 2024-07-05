@@ -19,7 +19,7 @@ const SupportSection = () => {
           opportunities in the motorsport field.
         </div> */}
       </div>
-      <div className="md:w-3/4 mx-auto overflow-hidden md:py-20 py-10 bg-gradient-to-l rounded-full from-gray-900 to-black shadow-inner shadow-NeonBlue">
+      <div className="md:w-3/4 mx-auto overflow-hidden md:py-20 py-5 bg-gradient-to-l rounded-full from-gray-800 to-black shadow-inner shadow-NeonBlue">
         <CustomAutoScroll items={brandLogos} />
       </div>
     </section>
