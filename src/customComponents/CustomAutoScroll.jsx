@@ -1,11 +1,11 @@
 const CustomAutoScroll = ({ items = [] }) => {
   return (
     <div className=" w-full inline-flex flex-nowrap overflow-hidden">
-      <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none ">
+      <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
         {items?.map((i) => (
           <li key={i} className="">
             <img
-              loading="lazy"
+              // loading="lazy"
               src={i}
               alt={"brand logo"}
               className="md:max-w-20 md:max-h-20 max-w-20 max-h-20 "
@@ -13,21 +13,21 @@ const CustomAutoScroll = ({ items = [] }) => {
           </li>
         ))}
       </ul>
-      {/* <ul
+      <ul
         className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
         aria-hidden="true"
       >
         {items?.map((i) => (
           <li key={i} className="">
             <img
-              loading="lazy"
+              // loading="lazy"
               src={i}
               alt={"brand logo"}
               className="md:max-w-20 md:max-h-20 max-w-20 max-h-20 "
             />
           </li>
         ))}
-      </ul> */}
+      </ul>
     </div>
   );
 };

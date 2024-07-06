@@ -15,9 +15,6 @@ body {
 
 /* globals.css or any CSS file */
 
-
-
-
 .navbar-speedometer {
   position: relative;
   width: 100%;
@@ -89,10 +86,10 @@ body {
 }
 
 .custom-shadow {
-  box-shadow: 
-  10px 0 10px -5px rgba(229, 9, 20, 0.5),    
-  -10px 0 10px -5px rgba(255, 215, 0, 0.5),  
-  0 10px 10px -5px rgba(58, 134, 255, 0.5),    0 -10px 10px -5px rgba(128, 128, 128, 0.5);
+  box-shadow: 10px 0 10px -5px rgba(229, 9, 20, 0.5),
+    -10px 0 10px -5px rgba(255, 215, 0, 0.5),
+    0 10px 10px -5px rgba(58, 134, 255, 0.5),
+    0 -10px 10px -5px rgba(128, 128, 128, 0.5);
 }
 
 /* .themeButton:hover {
@@ -103,16 +100,23 @@ body {
   padding-left: 30px;
 } */
 
-::-webkit-scrollbar{
-width: 0.3rem;
+::-webkit-scrollbar {
+  width: 0.3rem;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: #000;
-}::-webkit-scrollbar-thumb{
+}
+::-webkit-scrollbar-thumb {
   background: #e50914;
   border-radius: 1rem;
 }
 
 .support {
   filter: drop-shadow(0px 1px 2px #ffffff);
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .animate-infinite-scroll {
+    -webkit-overflow-scrolling: touch;
+  }
 }
