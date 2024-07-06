@@ -3,7 +3,7 @@ import CustomAutoScroll from "../customComponents/CustomAutoScroll";
 import CustomRightArrow from "../customComponents/CustomRightArrow";
 
 const SupportSection = () => {
-  const brandLogos = Object.values(assets.support);
+  const brandLogos = Object.values(assets?.support);
   return (
     <section className="relative bg-gradient-to-r from-black via-gray-950 to-gray-950 text-white pb-20 px-8 h-full">
       <div className="mb-20">
@@ -19,7 +19,7 @@ const SupportSection = () => {
           opportunities in the motorsport field.
         </div> */}
       </div>
-      <div className="md:w-3/4 mx-auto overflow-hidden md:py-20 py-5 bg-gradient-to-l rounded-full from-gray-800 to-black shadow-inner shadow-NeonBlue">
+      <div className="md:w-3/4 mx-auto overflow-hidden md:py-20 py-6 bg-gradient-to-l rounded-full from-gray-700 to-black shadow-inner shadow-NeonBlue">
         <CustomAutoScroll items={brandLogos} />
       </div>
     </section>
