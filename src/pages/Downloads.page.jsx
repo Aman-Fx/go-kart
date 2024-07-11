@@ -20,7 +20,7 @@ function DownloadsPage() {
 
               <ThemeButton label="Rule Book" />
             </a>
-            <a href="https://drive.google.com/file/d/1FJyB4RkziZ8dPnmPt3QKgbGufYdGR6gD/view" target="_blank">
+            <a href="https://drive.google.com/file/d/1l_x1uRbNW-XET0gi0J-rJy6THPSXzPJq/view" target="_blank">
               <ThemeButton label="Brochure" />
             </a>
           </div>
