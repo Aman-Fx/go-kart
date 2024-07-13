@@ -4,7 +4,8 @@ import ImageSlider from "../components/ImageSlider";
 import PromotingSection from "../components/PromotingSection";
 import SeasonSection from "../components/SeasonSection";
 import SupportSection from "../components/SupportSection";
-import VideoSection from '../components/VideoSection';
+import VideoSection from "../components/VideoSection";
+import IntoVideoSection from "../components/IntoVideoSection";
 
 const HomePage = () => {
   return (
@@ -18,19 +19,17 @@ const HomePage = () => {
       <div className="">
         <SeasonSection />
       </div>
-      {/* <div className="">
-        <AboutSection />
-        </div> */}
+      <div className="">
+        <IntoVideoSection />
+      </div>
+
       <div className="">
         <GallerySection />
       </div>
-      {/* <div className="">
-        <CommitteeSection />
-      </div> */}
+
       <div className="">
         <VideoSection />
       </div>
-
 
       <div className="">
         <SupportSection />
@@ -38,10 +37,6 @@ const HomePage = () => {
       <div className="">
         <PromotingSection />
       </div>
-
-      {/* <div className="relative">
-        <GalleryPage />
-      </div> */}
     </div>
   );
 };

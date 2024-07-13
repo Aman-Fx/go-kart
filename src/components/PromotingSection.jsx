@@ -14,7 +14,7 @@ const PromotingSection = () => {
           <hr className=" flex-grow border-0 bg-gradient-to-r from-primary via-gray-950 to-gray-950 p-px  rounded-3xl" />
         </div>
       </div>
-      <div className=" overflow-hidden md:py-20 py-6 bg-gradient-to-r  from-gray-300 via-gray-300 to-gray-200">
+      <div className=" overflow-hidden md:py-20 py-6 bg-gradient-to-r  from-gray-200 via-gray-400 to-gray-500">
         <CustomMarquee items={logos} dir={MARQUEE_DIRECTION.left} />
       </div>
     </section>

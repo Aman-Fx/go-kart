@@ -16,7 +16,7 @@ function DownloadsPage() {
           </div>
 
           <div className="flex gap-5 justify-center flex-wrap items-center mx-auto">
-            <a href="https://drive.google.com/file/d/17oItk-68lWxqY8bhMzx881yGZaMw7I2M/view" target="_blank">
+            <a href="https://drive.google.com/file/d/17oItk-68lWxqY8bhMzx881yGZaMw7I2M/view?usp=drivesdk" target="_blank">
 
               <ThemeButton label="Rule Book" />
             </a>

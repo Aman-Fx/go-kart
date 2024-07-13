@@ -5,7 +5,8 @@ export const assets = {
     hindustanMotorsportsLogo: "./basics/hindustan-motorsports.png",
     dotPattern: "/basics/dots-pattern.svg",
     hfkcLogo: "/basics/hfkc.png",
-    commingSoon: '/basics/comming-soon.jpg'
+    commingSoon: "/basics/comming-soon.jpg",
+    HFKC_Intro: "/basics/HFKC_Intro.mp4",
   },
   heroSection: {
     backGroundVideo: "./hero/karting-video.mp4",
@@ -56,25 +57,24 @@ export const assets = {
     venagoLogo: "./support/Venago.png",
     vintageVisionLogo: "./support/VintageVision.png",
   },
- promoting: {
-  make_in_india: './promoting/make_in_india.png',
-  startup_india: './promoting/startup_india.png',
-  skill_india: './promoting/skill_india.png',
-  clean_india: './promoting/clean_india.png',
- },
-
+  promoting: {
+    make_in_india: "./promoting/make_in_india.png",
+    startup_india: "./promoting/startup_india.png",
+    skill_india: "./promoting/skill_india.png",
+    clean_india: "./promoting/clean_india.png",
+  },
 
   background: {
     RegistrationPage: "./background/registration-bg.png",
     DownloadPage: "./background/downloads.png",
-    ebikeDesktop: './background/e-bike-comming-soon.jpeg',
-    ebikeMobile: './background/e-bike-mobile.jpeg',
-    errorDesktop: './background/404-desktop.jpeg',
-    errorMobile: './background/404-mobile.jpeg',
-    quadDesktop: './background/quad-bike-desktop.jpeg',
-    quadMobile: './background/quadBike-mobile.jpeg',
-    trainingDesktop: './background/training.jpeg',
-    trainingMoile: './background/training-mobile.jpeg',
+    ebikeDesktop: "./background/e-bike-comming-soon.jpeg",
+    ebikeMobile: "./background/e-bike-mobile.jpeg",
+    errorDesktop: "./background/404-desktop.jpeg",
+    errorMobile: "./background/404-mobile.jpeg",
+    quadDesktop: "./background/quad-bike-desktop.jpeg",
+    quadMobile: "./background/quadBike-mobile.jpeg",
+    trainingDesktop: "./background/training.jpeg",
+    trainingMoile: "./background/training-mobile.jpeg",
   },
 
   bannerImages: {
