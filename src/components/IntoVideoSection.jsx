@@ -58,7 +58,7 @@ const IntoVideoSection = () => {
     if(location.key === 'default'){
       setTimeout(() => {
         handleSmoothScroll();
-      },3000)
+      },5000)
     }
     
   }, []);
