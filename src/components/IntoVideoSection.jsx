@@ -15,7 +15,7 @@ const IntoVideoSection = () => {
     const options = {
       root: null, // viewport
       rootMargin: "0px",
-      threshold: 0.6, // 50% visibility needed to trigger
+      threshold: 0.3, // 30% visibility needed to trigger
     };
     const video = document.getElementById('myVideo');
 
@@ -58,7 +58,7 @@ const IntoVideoSection = () => {
     if(location.key === 'default'){
       setTimeout(() => {
         handleSmoothScroll();
-      },6000)
+      },3000)
     }
     
   }, []);
@@ -78,7 +78,6 @@ const IntoVideoSection = () => {
         id="myVideo"
         src={assets.global.HFKC_Intro}
         loop
-        muted
       ></video>
     </section>
   );
