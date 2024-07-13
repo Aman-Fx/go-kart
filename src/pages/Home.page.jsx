@@ -1,6 +1,7 @@
 import GallerySection from "../components/GallerySection";
 import HeroSection from "../components/HeroSection";
 import ImageSlider from "../components/ImageSlider";
+import PromotingSection from "../components/PromotingSection";
 import SeasonSection from "../components/SeasonSection";
 import SupportSection from "../components/SupportSection";
 import VideoSection from '../components/VideoSection';
@@ -33,6 +34,9 @@ const HomePage = () => {
 
       <div className="">
         <SupportSection />
+      </div>
+      <div className="">
+        <PromotingSection />
       </div>
 
       {/* <div className="relative">

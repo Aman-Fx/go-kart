@@ -28,8 +28,8 @@ const App = () => {
           <Route path={ROUTES.goKart} element={<GoKartPage />} />
           <Route path={ROUTES.season} element={<SeasonPage />} />
           <Route path={ROUTES.downloads} element={<DownloadsPage />} />
-          <Route path={ROUTES.eBike} element={<EBikePage />} />
-          <Route path={ROUTES.quadBikeATV} element={<QuadBikePage />} />
+          {/* <Route path={ROUTES.eBike} element={<EBikePage />} /> */}
+          {/* <Route path={ROUTES.quadBikeATV} element={<QuadBikePage />} /> */}
           <Route path={ROUTES.registration} element={<RegistrationPage />} />
           <Route path={ROUTES.training} element={<TrainingPage />} />
           <Route path={ROUTES.notFound} element={<NotFoundPage />} />

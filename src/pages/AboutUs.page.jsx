@@ -1,9 +1,10 @@
 import { assets } from "../assets";
+import TeamsComponent from "../components/TeamsComponent";
 import { aboutUs } from "../constants";
 
 const AboutUsPage = () => {
   return (
-    <section className="py-20 bg-gradient-to-r from-gray-950 via-gray-950 to-black sm:py-16 lg:py-24 min-h-dvh flex items-center">
+    <section className="py-20 bg-gradient-to-r from-gray-950 via-gray-950 to-black sm:py-16 lg:py-24 min-h-dvh ">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 md:gap-y-12 gap-y-10">
           <div className="relative w-fit lg:mb-12">
@@ -24,7 +25,7 @@ const AboutUsPage = () => {
           </div>
 
           <div className="2xl:pl-16 text-secondary">
-            <h2 className=" text-primary sm:text-4xl lg:text-5xl  text-xl md:text-3xl font-header md:mb-9 mb-5">
+            <h2 className="text-primary sm:text-4xl lg:text-5xl  text-xl md:text-3xl font-header md:mb-9 mb-5">
               About Us
             </h2>
             <p className="text-base md:text-lg mb-8 font-body leading-relaxed text-neutral">
@@ -33,6 +34,8 @@ const AboutUsPage = () => {
           </div>
         </div>
       </div>
+      {/* Teams */}
+      <TeamsComponent/>
     </section>
   );
 };

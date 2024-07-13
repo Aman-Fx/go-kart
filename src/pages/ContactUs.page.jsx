@@ -34,14 +34,14 @@ const ContactUsPage = () => {
               {contactDetails?.map((i) => (
                 <a
                   key={i?.id}
-                  className="flex items-center gap-5 group cursor-pointer w-fit p-3 mb-5"
+                  className="flex items-center gap-5 group cursor-pointer w-fit p-3 mb-5 text-sm"
                   href={i?.link}
                   target="_blank"
                 >
                   <div className=" w-10 h-10 relative ">
-                    <div className="w-full h-full rounded-full z-0 custom-shadow relative animate-spin-slow"></div>
-                    <div className=" flex items-center justify-center bg-gradient-to-r from-black via-gray-950 to-gray-950  w-full h-full rounded-2xl absolute top-0 left-0  z-10 group-hover:scale-110">
-                      <span className="text-neutral group-hover:text-secondary">
+                    {/* <div className="w-full h-full rounded-full z-0 custom-shadow relative animate-spin-slow"></div> */}
+                    <div className="shadow-lg shadow-gray-800 flex items-center justify-center bg-gradient-to-r from-black via-gray-950 to-gray-950  w-full h-full rounded-2xl absolute top-0 left-0  z-10 group-hover:scale-110">
+                      <span className="text-secondary group-hover:text-secondary">
                         {i?.icon}
                       </span>
                     </div>

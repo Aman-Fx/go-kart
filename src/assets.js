@@ -56,6 +56,14 @@ export const assets = {
     venagoLogo: "./support/Venago.png",
     vintageVisionLogo: "./support/VintageVision.png",
   },
+ promoting: {
+  make_in_india: './promoting/make_in_india.png',
+  startup_india: './promoting/startup_india.png',
+  skill_india: './promoting/skill_india.png',
+  clean_india: './promoting/clean_india.png',
+ },
+
+
   background: {
     RegistrationPage: "./background/registration-bg.png",
     DownloadPage: "./background/downloads.png",

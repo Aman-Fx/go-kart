@@ -14,11 +14,12 @@ export const kartEvents = [
         "PRIZE MONEY :- 5.5 LAKHS",
         "CATEGORIES- 130CC, E-KART",
       ],
+      awards: null,
     },
     direction: "ryt",
   },
   {
-    year: "July 2019",
+    year: "Jul 2019",
     direction: "lft",
     img: assets.seasonSection.issSeason,
     data: {
@@ -30,6 +31,7 @@ export const kartEvents = [
         "PRIZE MONEY :- 3.5 LAKHS",
         "CATEGORIES – 130CC",
       ],
+      awards: null,
     },
   },
   {
@@ -45,10 +47,11 @@ export const kartEvents = [
         "PRIZE MONEY :- 5 LAKHS",
         "CATEGORIES –  130CC, E-KART",
       ],
+      awards: null,
     },
   },
   {
-    year: "July 2024",
+    year: "Jul 2024",
     direction: "lft",
     img: assets.seasonSection.issSeason,
     data: {
@@ -68,10 +71,116 @@ export const kartEvents = [
         "PLACEMENT DRIVE",
         "24X7 TECHNICAL ASSISTANCE",
       ],
+      awards: [
+        { id: 1, title: "OVERALL CHAMPION", team: "TEAM MARS" },
+        { id: 2, title: "OVERALL 1ST RUNNER-UP", team: "TEAM INFINITY RACERS" },
+        { id: 3, title: "OVERALL 2ND RUNNER-UP", team: "TEAM VIJAYRATH" },
+        { id: 4, title: "CAE WINNER", team: "TEAM TRIDENT" },
+        { id: 5, title: "INNOVATION WINNER", team: "TEAM VIJAYRATH" },
+        { id: 6, title: "BUSINESS PLAN WINNER", team: "TEAM TRIDENT" },
+        { id: 7, title: "COST REPORT WINNER", team: "TEAM TRIDENT" },
+        { id: 8, title: "TI OK IN FIRST ATTEMPT", team: "DNF" },
+        { id: 9, title: "BEST RACER", team: "SAMEER SALVE(INVADER RACING)" },
+        { id: 10, title: "BUILD QUALITY", team: "TEAM MARS" },
+        { id: 11, title: "BEST CAPTAIN", team: "SHREYANSH PANDEY(FALCONS)" },
+        { id: 12, title: "BEST FACULTY ADVISOR", team: "TEAM VIJAYRATH" },
+        { id: 13, title: "BEST TEAM APPAREL", team: "TEAM INFINITY RACERS" },
+        { id: 14, title: "CLEANEST PIT", team: "TEAM X-TREME" },
+        { id: 15, title: "BEST AESTHETICS", team: "TEAM SCAVENGERS" },
+        { id: 16, title: "BEST PHOTOGRAPHY", team: "" },
+        { id: 17, title: "BEST TEAM TEASER", team: "TEAM TRIDENT" },
+        { id: 18, title: "SOCIAL MEDIA AWARD", team: "" },
+        { id: 19, title: "BEST TEAM BANNER", team: "TEAM MARS" },
+        { id: 20, title: "ENDURANCE WINNER(EV)", team: "TEAM VIJAYRATH" },
+        {
+          id: 21,
+          title: "ENDURANCE 1ST RUNNER-UP(EV)",
+          team: "TEAM INVADER RACING",
+        },
+        {
+          id: 22,
+          title: "ENDURANCE 2ND RUNNER-UP(EV)",
+          team: "TEAM AESTROIDS",
+        },
+        { id: 23, title: "ACCELERATION WINNER(EV)", team: "TEAM VIJAYRATH" },
+        {
+          id: 24,
+          title: "ACCELERATION 1ST RUNNER-UP(EV)",
+          team: "TEAM INFINITY RACERS",
+        },
+        {
+          id: 25,
+          title: "ACCELERATION 2ND RUNNER-UP(EV)",
+          team: "TEAM INVADER RACING",
+        },
+        { id: 26, title: "SKID-PAD WINNER(EV)", team: "TEAM INFINITY RACERS" },
+        { id: 27, title: "SKID-PAD 1ST RUNNER-UP(EV)", team: "TEAM AESTROIDS" },
+        { id: 28, title: "SKID-PAD 2ND RUNNER-UP(EV)", team: "TEAM VIJAYRATH" },
+        { id: 29, title: "AUTOCROSS WINNER(EV)", team: "TEAM INVADERS RACING" },
+        {
+          id: 30,
+          title: "AUTOCROSS 1ST RUNNER-UP(EV)",
+          team: "TEAM INFINITY RACERS",
+        },
+        { id: 31, title: "AUTOCROSS 2ND RUNNER-UP(EV)", team: "DNF" },
+        { id: 32, title: "DRAG RACE WINNER(EV)", team: "TEAM VIJAYRATH" },
+        {
+          id: 33,
+          title: "DRAG RACE 1ST RUNNER-UP(EV)",
+          team: "TEAM INFINITY RACERS",
+        },
+        {
+          id: 34,
+          title: "DRAG RACE 2ND RUNNER-UP(EV)",
+          team: "TEAM AESTROIDS",
+        },
+        { id: 35, title: "FASTEST LAP(EV)", team: "TEAM INFINITY RACERS" },
+        { id: 36, title: "ENDURANCE WINNER(IC)", team: "TEAM ABHYUDAYA" },
+        { id: 37, title: "ENDURANCE 1ST RUNNER-UP(IC)", team: "TEAM MARS" },
+        { id: 38, title: "ENDURANCE 2ND RUNNER-UP(IC)", team: "TEAM TRIDENT" },
+        {
+          id: 39,
+          title: "ENDURANCE 3RD RUNNER-UP(IC)",
+          team: "TEAM INVADERS RACING",
+        },
+        { id: 40, title: "ACCELERATION WINNER(IC)", team: "TEAM MARS" },
+        {
+          id: 41,
+          title: "ACCELERATION 1ST RUNNER-UP(IC)",
+          team: "TEAM FALCONS",
+        },
+        {
+          id: 42,
+          title: "ACCELERATION 2ND RUNNER-UP(IC)",
+          team: "TEAM INVADERS RACING",
+        },
+        {
+          id: 43,
+          title: "ACCELERATION 3RD RUNNER-UP(IC)",
+          team: "TEAM TRIDENT",
+        },
+        { id: 44, title: "SKID-PAD WINNER(IC)", team: "TEAM INVADERS RACING" },
+        { id: 45, title: "SKID-PAD 1ST RUNNER-UP(IC)", team: "TEAM MARS" },
+        { id: 46, title: "SKID-PAD 2ND RUNNER-UP(IC)", team: "DNF" },
+        { id: 47, title: "SKID-PAD 3RD RUNNER-UP(IC)", team: "DNF" },
+        { id: 48, title: "AUTOCROSS WINNER(IC)", team: "TEAM INVADERS RACING" },
+        { id: 49, title: "AUTOCROSS 1ST RUNNER-UP(IC)", team: "DNF" },
+        { id: 50, title: "AUTOCROSS 2ND RUNNER-UP(IC)", team: "DNF" },
+        { id: 51, title: "AUTOCROSS 3RD RUNNER-UP(IC)", team: "DNF" },
+        { id: 52, title: "DRAG RACE WINNER(IC)", team: "TEAM FALCONS" },
+        { id: 53, title: "DRAG RACE 1ST RUNNER-UP(IC)", team: "TEAM TRIDENT" },
+        { id: 54, title: "DRAG RACE 2ND RUNNER-UP(IC)", team: "TEAM MARS" },
+        {
+          id: 55,
+          title: "DRAG RACE 3RD RUNNER-UP(IC)",
+          team: "TEAM INVADERS RACING",
+        },
+        { id: 56, title: "FASTEST LAP(IC)", team: "TEAM INVADERS RACING" },
+      ],
     },
   },
   {
-    year: "Jan 2025",
+    year: "Mar 2025",
     direction: "ryt",
     img: assets.seasonSection.hfkcLogo,
     data: {
@@ -83,6 +192,7 @@ export const kartEvents = [
         "REGISTRATION FEE-32,500 INR",
         "FINAL EVENT- 17-19 MARCH,2025",
       ],
+      awards: null,
     },
   },
 ];
@@ -105,6 +215,106 @@ export const aboutUs = {
     "Hindustan Motorsports was established back in 2015,We have been one of the trusted and prominent motorsports company. We don’t just organize events,We craft a legacy of thrilling races,our events are a celebration of skill,innovation and relentless pursuit of excellence.Join us on the track for an unparalleled racing experience that goes beyond competition.We are not just a firm, We are a community united by a passion for motorsports.",
   companyLogo: assets.global.hindustanMotorsportsLogo,
 };
+
+export const teamData = [
+  {
+    member_name: "MR.SAGAR VYAS",
+    designation: "FOUNDER/C.E.O",
+    img: "",
+    id: 1,
+  },
+  {
+    member_name: "MR.YASHWARDHAN SINGH CHANDRAWAT",
+    designation: "C.O.O",
+    img: "",
+    id: 2,
+  },
+  {
+    member_name: "MR.PRATYAKSH MAITHIL",
+    designation: "C.M.O",
+    id: 3,
+  },
+  {
+    member_name: "MR.ABHINAY NIGAM",
+    designation: "CHIEF ADVISOR",
+    id: 4,
+  },
+  {
+    member_name: "MR.GAURAV SINGH RATHORE",
+    designation: "MANUFACTURING HEAD",
+    id: 5,
+  },
+  {
+    member_name: "MS.PRINCY SHAKTAWAT",
+    designation: "MARKETING AND SOCIAL MEDIA",
+    id: 6,
+  },
+  {
+    member_name: "MR.YASH GOKHARE",
+    designation: "OFFICIAL",
+    id: 7,
+  },
+  {
+    member_name: "MR.RAHUL BAVISKAR",
+    designation: "OFFICIAL",
+    id: 8,
+  },
+  {
+    member_name: "MR.ANUPAM SHARMA",
+    designation: "OFFICIAL",
+    id: 9,
+  },
+  {
+    member_name: "MR.TUSHAR KUMBHARDE",
+    designation: "OFFICIAL",
+    id: 10,
+  },
+  {
+    member_name: "MR.TEJAS PAMPATTIWAR",
+    designation: "OFFICIAL",
+    id: 11,
+  },
+  {
+    member_name: "MR.CHETAN PATIL",
+    designation: "OFFICIAL",
+    id: 12,
+  },
+  {
+    member_name: "MR.PRADEEP M",
+    designation: "AMBASSADOR",
+    id: 13,
+  },
+  {
+    member_name: "MR.MURAPALA KIRAN KUMAR",
+    designation: "AMBASSADOR",
+    id: 14,
+  },
+  {
+    member_name: "MR.ISHWAR SHARMA",
+    designation: "COORDINATOR",
+    id: 15,
+  },
+  {
+    member_name: "MR.HARSH SHARMA",
+    designation: "COORDINATOR",
+    id: 16,
+  },
+  {
+    member_name: "MR.SHIVAM SHARMA",
+    designation: "COORDINATOR",
+    id: 17,
+  },
+  {
+    member_name: "MR.NADEEM AHMED",
+    designation: "COORDINATOR",
+    id: 18,
+  },
+  {
+    member_name: "MR.RAHUL OJHA",
+    designation: "COORDINATOR",
+    id: 19,
+  },
+];
 
 // for gallary image
 export const images = Object.values(assets.gallery);
@@ -137,7 +347,7 @@ export const contactDetails = [
   {
     id: 2,
     title: "Call Us",
-    description: "+91 700-018-0509",
+    description: <span>+91 700-018-0509 | +91 626-733-6735</span>,
     icon: (
       <svg
         className="h-full sm:size-[24px] size-[16px]"
@@ -224,18 +434,18 @@ export const navItems = [
         id: 4,
       },
 
-      {
-        childItemName: "E-bike",
-        route: ROUTES.eBike,
-        childId: 2,
-        id: 5,
-      },
-      {
-        childItemName: "Quad bike & ATV",
-        route: ROUTES.quadBikeATV,
-        childId: 3,
-        id: 6,
-      },
+      // {
+      //   childItemName: "E-bike",
+      //   route: ROUTES.eBike,
+      //   childId: 2,
+      //   id: 5,
+      // },
+      // {
+      //   childItemName: "Quad bike & ATV",
+      //   route: ROUTES.quadBikeATV,
+      //   childId: 3,
+      //   id: 6,
+      // },
     ],
   },
   {
@@ -282,3 +492,10 @@ export const navItems = [
     externalRoute: false,
   },
 ];
+
+export const MARQUEE_DIRECTION = {
+  left: "left",
+  right: "right",
+  top: "top",
+  down: "down",
+};

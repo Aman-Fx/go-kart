@@ -45,6 +45,20 @@ function SeasonPage({ id, handleKartEvent, isHome = false }) {
                 />
               </div>
             </div>
+           { kartEvents[id].data?.awards ? <div className=" mt-8">
+              <p className="font-header text-primary">Awards</p>
+
+              <ul className=" text-neutral md:text-sm text-xs font-body list-disc uppercase ml-4 font-semibold mt-8">
+                {kartEvents[id].data?.awards?.map((i) => (
+                  <li className="mb-2" key={i.id}>
+                    <div className="flex justify-between">
+                      <span>{i.title}</span>
+                      <span>{i.team}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div> : null}
           </div>
           {
             <div className="mx-auto mt-auto text-center">
