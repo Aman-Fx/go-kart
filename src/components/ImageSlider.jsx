@@ -10,7 +10,7 @@ const ImageSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
+    }, 10000); // Change image every 3 seconds
     return () => clearInterval(interval);
   }, []);
 
@@ -29,7 +29,7 @@ const ImageSlider = () => {
   return (
     <>
       <div className="h-dvh  flex  items-center bg-gradient-to-r from-black via-gray-950 to-gray-950" data-carousel="slide">
-        <div className="relative w-full max-w-3xl h-1/2 mx-auto shadow-xl shadow-background hover:shadow-gray-800 hover:border-gray-800">
+        <div className="relative md:w-auto w-full aspect-square h-[600px] mx-auto shadow-xl shadow-background hover:shadow-gray-800 hover:border-gray-800">
           {images.map((image, index) => (
             <img
               loading="lazy"
