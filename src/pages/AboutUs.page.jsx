@@ -10,16 +10,30 @@ const AboutUsPage = () => {
           <div className="relative w-fit lg:mb-12">
             <img
               loading="lazy"
-              className="absolute -right-10 top-20 xl:-bottom-12 xl:-right-4 text-white "
+              className="absolute -right-10 top-20 xl:-bottom-12 xl:-right-4 text-white"
               src={assets.global.dotPattern}
               alt="null"
             />
-            <div className="relative md:pl-12 md:pr-6">
+            <div className="relative mb-5">
               <img
                 loading="lazy"
                 className="relative aspect-video sm:h-60 h-40"
                 src={aboutUs.companyLogo}
                 alt=""
+              />
+            </div>
+            <div className="text-white flex justify-center gap-10 bg-white p-3 rounded-full">
+              <img
+                loading="lazy"
+                className=" aspect-video h-12"
+                src={assets.aboutSection.msme_logo}
+                alt="null"
+              />
+              <img
+                loading="lazy"
+                className=" aspect-square w-12 h-12 "
+                src={assets.aboutSection.iso_logo}
+                alt="null"
               />
             </div>
           </div>
@@ -35,7 +49,7 @@ const AboutUsPage = () => {
         </div>
       </div>
       {/* Teams */}
-      <TeamsComponent/>
+      <TeamsComponent />
     </section>
   );
 };

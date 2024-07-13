@@ -4,6 +4,7 @@ import CustomRightArrow from "../customComponents/CustomRightArrow";
 
 const SupportSection = () => {
   const logos = Object.values(assets?.support);
+
   return (
     <section className="relative bg-gradient-to-r from-black via-gray-950 to-gray-950 text-white pb-20  h-full">
       <div className="mb-20 px-8">

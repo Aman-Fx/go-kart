@@ -7,6 +7,7 @@ export const assets = {
     hfkcLogo: "/basics/hfkc.png",
     commingSoon: "/basics/comming-soon.jpg",
     HFKC_Intro: "/basics/HFKC_Intro.mp4",
+    default_profile: "/about/default_profile.jpg",
   },
   heroSection: {
     backGroundVideo: "./hero/karting-video.mp4",
@@ -23,6 +24,8 @@ export const assets = {
     smallKart: "./about/smallKart.png",
     NexusMotoSport: "./about/NexusMotoSport.jpg",
     IndianKarting: "./about/IndianKarting.jpg",
+    msme_logo: "./about/msme_logo.png",
+    iso_logo: "./about/iso_logo.png",
   },
   committeeSection: {
     Abhishek: "./committiee/AbhishekKaranjule.jpg",

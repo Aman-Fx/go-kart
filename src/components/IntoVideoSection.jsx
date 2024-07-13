@@ -39,9 +39,8 @@ const IntoVideoSection = () => {
       <video
         className="w-full h-full"
         src={assets.global.HFKC_Intro}
-        autoPlay = {isVisible ? true : undefined}
+        autoPlay={isVisible ? true : undefined}
         loop
-        
       ></video>
     </section>
   );

@@ -10,9 +10,6 @@ const TeamsComponent = () => {
           <h2 className="text-primary lg:text-3xl text-xl md:text-2xl font-header">
             Meet the brains
           </h2>
-          <p className="max-w-md mx-auto mt-4 text-base leading-relaxed text-gray-600">
-            title if they have
-          </p>
         </div>
 
         <div className="grid grid-cols-2 text-center sm:grid-cols-4 gap-y-8 lg:grid-cols-9 gap-x-0">
@@ -20,8 +17,8 @@ const TeamsComponent = () => {
             <React.Fragment key={i.id}>
               <div>
                 <img
-                  className="object-cover mx-auto rounded-lg w-28 h-28 shadow-lg shadow-gray-800"
-                  src={assets.committeeSection.Aniket}
+                  className="object-cover mx-auto rounded-lg w-32 h-32 shadow-lg shadow-gray-900"
+                  src={i.img ?? assets.global.default_profile}
                   alt=""
                 />
                 <p className="mt-8 text-secondary group-hover:text-neonblue tracking-wider text-sm">
