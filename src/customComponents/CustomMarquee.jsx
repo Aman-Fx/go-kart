@@ -14,7 +14,7 @@ const CustomMarquee = ({items, dir = MARQUEE_DIRECTION.right}) => {
               loading="lazy"
               src={i}
               alt={"brand logo"}
-              className="min-w-10 min-h-10 max-w-20 max-h-20 aspect-auto"
+              className="md:max-w-20 md:max-h-20 max-w-20 max-h-20 min-w-10"
             />
           </li>
         ))}

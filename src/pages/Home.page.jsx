@@ -1,13 +1,14 @@
 import GallerySection from "../components/GallerySection";
 import HeroSection from "../components/HeroSection";
 import ImageSlider from "../components/ImageSlider";
+import IntoVideoSection from "../components/IntoVideoSection";
 import PromotingSection from "../components/PromotingSection";
 import SeasonSection from "../components/SeasonSection";
 import SupportSection from "../components/SupportSection";
 import VideoSection from "../components/VideoSection";
-import IntoVideoSection from "../components/IntoVideoSection";
 
 const HomePage = () => {
+  
   return (
     <div className="relative">
       <div className="top-0 h-dvh w-full z-1">
@@ -17,10 +18,10 @@ const HomePage = () => {
         <ImageSlider />
       </div>
       <div className="">
-        <SeasonSection />
+        <IntoVideoSection />
       </div>
       <div className="">
-        <IntoVideoSection />
+        <SeasonSection />
       </div>
 
       <div className="">
