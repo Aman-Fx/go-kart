@@ -1,7 +1,5 @@
 export const assets = {
   global: {
-    ick_logo: "./basics/Ick-logo.png",
-    footerImg: "./basics/trackImg.jpg",
     hindustanMotorsportsLogo: "./basics/hindustan-motorsports.png",
     dotPattern: "/basics/dots-pattern.svg",
     hfkcLogo: "/basics/hfkc.png",
@@ -13,7 +11,6 @@ export const assets = {
     backGroundVideo: "./hero/karting-video.mp4",
   },
   seasonSection: {
-    tyre: "./season/tyre.png",
     person: "./season/aPerson.png",
     quadBiking: "./season/quad-bike-png.png",
     dirtBiking: "./season/dirt-bikingPng.jpg",
@@ -27,11 +24,7 @@ export const assets = {
     msme_logo: "./about/msme_logo.png",
     iso_logo: "./about/iso_logo.png",
   },
-  committeeSection: {
-    Abhishek: "./committiee/AbhishekKaranjule.jpg",
-    Aniket: "./committiee/AniketMind.jpg",
-    Azmat: "./committiee/AzmatHussain.jpg",
-  },
+  
   socialIcons: {
     dribble: "./socialIcons/dribble.svg",
     linkedIn: "./socialIcons/linkedin.svg",

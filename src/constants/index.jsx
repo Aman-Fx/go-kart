@@ -282,7 +282,7 @@ export const teamData = [
   {
     member_name: "MR. AMAN SONI",
     designation: "UI/UX DESIGNER",
-    img: "./teamMembers/AMAN_SONI.PNG",
+    img: "./teamMembers/AMAN_SONI.jpg",
     id: 5,
   },
   {
