@@ -1,27 +1,31 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 import { assets } from "../assets";
 import CustomRightArrow from "../customComponents/CustomRightArrow";
 
 const IntoVideoSection = () => {
-  
+
   const videoContainerRef = useRef(null);
   // const location =useLocation();
-  
+
 
   useEffect(() => {
+    const video = document.getElementById('myVideo');
     const options = {
       root: null, // viewport
       rootMargin: "0px",
       threshold: 0.5, // 50% visibility needed to trigger
     };
-    const video = document.getElementById('myVideo');
 
     const handleIntersection = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           video.play()
+          video.controls = true
+          video.muted =false
         } else {
           video.pause()
+          video.controls = false
+          video.muted =true
         }
       });
     };
@@ -36,25 +40,25 @@ const IntoVideoSection = () => {
         observer.unobserve(videoContainerRef.current);
       }
     };
-  },[]);
+  }, []);
 
   const handleSmoothScroll = () => {
     if (videoContainerRef.current) {
       const section = videoContainerRef.current;
-      const yOffset = 0; // Adjust this value to set the margin-top offset
-      
+      const yOffset = 50; // Adjust this value to set the margin-top offset
+
       const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      
+
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
   };
 
   // Execute smooth scroll on component mount
-  useEffect(() => {
+  useLayoutEffect(() => {
     // if(location.key === 'default'){
-      setTimeout(() => {
-        handleSmoothScroll();
-      },4000)
+    setTimeout(() => {
+      handleSmoothScroll();
+    }, 4000)
     // }
   }, []);
 
@@ -72,6 +76,7 @@ const IntoVideoSection = () => {
         id="myVideo"
         src={assets.global.HFKC_Intro}
         loop
+        muted
       ></video>
     </section>
   );
