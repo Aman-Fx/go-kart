@@ -280,6 +280,12 @@ export const teamData = [
     id: 5,
   },
   {
+    member_name: "MR. AMAN SONI",
+    designation: "UI/UX DESIGNER",
+    img: "./teamMembers/AMAN_SONI.PNG",
+    id: 5,
+  },
+  {
     member_name: "MR.NEERAJ WADHE",
     designation: "PHOTOGRAPHY & MEDIA HEAD",
     img: "./teamMembers/Neeraj_Wadhe.jpg",
@@ -336,7 +342,7 @@ export const teamData = [
   {
     member_name: "MR.MURAPALA KIRAN KUMAR",
     designation: "AMBASSADOR",
-    img: null,
+    img: "./teamMembers/KIRAN_KUMAR.JPG",
     id: 14,
   },
   {
@@ -362,6 +368,11 @@ export const teamData = [
     designation: "COORDINATOR",
     img: "./teamMembers/Nadeem_Ahmad.jpg",
     id: 18,
+  },{
+    member_name: "MR.RAHUL OJHA",
+    designation: "COORDINATOR",
+    img: "./teamMembers/RAHUL_OJHA.jpg",
+    id: 30,
   },
   {
     member_name: "MISS.HARSHITA GHODESHWAR",

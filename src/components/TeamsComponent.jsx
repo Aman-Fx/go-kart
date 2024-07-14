@@ -3,11 +3,11 @@ import { assets } from "../assets";
 import { teamData } from "../constants";
 
 const TeamsComponent = () => {
-  const higherAuthorities = teamData.slice(0, 9);
-  const officials = teamData.slice(9,15);
-  const ambassador = teamData.slice(15,17);
-  const coordinator = teamData.slice(17,22);
-  const volunteer = teamData.slice(22);
+  const higherAuthorities = teamData.slice(0, 10);
+  const officials = teamData.slice(10,16);
+  const ambassador = teamData.slice(16,18);
+  const coordinator = teamData.slice(18,23);
+  const volunteer = teamData.slice(23);
 
   
   return (
