@@ -22,7 +22,7 @@ const AboutUsPage = () => {
                 alt=""
               />
             </div>
-            <div className="text-white flex justify-center gap-10 bg-white p-3 rounded-full">
+            <div className="text-white flex justify-around gap-10 bg-white p-3 rounded-full">
               <img
                 loading="lazy"
                 className=" aspect-video h-12"

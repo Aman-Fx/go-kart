@@ -15,6 +15,24 @@ function ScrollToTop() {
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef();
+  const [isVisible, setIsVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const isVisible = prevScrollPos > currentScrollPos || currentScrollPos < 10;
+
+      setIsVisible(isVisible);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos]);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -37,8 +55,10 @@ const Navbar = () => {
   };
 
   return (
+
     <nav
-      className="bg-black md:bg-opacity-75 p-8 font-body text-white text-base hover:text-primary-red transition duration-300 font-normal"
+      className={`navbar ${isVisible ? 'navbar-visible' : 'navbar-hidden'} bg-black md:bg-opacity-75 p-8 font-body text-white text-base hover:text-primary-red transition duration-300 font-normal`}
+      
       ref={navRef}
     >
       <ScrollToTop />

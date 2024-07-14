@@ -5,6 +5,7 @@ export const kartEvents = [
   {
     year: "Sept 2018",
     img: assets.seasonSection.hfkcLogo,
+    host:"Hindustan Formula Karting Championship",
     data: {
       id: 1,
       heading: "Season 1",
@@ -22,6 +23,7 @@ export const kartEvents = [
     year: "Jul 2019",
     direction: "lft",
     img: assets.seasonSection.issSeason,
+    host:"Indian Superkarting Series",
     data: {
       id: 2,
       heading: "Season 2",
@@ -38,6 +40,7 @@ export const kartEvents = [
     year: "Jan 2020",
     direction: "ryt",
     img: assets.seasonSection.hfkcLogo,
+    host:"Hindustan Formula Karting Championship",
     data: {
       id: 3,
       heading: "Season 3",
@@ -54,6 +57,7 @@ export const kartEvents = [
     year: "Jul 2024",
     direction: "lft",
     img: assets.seasonSection.issSeason,
+    host:"Indian Superkarting Series",
     data: {
       id: 4,
       heading: "Season 4",
@@ -183,13 +187,14 @@ export const kartEvents = [
     year: "Mar 2025",
     direction: "ryt",
     img: assets.seasonSection.hfkcLogo,
+    host:"Hindustan Formula Karting Championship",
     data: {
       id: 5,
       heading: "Season 5",
       subHeading: [
-        "PRIZE MONEY- 5.2LAKHS",
+        "PRIZE MONEY- 5.2 LAKHS",
         "VENUE-RPM International Racing Circuit, BHOPAL",
-        "REGISTRATION FEE-32,500 INR",
+        "REGISTRATION FEE- 32,500 INR",
         "FINAL EVENT- 17-19 MARCH,2025",
       ],
       awards: null,

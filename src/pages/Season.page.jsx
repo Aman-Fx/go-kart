@@ -18,7 +18,7 @@ function SeasonPage({ id, handleKartEvent, isHome = false }) {
 
                 <div className="">
                   <p className="text-base font-semibold  mt-6 text-primary">
-                    Indian Superkarting Series
+                   {kartEvents[id].host}
                   </p>
                   <p className="text-neutral font-header">
                     {kartEvents[id].year}
