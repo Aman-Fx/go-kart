@@ -5,7 +5,7 @@ export const kartEvents = [
   {
     year: "Sept 2018",
     img: assets.seasonSection.hfkcLogo,
-    host:"Hindustan Formula Karting Championship",
+    host: "Hindustan Formula Karting Championship",
     data: {
       id: 1,
       heading: "Season 1",
@@ -23,7 +23,7 @@ export const kartEvents = [
     year: "Jul 2019",
     direction: "lft",
     img: assets.seasonSection.issSeason,
-    host:"Indian Superkarting Series",
+    host: "Indian Superkarting Series",
     data: {
       id: 2,
       heading: "Season 2",
@@ -40,7 +40,7 @@ export const kartEvents = [
     year: "Jan 2020",
     direction: "ryt",
     img: assets.seasonSection.hfkcLogo,
-    host:"Hindustan Formula Karting Championship",
+    host: "Hindustan Formula Karting Championship",
     data: {
       id: 3,
       heading: "Season 3",
@@ -57,7 +57,7 @@ export const kartEvents = [
     year: "Jul 2024",
     direction: "lft",
     img: assets.seasonSection.issSeason,
-    host:"Indian Superkarting Series",
+    host: "Indian Superkarting Series",
     data: {
       id: 4,
       heading: "Season 4",
@@ -202,15 +202,16 @@ export const kartEvents = [
     year: "Mar 2025",
     direction: "ryt",
     img: assets.seasonSection.hfkcLogo,
-    host:"Hindustan Formula Karting Championship",
+    host: "Hindustan Formula Karting Championship",
     data: {
       id: 5,
       heading: "Season 5",
       subHeading: [
         "PRIZE MONEY- 5.2 LAKHS",
-        "VENUE-RPM International Racing Circuit, BHOPAL",
+        "VENUE-RPM INTERNATIONAL RACING CIRCUIT, BHOPAL",
         "REGISTRATION FEE- 32,500 INR",
         "FINAL EVENT- 17-19 MARCH,2025",
+        "CATEGORIES- 130CC,160CC,E-KART",
       ],
       awards: null,
     },
@@ -261,11 +262,28 @@ export const teamData = [
     img: "./teamMembers/ABHINAY_NIGAM.jpg",
     id: 4,
   },
+   {
+    member_name: "MR.SOMESH THAKUR",
+    designation: "EVENT HEAD",
+    img: "./teamMembers/Somesh_Thakur.jpeg",
+    id: 25,
+  },
   {
     member_name: "MR.GAURAV SINGH RATHORE",
     designation: "MANUFACTURING HEAD",
     img: "./teamMembers/GAURAV_SINGH_RATHORE.jpg",
+    id: 27,
+  },{
+    member_name: "MR. KISHAN ABHISHEK",
+    designation: "IT HEAD",
+    img: "./teamMembers/KISHAN_ABHISHEK.JPG",
     id: 5,
+  },
+  {
+    member_name: "MR.NEERAJ WADHE",
+    designation: "PHOTOGRAPHY & MEDIA HEAD",
+    img: "./teamMembers/Neeraj_Wadhe.jpg",
+    id: 26,
   },
   {
     member_name: "MS.PRINCY SHAKTAWAT",
@@ -312,7 +330,7 @@ export const teamData = [
   {
     member_name: "MR.PRADEEP M",
     designation: "AMBASSADOR",
-    img: null,
+    img: "./teamMembers/PRADEEP.jpg",
     id: 13,
   },
   {
@@ -330,28 +348,49 @@ export const teamData = [
   {
     member_name: "MR.HARSH SHARMA",
     designation: "COORDINATOR",
-    img: null,
+    img: "./teamMembers/Harsh_Sharma.jpg",
     id: 16,
   },
   {
     member_name: "MR.SHIVAM SHARMA",
     designation: "COORDINATOR",
-    img: null,
+    img: "./teamMembers/Shivam_Sharma.jpg",
     id: 17,
   },
   {
-    member_name: "MR.NADEEM AHMED",
+    member_name: "MR.NADEEM AHMAD",
     designation: "COORDINATOR",
-    img: null,
+    img: "./teamMembers/Nadeem_Ahmad.jpg",
     id: 18,
   },
   {
-    member_name: "MR.RAHUL OJHA",
-    img: null,
-    designation: "COORDINATOR",
-
-    id: 19,
+    member_name: "MISS.HARSHITA GHODESHWAR",
+    img: "./teamMembers/HARSHITA_GHODESHWAR.jpg",
+    designation: "VOLUNTEER",
+    id: 20,
   },
+  {
+    member_name: "MISS.GARVITA KASERA",
+    img: "./teamMembers/GARVITA_KASERA.jpg",
+    designation: "VOLUNTEER",
+    id: 21,
+  }, {
+    member_name: "MR.JAY PRAJAPATI",
+    img: "./teamMembers/JAY_PRAJAPATI.jpg",
+    designation: "VOLUNTEER",
+    id: 22,
+  }, {
+    member_name: "MR.KISHAN CHOUHAN",
+    img: "./teamMembers/KISHAN_CHOUHAN.jpg",
+    designation: "VOLUNTEER",
+    id: 23,
+  }, {
+    member_name: "MR.GOURAV NAGAR",
+    img: "./teamMembers/GOURAV_NAGAR.jpg",
+    designation: "VOLUNTEER",
+    id: 24,
+  },
+
 ];
 
 // for gallary image

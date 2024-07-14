@@ -53,12 +53,13 @@ export const assets = {
     mitLogo: "./support/mitLogo.png",
     brcLogo: "./support/brc.png",
     destinytionLogo: "./support/Destinytion.png",
-    dewizeIoLogo: "./support/DewizeIo.png",
-    redRabbitLogo: "./support/RedRabbit.png",
+    // dewizeIoLogo: "./support/DewizeIo.png",
+    // redRabbitLogo: "./support/RedRabbit.png",
     renforcerLogo: "./support/Renforcer.png",
     rpEventsLogo: "./support/RpEvents.png",
-    venagoLogo: "./support/Venago.png",
+    // venagoLogo: "./support/Venago.png",
     vintageVisionLogo: "./support/VintageVision.png",
+    met: "./support/MET.jpeg",
   },
   promoting: {
     make_in_india: "./promoting/make_in_india.png",
@@ -82,7 +83,8 @@ export const assets = {
 
   bannerImages: {
     img_1: "./banner/HFKC-Banner.png",
-    img_2: "./banner/Iss5Banner.jpg",
+    img_2: "./banner/RPMRacingCircuit.jpg",
+    img_3: "./banner/Iss5Banner.jpg",
     // img_3: "./banner/groupPhoto.jpg",
     // img_4: "./banner/closeUpShot.jpg",
     // img_5: "./banner/closeUpShot2.jpg",

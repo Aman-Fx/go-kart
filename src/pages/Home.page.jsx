@@ -1,7 +1,7 @@
 import GallerySection from "../components/GallerySection";
 import HeroSection from "../components/HeroSection";
 import ImageSlider from "../components/ImageSlider";
-import IntoVideoSection from "../components/IntoVideoSection";
+import IntroVideoSection from "../components/IntoVideoSection";
 import PromotingSection from "../components/PromotingSection";
 import SeasonSection from "../components/SeasonSection";
 import SupportSection from "../components/SupportSection";
@@ -18,7 +18,7 @@ const HomePage = () => {
         <ImageSlider />
       </div>
       <div className="">
-        <IntoVideoSection />
+        <IntroVideoSection />
       </div>
       <div className="">
         <SeasonSection />

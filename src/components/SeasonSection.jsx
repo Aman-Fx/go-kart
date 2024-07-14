@@ -119,12 +119,13 @@ const EventCard = ({ heading, content, year, CommingSoon, id, handleKartEvent })
         {heading ?? "heading"}
       </h3>
 
-      <ul className="text-white text-xs font-body list-disc mb-5">
-        {content?.slice(0, 4)?.map((i) => (
+      <ul className="text-white text-xs font-body list-disc list-inside mb-5">
+        {content?.slice(0, 5)?.map((i) => (
           <li className="mb-2" key={i}>
             {i}
           </li>
         ))}
+        {console.log("🚀 ~ EventCard ~ content:", content)}
       </ul>
       <div className="mx-auto mt-auto">
         <ThemeButton label="learn more" onClick={() => handleKartEvent(id)} />

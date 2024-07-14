@@ -2,7 +2,7 @@ import { useEffect, useLayoutEffect, useRef } from "react";
 import { assets } from "../assets";
 import CustomRightArrow from "../customComponents/CustomRightArrow";
 
-const IntoVideoSection = () => {
+const IntroVideoSection = () => {
 
   const videoContainerRef = useRef(null);
   // const location =useLocation();
@@ -82,4 +82,4 @@ const IntoVideoSection = () => {
   );
 };
 
-export default IntoVideoSection;
+export default IntroVideoSection;
