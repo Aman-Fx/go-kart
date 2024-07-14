@@ -119,7 +119,7 @@ const EventCard = ({ heading, content, year, CommingSoon, id, handleKartEvent })
         {heading ?? "heading"}
       </h3>
 
-      <ul className="text-white text-xs font-body list-disc list-inside mb-5">
+      <ul className="text-white text-xs font-body list-disc mb-5">
         {content?.slice(0, 4)?.map((i) => (
           <li className="mb-2" key={i}>
             {i}

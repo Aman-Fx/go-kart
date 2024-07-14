@@ -45,20 +45,29 @@ function SeasonPage({ id, handleKartEvent, isHome = false }) {
                 />
               </div>
             </div>
-           { kartEvents[id].data?.awards ? <div className=" mt-8">
-              <p className="font-header text-primary">Awards</p>
+            {kartEvents[id].data?.awards ? (
+              <div className=" mt-8  bg-black bg-opacity-10 relative rounded-3xl shadow-md shadow-primary pb-5 border border-primary ">
+                <p className="lg:text-3xl text-xl md:text-2xl font-header uppercase py-3 px-6 rounded-lg border border-primary text-white absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-950">
+                  Awards
+                </p>
 
-              <ul className=" text-neutral md:text-sm text-xs font-body list-disc uppercase ml-4 font-semibold mt-8">
-                {kartEvents[id].data?.awards?.map((i) => (
-                  <li className="mb-2" key={i.id}>
-                    <div className="flex justify-between">
+                <div className="max-h-96 overflow-auto mt-8 py-10 md:px-20 px-6 flex flex-col gap-y-5">
+                  {kartEvents[id].data?.awards?.map((i) => (
+                    <div
+                      className="md:text-lg text-sm relative flex justify-between md:flex-row flex-col flex-wrap bg-from-gray-900 via-gray-800 to-gray-700 rounded-lg shadow shadow-neutral md:px-6 px-4 py-3 font-body leading-relaxed text-secondary uppercase"
+                      key={i.id}
+                    >
+                      {" "}
+                      {i?.img ? <img src={i.img} className="h-14 absolute -left-5 -top-3" /> : null}
                       <span>{i.title}</span>
-                      <span>{i.team}</span>
+                      <span className="text-neutral font-semibold">
+                        {i.team}
+                      </span>
                     </div>
-                  </li>
-                ))}
-              </ul>
-            </div> : null}
+                  ))}
+                </div>
+              </div>
+            ) : null}
           </div>
           {
             <div className="mx-auto mt-auto text-center">

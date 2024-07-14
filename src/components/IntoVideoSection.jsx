@@ -72,7 +72,7 @@ const IntoVideoSection = () => {
         <hr className="flex-grow  border-0 bg-gradient-to-r from-primary via-gray-950 to-gray-950 p-px  rounded-3xl" />
       </div>
       <video
-        className=" aspect-video w-full h-full"
+        className=" aspect-video w-full h-full "
         id="myVideo"
         src={assets.global.HFKC_Intro}
         loop

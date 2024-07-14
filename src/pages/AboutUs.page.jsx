@@ -10,7 +10,7 @@ const AboutUsPage = () => {
           <div className="relative w-fit lg:mb-12">
             <img
               loading="lazy"
-              className="absolute -right-10 top-20 xl:-bottom-12 xl:-right-4 text-white"
+              className="absolute -right-10 top-20 xl:-bottom-12 xl:-right-4 text-white sm:block hidden"
               src={assets.global.dotPattern}
               alt="null"
             />

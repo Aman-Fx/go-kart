@@ -76,9 +76,24 @@ export const kartEvents = [
         "24X7 TECHNICAL ASSISTANCE",
       ],
       awards: [
-        { id: 1, title: "OVERALL CHAMPION", team: "TEAM MARS" },
-        { id: 2, title: "OVERALL 1ST RUNNER-UP", team: "TEAM INFINITY RACERS" },
-        { id: 3, title: "OVERALL 2ND RUNNER-UP", team: "TEAM VIJAYRATH" },
+        {
+          id: 1,
+          title: "OVERALL CHAMPION",
+          team: "TEAM MARS",
+          img: "./basics/trophy.png",
+        },
+        {
+          id: 2,
+          title: "OVERALL 1ST RUNNER-UP",
+          team: "TEAM INFINITY RACERS",
+          img: "public/basics/1st_position.png",
+        },
+        {
+          id: 3,
+          title: "OVERALL 2ND RUNNER-UP",
+          team: "TEAM VIJAYRATH",
+          img: "public/basics/2nd_position.png",
+        },
         { id: 4, title: "CAE WINNER", team: "TEAM TRIDENT" },
         { id: 5, title: "INNOVATION WINNER", team: "TEAM VIJAYRATH" },
         { id: 6, title: "BUSINESS PLAN WINNER", team: "TEAM TRIDENT" },
@@ -267,31 +282,31 @@ export const teamData = [
   {
     member_name: "MR.RAHUL BAVISKAR",
     designation: "OFFICIAL",
-    img:"./teamMembers/RAHUL_BAVISKAR.jpeg",
+    img: "./teamMembers/RAHUL_BAVISKAR.jpeg",
     id: 8,
   },
   {
     member_name: "MR.ANUPAM SHARMA",
     designation: "OFFICIAL",
-    img:'./teamMembers/ANUPAM_SHARMA.jpeg',
+    img: "./teamMembers/ANUPAM_SHARMA.jpeg",
     id: 9,
   },
   {
     member_name: "MR.TUSHAR KUMBHARDE",
     designation: "OFFICIAL",
-    img: './teamMembers/Tushar_Kumbharde.jpg',
+    img: "./teamMembers/Tushar_Kumbharde.jpg",
     id: 10,
   },
   {
     member_name: "MR.TEJAS PAMPATTIWAR",
     designation: "OFFICIAL",
-    img:'./teamMembers/TEJAS_PAMPATTIWAR.jpeg',
+    img: "./teamMembers/TEJAS_PAMPATTIWAR.jpeg",
     id: 11,
   },
   {
     member_name: "MR.CHETAN PATIL",
     designation: "OFFICIAL",
-    img: './teamMembers/CHETAN_PATIL.jpeg',
+    img: "./teamMembers/CHETAN_PATIL.jpeg",
     id: 12,
   },
   {
@@ -309,7 +324,7 @@ export const teamData = [
   {
     member_name: "MR.ISHWAR SHARMA",
     designation: "COORDINATOR",
-    img: './teamMembers/Ishwar_Sharma.jpg',
+    img: "./teamMembers/Ishwar_Sharma.jpg",
     id: 15,
   },
   {
@@ -321,7 +336,7 @@ export const teamData = [
   {
     member_name: "MR.SHIVAM SHARMA",
     designation: "COORDINATOR",
-    img:null,
+    img: null,
     id: 17,
   },
   {
@@ -332,7 +347,7 @@ export const teamData = [
   },
   {
     member_name: "MR.RAHUL OJHA",
-    img: './teamMembers/RAHUL_BAVISKAR.jpeg',
+    img: null,
     designation: "COORDINATOR",
 
     id: 19,
