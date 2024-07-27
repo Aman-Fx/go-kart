@@ -1,10 +1,20 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { assets } from "../assets";
 import { ROUTES, kartEvents } from "../constants";
 
 const Footer = () => {
   const navigate = useNavigate();
-  const handleNavigate = (id) => {
+  const {pathname} = useLocation();
+
+  const handleNavigate = (path) => {
+    console.log(path)
+    if(pathname === path){
+      window.scrollTo(0,0)
+    }else{
+      navigate(path)
+    }
+  }
+  const goToKartPage=(id)=>{
     navigate(ROUTES.goKart, { state: { id, isHome: true } });
   }
   return (
@@ -33,20 +43,20 @@ const Footer = () => {
                 Quick Links
               </h2>
               <ul className="text-neutral font-medium [&_li]:md:mb-4 [&_li]:mb-2 md:text-sm text-xs">
-                <li>
-                  <Link to={ROUTES.home} className="hover:underline">
+                <li onClick={()=>handleNavigate(ROUTES.home)} className="hover:underline cursor-pointer">
+                  {/* <Link onClick={()=>handleNavigate(ROUTES.home)} className="hover:underline"> */}
                     Home
-                  </Link>
+                  {/* </Link> */}
                 </li>
-                <li>
-                  <Link to={ROUTES.aboutUs} className="hover:underline">
+                <li onClick={()=>handleNavigate(ROUTES.aboutUs)} className="hover:underline cursor-pointer">
+                  {/* <Link onClick={()=>handleNavigate(ROUTES.aboutUs)} className="hover:underline"> */}
                     About us
-                  </Link>
+                  {/* </Link> */}
                 </li>
-                <li>
-                  <Link to={ROUTES.contactUs} className="hover:underline">
-                    Contact us
-                  </Link>
+                <li onClick={()=>handleNavigate(ROUTES.gallery)} className="hover:underline cursor-pointer">
+                  {/* <Link  > */}
+                    Gallery
+                  {/* </Link> */}
                 </li>
               </ul>
             </div>
@@ -58,7 +68,7 @@ const Footer = () => {
               <ul className="text-neutral font-medium [&_li]:md:mb-4 [&_li]:mb-2 md:text-sm text-xs">
                 {
                   kartEvents.slice(kartEvents.length - 4, kartEvents.length - 1).map((item) =>
-                    <li key={Math.random().toString()} onClick={() => handleNavigate(item?.data?.id - 1)} className="hover:underline cursor-pointer">
+                    <li key={Math.random().toString()} onClick={() => goToKartPage(item?.data?.id - 1)} className="hover:underline cursor-pointer">
                       {item?.data?.heading}
                     </li>
                   )

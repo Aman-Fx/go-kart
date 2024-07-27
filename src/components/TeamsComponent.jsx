@@ -4,10 +4,10 @@ import { teamData } from "../constants";
 
 const TeamsComponent = () => {
   const higherAuthorities = teamData.slice(0, 10);
-  const officials = teamData.slice(10, 16);
-  const ambassador = teamData.slice(16, 18);
-  const coordinator = teamData.slice(18, 23);
-  const volunteer = teamData.slice(23);
+  const officials = teamData.slice(10, 17);
+  const ambassador = teamData.slice(17, 20);
+  const coordinator = teamData.slice(20, 25);
+  const volunteer = teamData.slice(25);
 
   return (
     <section className="py-10 sm:py-16 lg:py-24 font-body">
@@ -59,6 +59,7 @@ const TeamsComponent = () => {
             </React.Fragment>
           ))}
         </div>
+        {/* ambassador */}
         <div className="flex flex-wrap justify-center gap-y-8 gap-x-10 mx-auto mb-10">
           {ambassador.map((i) => (
             <React.Fragment key={i.id}>
@@ -79,6 +80,7 @@ const TeamsComponent = () => {
             </React.Fragment>
           ))}
         </div>
+        {/* coordinator */}
         <div className="flex flex-wrap justify-center gap-y-8 gap-x-10 mx-auto mb-10">
           {coordinator.map((i) => (
             <React.Fragment key={i.id}>
@@ -99,6 +101,7 @@ const TeamsComponent = () => {
             </React.Fragment>
           ))}
         </div>{" "}
+        {/* volunteer */}
         <div className="flex flex-wrap justify-center gap-y-8 gap-x-10 mx-auto mb-10">
           {volunteer.map((i) => (
             <React.Fragment key={i.id}>

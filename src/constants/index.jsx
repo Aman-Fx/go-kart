@@ -262,28 +262,29 @@ export const teamData = [
     img: "./teamMembers/ABHINAY_NIGAM.jpg",
     id: 4,
   },
-   {
+  {
     member_name: "MR. SOMESH THAKUR",
     designation: "EVENT HEAD",
     img: "./teamMembers/Somesh_Thakur.jpeg",
-    id: 25,
+    id: 5,
   },
   {
     member_name: "MR. GAURAV SINGH RATHORE",
     designation: "MANUFACTURING HEAD",
     img: "./teamMembers/GAURAV_SINGH_RATHORE.jpg",
     id: 27,
-  },{
+  },
+  {
     member_name: "MR. KISHAN ABHISHEK",
     designation: "IT HEAD",
     img: "./teamMembers/KISHAN_ABHISHEK.JPG",
-    id: 5,
+    id: 53,
   },
   {
     member_name: "MR. AMAN SONI",
     designation: "UI/UX DESIGNER",
     img: "./teamMembers/AMAN_SONI.jpg",
-    id: 5,
+    id: 51,
   },
   {
     member_name: "MR. NEERAJ WADHE",
@@ -334,6 +335,12 @@ export const teamData = [
     id: 12,
   },
   {
+    member_name: "MR. ABHAY VERMA",
+    designation: "OFFICIAL",
+    img: "./teamMembers/Abhay_Verma.jpg",
+    id: 121,
+  },
+  {
     member_name: "MR. PRADEEP M",
     designation: "AMBASSADOR",
     img: "./teamMembers/PRADEEP.jpg",
@@ -344,6 +351,12 @@ export const teamData = [
     designation: "AMBASSADOR",
     img: "./teamMembers/KIRAN_KUMAR.JPG",
     id: 14,
+  },
+  {
+    member_name: "MR.PRATEEK HIRALKAR ",
+    designation: "AMBASSADOR",
+    img: "./teamMembers/Pratik_Hiralkar.jpg",
+    id: 142,
   },
   {
     member_name: "MR. ISHWAR SHARMA",
@@ -368,7 +381,8 @@ export const teamData = [
     designation: "COORDINATOR",
     img: "./teamMembers/Nadeem_Ahmad.jpg",
     id: 18,
-  },{
+  },
+  {
     member_name: "MR. RAHUL OJHA",
     designation: "COORDINATOR",
     img: "./teamMembers/RAHUL_OJHA.jpg",
@@ -385,23 +399,49 @@ export const teamData = [
     img: "./teamMembers/GARVITA_KASERA.jpg",
     designation: "VOLUNTEER",
     id: 21,
-  }, {
+  },
+  {
     member_name: "MR. JAY PRAJAPATI",
     img: "./teamMembers/JAY_PRAJAPATI.jpg",
     designation: "VOLUNTEER",
     id: 22,
-  }, {
+  },
+  {
     member_name: "MR. KISHAN CHOUHAN",
     img: "./teamMembers/KISHAN_CHOUHAN.jpg",
     designation: "VOLUNTEER",
     id: 23,
-  }, {
+  },
+  {
     member_name: "MR. GOURAV NAGAR",
     img: "./teamMembers/GOURAV_NAGAR.jpg",
     designation: "VOLUNTEER",
     id: 24,
   },
-
+  {
+    member_name: "MISS.SHRADDHA PALIWAL",
+    img: "./teamMembers/Shraddha.JPG",
+    designation: "VOLUNTEER",
+    id: 25,
+  },
+  {
+    member_name: "MISS.ARCHY GOTHWAL",
+    img: "./teamMembers/Archy_Gothwal.jpg",
+    designation: "VOLUNTEER",
+    id: 26,
+  },
+  {
+    member_name: "MR.HARSH SHAH",
+    img: "./teamMembers/Harsh_shah.jpg",
+    designation: "VOLUNTEER",
+    id: 27,
+  },
+  {
+    member_name: "MR.PRAJWAL SUBHASH BOBADE",
+    img: "./teamMembers/PRAJWAL_SUBHASH_BOBADE.jpg",
+    designation: "VOLUNTEER",
+    id: 28,
+  },
 ];
 
 // for gallary image

@@ -8,7 +8,6 @@ import SupportSection from "../components/SupportSection";
 import VideoSection from "../components/VideoSection";
 
 const HomePage = () => {
-  
   return (
     <div className="relative">
       <div className="top-0 h-dvh w-full z-1">

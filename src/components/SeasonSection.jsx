@@ -125,7 +125,6 @@ const EventCard = ({ heading, content, year, CommingSoon, id, handleKartEvent })
             {i}
           </li>
         ))}
-        {console.log("🚀 ~ EventCard ~ content:", content)}
       </ul>
       <div className="mx-auto mt-auto">
         <ThemeButton label="learn more" onClick={() => handleKartEvent(id)} />
