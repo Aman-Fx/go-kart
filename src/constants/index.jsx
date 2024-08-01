@@ -562,12 +562,12 @@ export const navItems = [
         id: 4,
       },
 
-      // {
-      //   childItemName: "E-bike",
-      //   route: ROUTES.eBike,
-      //   childId: 2,
-      //   id: 5,
-      // },
+      {
+        childItemName: "E-bike",
+        route: ROUTES.eBike,
+        childId: 2,
+        id: 5,
+      },
       // {
       //   childItemName: "Quad bike & ATV",
       //   route: ROUTES.quadBikeATV,

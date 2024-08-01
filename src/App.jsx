@@ -6,6 +6,7 @@ import ContactUsPage from "./pages/ContactUs.page";
 import DownloadsPage from "./pages/Downloads.page";
 import GalleryPage from "./pages/Gallery.page";
 import GoKartPage from "./pages/GoKart.page";
+import EBikePage from "./pages/EBike.page";
 import HomePage from "./pages/Home.page";
 import NotFoundPage from "./pages/NotFound.page";
 import RegistrationPage from "./pages/RegisterNow.page";
@@ -24,7 +25,7 @@ const App = () => {
           <Route path={ROUTES.goKart} element={<GoKartPage />} />
           <Route path={ROUTES.season} element={<SeasonPage />} />
           <Route path={ROUTES.downloads} element={<DownloadsPage />} />
-          {/* <Route path={ROUTES.eBike} element={<EBikePage />} /> */}
+          <Route path={ROUTES.eBike} element={<EBikePage />} />
           {/* <Route path={ROUTES.quadBikeATV} element={<QuadBikePage />} /> */}
           <Route path={ROUTES.registration} element={<RegistrationPage />} />
           <Route path={ROUTES.training} element={<TrainingPage />} />
