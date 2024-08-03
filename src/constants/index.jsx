@@ -1,6 +1,26 @@
 import { assets } from "../assets";
 
 // go kart events
+
+export const eBikeEvents =[
+  {
+    year: "Mar 2025",
+    direction: "ryt",
+    img: assets.seasonSection.eBike,
+    host: "In Association With VINTAGE VISION PVT. LTD.",
+    data: {
+      id: 5,
+      heading: "Indian E-Bike Championship",
+      subHeading: [
+        "PRIZE MONEY- 2 LAKHS",
+        "REGISTRATION FEE- 25,000 INR",
+        "FINAL EVENT- 17-19 MARCH,2025",
+        "VENUE-RPM INTERNATIONAL RACING CIRCUIT, BHOPAL",
+      ],
+      awards: null,
+    },
+  },
+]
 export const kartEvents = [
   {
     year: "Sept 2018",
@@ -207,11 +227,11 @@ export const kartEvents = [
       id: 5,
       heading: "Season 5",
       subHeading: [
-        "PRIZE MONEY- 5.2 LAKHS",
         "VENUE-RPM INTERNATIONAL RACING CIRCUIT, BHOPAL",
-        "REGISTRATION FEE- 32,500 INR",
         "FINAL EVENT- 17-19 MARCH,2025",
+        "PRIZE MONEY- 5.2 LAKHS",
         "CATEGORIES- 130CC,160CC,E-KART",
+        "REGISTRATION FEE- 32,500 INR",
       ],
       awards: null,
     },

@@ -16,6 +16,7 @@ export const assets = {
     dirtBiking: "./season/dirt-bikingPng.jpg",
     hfkcLogo: "/season/hfkc.png",
     issSeason: "/season/ISS-series.png",
+    eBike: "/season/IEBC LOGO-WHITE.png",
   },
   aboutSection: {
     smallKart: "./about/smallKart.png",
@@ -78,6 +79,7 @@ export const assets = {
     img_1: "./banner/HFKC-Banner.png",
     img_2: "./banner/RPMRacingCircuit.jpg",
     img_3: "./banner/Iss5Banner.jpg",
+    img_4: "./banner/IEBC-25.jpg",
     // img_3: "./banner/groupPhoto.jpg",
     // img_4: "./banner/closeUpShot.jpg",
     // img_5: "./banner/closeUpShot2.jpg",

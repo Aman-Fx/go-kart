@@ -23,6 +23,19 @@ const RegistrationPage = () => {
               <ThemeButton label="Register now" />
             </a>
           </div>
+        </div> <div className="group bg-black bg-opacity-80  flex flex-col items-center md:p-10 p-5 rounded-2xl shadow-md shadow-primary hover:scale-105 hover:-translate-y-3 hover:shadow-NeonBlue transition duration-700">
+          <div className="text-primary text-xl md:text-3xl text-center font-header md:mb-10 mb-5">
+            JOIN THE JOURNEY
+          </div>
+          <div className="text-base md:text-lg mb-8 font-body leading-relaxed text-secondary uppercase text-center flex-grow flex md:items-start items-center">
+            Get Your Registration for <br />the INDIA'S BIGGEST STUDENT'S KARTING CHAMPIONSHIP!
+          </div>
+          <div className="">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdaRvHE3hqrYnTrXJPp004VM1mwE762R3UfQo7WiPJzWnURiQ/viewform" target="_blank">
+
+              <ThemeButton label="Register now" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
