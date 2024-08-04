@@ -18,7 +18,7 @@ const TeamsComponent = () => {
           </h2>
         </div>
         {/* higherAuthorities */}
-        <div className="flex flex-wrap justify-center gap-y-8 gap-x-10 mx-auto mb-10">
+        <div className="flex flex-wrap justify-between gap-y-8 gap-x-10 mx-auto mb-10">
           {higherAuthorities.map((i) => (
             <React.Fragment key={i.id}>
               <div className="w-52 h-auto">
@@ -39,7 +39,7 @@ const TeamsComponent = () => {
           ))}
         </div>
         {/* general members */}
-        <div className="flex flex-wrap justify-center gap-y-8 gap-x-10 mx-auto mb-10">
+        <div className="flex flex-wrap justify-between gap-y-8 gap-x-10 mx-auto mb-10">
           {officials.map((i) => (
             <React.Fragment key={i.id}>
               <div className="w-32 h-auto">
@@ -60,7 +60,7 @@ const TeamsComponent = () => {
           ))}
         </div>
         {/* ambassador */}
-        <div className="flex flex-wrap justify-center gap-y-8 gap-x-10 mx-auto mb-10">
+        <div className="flex flex-wrap justify-around gap-y-8 gap-x-10 mx-auto mb-10">
           {ambassador.map((i) => (
             <React.Fragment key={i.id}>
               <div className="w-32 h-auto">
@@ -81,7 +81,7 @@ const TeamsComponent = () => {
           ))}
         </div>
         {/* coordinator */}
-        <div className="flex flex-wrap justify-center gap-y-8 gap-x-10 mx-auto mb-10">
+        <div className="flex flex-wrap justify-between gap-y-8 gap-x-10 mx-auto mb-10">
           {coordinator.map((i) => (
             <React.Fragment key={i.id}>
               <div className="w-32 h-auto">
