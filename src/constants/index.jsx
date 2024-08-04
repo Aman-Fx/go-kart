@@ -312,12 +312,12 @@ export const teamData = [
     img: "./teamMembers/Neeraj_Wadhe.jpg",
     id: 26,
   },
-  // {
-  //   member_name: "MISS. PRINCY SHAKTAWAT",
-  //   designation: "MARKETING AND SOCIAL MEDIA",
-  //   img: "./teamMembers/Princy_Shaktawat.jpg",
-  //   id: 6,
-  // },
+  {
+    member_name: "MISS. PRINCY SHAKTAWAT",
+    designation: "MARKETING AND SOCIAL MEDIA",
+    img: "./teamMembers/Princy_Shaktawat.jpg",
+    id: 6,
+  },
   {
     member_name: "MR. YASH GOKHARE",
     designation: "OFFICIAL",
