@@ -71,8 +71,8 @@ export const assets = {
     errorMobile: "./background/404-mobile.jpeg",
     quadDesktop: "./background/quad-bike-desktop.jpeg",
     quadMobile: "./background/quadBike-mobile.jpeg",
-    trainingDesktop: "./background/training.jpeg",
-    trainingMoile: "./background/training-mobile.jpeg",
+    trainingDesktop: "./background/training_destop.jpg",
+    trainingMoile: "./background/training_mobile.jpg",
   },
 
   bannerImages: {
