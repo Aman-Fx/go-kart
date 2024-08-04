@@ -67,7 +67,7 @@ const ImageCard = ({ image, title, description, link }) => {
     <div className="group w-full max-w-80 relative rounded-xl  shadow-none transition duration-700 cursor-pointer hover:shadow-lg hover:shadow-gray-800 hover:border-gray-800 overflow-hidden border border-gray-800">
       <div className="md:h-72 w-full overflow-hidden">
         <img
-          loading="lazy"
+          
 
           src={image}
           alt="image"

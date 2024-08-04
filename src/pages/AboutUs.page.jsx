@@ -9,14 +9,14 @@ const AboutUsPage = () => {
         <div className="grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 md:gap-y-12 gap-y-10">
           <div className="relative w-fit lg:mb-12">
             <img
-              loading="lazy"
+              
               className="absolute -right-10 top-20 xl:-bottom-12 xl:-right-4 text-white sm:block hidden"
               src={assets.global.dotPattern}
               alt="null"
             />
             <div className="relative mb-5">
               <img
-                loading="lazy"
+                
                 className="relative aspect-video sm:h-60 h-40"
                 src={aboutUs.companyLogo}
                 alt=""
@@ -24,13 +24,13 @@ const AboutUsPage = () => {
             </div>
             <div className="text-white flex justify-around gap-10 bg-white p-3 rounded-full">
               <img
-                loading="lazy"
+                
                 className=" aspect-video h-12"
                 src={assets.aboutSection.msme_logo}
                 alt="null"
               />
               <img
-                loading="lazy"
+                
                 className=" aspect-square w-12 h-12 "
                 src={assets.aboutSection.iso_logo}
                 alt="null"

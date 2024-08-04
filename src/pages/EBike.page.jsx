@@ -31,7 +31,7 @@ function EBikePage() {
 
           <div className="overflow-hidden rounded-2xl size-fit p-10">
             <img
-              loading="lazy"
+              
               className="size-full aspect-auto"
               alt="null"
               src={eventData.img}

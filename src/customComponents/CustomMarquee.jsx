@@ -9,7 +9,7 @@ const CustomMarquee = ({ items, dir = MARQUEE_DIRECTION.right }) => {
         {items?.map((i) => (
           <li key={i} className="max-w-[150px] max-h-[150px]">
             <img
-              loading="lazy"
+              
               src={i}
               alt={"brand logo"}
               className="h-full w-full"

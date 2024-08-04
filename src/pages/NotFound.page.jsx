@@ -9,12 +9,12 @@ function NotFoundPage() {
     <section className="relative h-dvh overflow-hidden bg-background">
       <div id="notfound" className="absolute top-0 left-0 w-full h-full">
         <img
-          loading="lazy"
+          
           className="w-full h-full md:block hidden "
           src={assets.background.errorDesktop}
         />
         <img
-          loading="lazy"
+          
           className="w-full h-full block md:hidden "
           src={assets.background.errorMobile}
         />

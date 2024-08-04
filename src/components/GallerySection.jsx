@@ -30,7 +30,7 @@ const GallerySection = () => {
               }`}
             >
               <img
-                loading="lazy"
+                
                 className={`h-full w-full  transition-all duration-700 group-hover:scale-110 ease-in-out transform  ${
                   slicedImages?.length == index + 1 ? "blur-sm " : ""
                 }`}

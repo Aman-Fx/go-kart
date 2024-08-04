@@ -74,7 +74,7 @@ const ImageCard = ({ image, title, description, link }) => {
     <div className="group w-full max-w-80 relative rounded-xl shadow-none transition-shadow duration-700 cursor-pointer hover:shadow-lg hover:shadow-gray-800 hover:border-gray-800 overflow-hidden border border-gray-800">
       <div className="h-72 w-full overflow-hidden">
         <img
-          loading="lazy"
+          
           src={image}
           alt="image"
           className="transition-all duration-700 group-hover:scale-110 ease-in-out"
@@ -87,19 +87,19 @@ const ImageCard = ({ image, title, description, link }) => {
           </div>
           <div className="flex items-center gap-3">
             <img
-              loading="lazy"
+              
               src={assets.socialIcons.dribble}
               alt="Dribble"
               className="w-5 h-5 duration-200 hover:scale-125 ease-in-out"
             />
             <img
-              loading="lazy"
+              
               src={assets.socialIcons.linkedIn}
               alt="LinkedIn"
               className="w-5 h-5 duration-200 hover:scale-125 ease-in-out"
             />
             <img
-              loading="lazy"
+              
               src={assets.socialIcons.facebook}
               alt="facebook"
               className="w-5 h-5 duration-200 hover:scale-125 ease-in-out"
