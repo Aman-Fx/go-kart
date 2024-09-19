@@ -3,11 +3,11 @@ import { assets } from "../assets";
 import { teamData } from "../constants";
 
 const TeamsComponent = () => {
-  const higherAuthorities = teamData.slice(0, 10);
-  const officials = teamData.slice(10, 17);
-  const ambassador = teamData.slice(17, 20);
-  const coordinator = teamData.slice(20, 25);
-  const volunteer = teamData.slice(25);
+  const higherAuthorities = teamData.slice(0, 9);
+  const officials = teamData.slice(9, 16);
+  const ambassador = teamData.slice(16, 19);
+  const coordinator = teamData.slice(19, 24);
+  const volunteer = teamData.slice(24);
 
   return (
     <section className="py-10 sm:py-16 lg:py-24 font-body">
@@ -18,7 +18,7 @@ const TeamsComponent = () => {
           </h2>
         </div>
         {/* higherAuthorities */}
-        <div className="flex flex-wrap justify-between gap-y-8 gap-x-10 mx-auto mb-10">
+        <div className="flex flex-wrap justify-center gap-y-8 gap-x-10 mx-auto mb-10">
           {higherAuthorities.map((i) => (
             <React.Fragment key={i.id}>
               <div className="w-52 h-auto">
@@ -39,7 +39,7 @@ const TeamsComponent = () => {
           ))}
         </div>
         {/* general members */}
-        <div className="flex flex-wrap justify-between gap-y-8 gap-x-10 mx-auto mb-10">
+        <div className="flex flex-wrap justify-around gap-y-8 gap-x-10 mx-auto mb-10">
           {officials.map((i) => (
             <React.Fragment key={i.id}>
               <div className="w-32 h-auto">
@@ -81,7 +81,7 @@ const TeamsComponent = () => {
           ))}
         </div>
         {/* coordinator */}
-        <div className="flex flex-wrap justify-between gap-y-8 gap-x-10 mx-auto mb-10">
+        <div className="flex flex-wrap justify-around gap-y-8 gap-x-10 mx-auto mb-10">
           {coordinator.map((i) => (
             <React.Fragment key={i.id}>
               <div className="w-32 h-auto">
@@ -102,7 +102,7 @@ const TeamsComponent = () => {
           ))}
         </div>{" "}
         {/* volunteer */}
-        <div className="flex flex-wrap justify-center gap-y-8 gap-x-10 mx-auto mb-10">
+        <div className="flex flex-wrap justify-around gap-y-8 gap-x-10 mx-auto mb-10">
           {volunteer.map((i) => (
             <React.Fragment key={i.id}>
               <div className="w-32 h-auto">
