@@ -4,7 +4,7 @@ import { assets } from "../assets";
 
 export const eBikeEvents =[
   {
-    year: "Mar 2025",
+    year: "Sept 2025",
     direction: "ryt",
     img: assets.seasonSection.eBike,
     host: "In Association With VINTAGE VISION PVT. LTD.",
@@ -14,7 +14,7 @@ export const eBikeEvents =[
       subHeading: [
         "PRIZE MONEY- 2 LAKHS",
         "REGISTRATION FEE- 25,000 INR",
-        "FINAL EVENT- 17-19 MARCH,2025",
+        "FINAL EVENT- 2-5 SEPTEMBER, 2025",
         "VENUE-RPM INTERNATIONAL RACING CIRCUIT, BHOPAL",
       ],
       awards: null,
@@ -219,7 +219,7 @@ export const kartEvents = [
     },
   },
   {
-    year: "Mar 2025",
+    year: "Sept 2025",
     direction: "ryt",
     img: assets.seasonSection.hfkcLogo,
     host: "Hindustan Formula Karting Championship",
@@ -228,9 +228,9 @@ export const kartEvents = [
       heading: "Season 5",
       subHeading: [
         "VENUE-RPM INTERNATIONAL RACING CIRCUIT, BHOPAL",
-        "FINAL EVENT- 17-19 MARCH,2025",
+        "FINAL EVENT- 2-5 SEPTEMBER 2025",
         "PRIZE MONEY- 5.2 LAKHS",
-        "CATEGORIES- 130CC,160CC,E-KART",
+        "CATEGORIES- IC-Kart, E-KART",
         "REGISTRATION FEE- 32,500 INR",
       ],
       awards: null,
@@ -408,48 +408,48 @@ export const teamData = [
     img: "./teamMembers/RAHUL_OJHA.jpg",
     id: 30,
   },
-  {
-    member_name: "MISS. HARSHITA GHODESHWAR",
-    img: "./teamMembers/HARSHITA_GHODESHWAR.jpg",
-    designation: "VOLUNTEER",
-    id: 20,
-  },
-  {
-    member_name: "MISS. GARVITA KASERA",
-    img: "./teamMembers/GARVITA_KASERA.jpg",
-    designation: "VOLUNTEER",
-    id: 21,
-  },
-  {
-    member_name: "MR. JAY PRAJAPATI",
-    img: "./teamMembers/JAY_PRAJAPATI.jpg",
-    designation: "VOLUNTEER",
-    id: 22,
-  },
-  {
-    member_name: "MR. KISHAN CHOUHAN",
-    img: "./teamMembers/KISHAN_CHOUHAN.jpg",
-    designation: "VOLUNTEER",
-    id: 23,
-  },
-  {
-    member_name: "MR. GOURAV NAGAR",
-    img: "./teamMembers/GOURAV_NAGAR.jpg",
-    designation: "VOLUNTEER",
-    id: 24,
-  },
-  {
-    member_name: "MISS.SHRADDHA PALIWAL",
-    img: "./teamMembers/Shraddha.JPG",
-    designation: "VOLUNTEER",
-    id: 25,
-  },
-  {
-    member_name: "MISS.ARCHY GOTHWAL",
-    img: "./teamMembers/Archy_Gothwal.jpg",
-    designation: "VOLUNTEER",
-    id: 26,
-  },
+  // {
+  //   member_name: "MISS. HARSHITA GHODESHWAR",
+  //   img: "./teamMembers/HARSHITA_GHODESHWAR.jpg",
+  //   designation: "VOLUNTEER",
+  //   id: 20,
+  // },
+  // {
+  //   member_name: "MISS. GARVITA KASERA",
+  //   img: "./teamMembers/GARVITA_KASERA.jpg",
+  //   designation: "VOLUNTEER",
+  //   id: 21,
+  // },
+  // {
+  //   member_name: "MR. JAY PRAJAPATI",
+  //   img: "./teamMembers/JAY_PRAJAPATI.jpg",
+  //   designation: "VOLUNTEER",
+  //   id: 22,
+  // },
+  // {
+  //   member_name: "MR. KISHAN CHOUHAN",
+  //   img: "./teamMembers/KISHAN_CHOUHAN.jpg",
+  //   designation: "VOLUNTEER",
+  //   id: 23,
+  // },
+  // {
+  //   member_name: "MR. GOURAV NAGAR",
+  //   img: "./teamMembers/GOURAV_NAGAR.jpg",
+  //   designation: "VOLUNTEER",
+  //   id: 24,
+  // },
+  // {
+  //   member_name: "MISS.SHRADDHA PALIWAL",
+  //   img: "./teamMembers/Shraddha.JPG",
+  //   designation: "VOLUNTEER",
+  //   id: 25,
+  // },
+  // {
+  //   member_name: "MISS.ARCHY GOTHWAL",
+  //   img: "./teamMembers/Archy_Gothwal.jpg",
+  //   designation: "VOLUNTEER",
+  //   id: 26,
+  // },
   {
     member_name: "MR.HARSH SHAH",
     img: "./teamMembers/Harsh_shah.jpg",
@@ -495,7 +495,7 @@ export const contactDetails = [
   {
     id: 2,
     title: "Call Us",
-    description: <span>+91 700-018-0509 | +91 626-733-6735</span>,
+    description: <span>+91 920-278-4505 | +91 700-018-0509</span>,
     icon: (
       <svg
         className="h-full sm:size-[24px] size-[16px]"

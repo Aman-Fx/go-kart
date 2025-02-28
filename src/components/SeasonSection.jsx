@@ -1,9 +1,9 @@
 import { Fragment } from "react";
-import { assets } from "../assets";
-import CustomRightArrow from "../customComponents/CustomRightArrow";
-import { ROUTES, kartEvents, upcommingEvents } from "../constants";
-import ThemeButton from "../customComponents/ThemeButton";
 import { useNavigate } from "react-router-dom";
+import { assets } from "../assets";
+import { ROUTES, kartEvents } from "../constants";
+import CustomRightArrow from "../customComponents/CustomRightArrow";
+import ThemeButton from "../customComponents/ThemeButton";
 
 const SeasonSection = () => {
   const navigate = useNavigate();
@@ -29,7 +29,7 @@ const SeasonSection = () => {
           />
         </div>
         <div className="flex flex-col gap-y-3 my-4">
-          {kartEvents?.map((event, index) => {
+          {kartEvents.reverse()?.map((event, index) => {
             return (
               <Fragment key={index}>
                 {/* bigger screen */}

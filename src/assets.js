@@ -51,6 +51,7 @@ export const assets = {
     // redRabbitLogo: "./support/RedRabbit.png",
     renforcerLogo: "./support/Renforcer.png",
     rpEventsLogo: "./support/RpEvents.png",
+    rpmLogo:'./support/rpmLogo.jpg',
     // venagoLogo: "./support/Venago.png",
     vintageVisionLogo: "./support/VintageVision.png",
     met: "./support/MET.jpeg",
@@ -76,7 +77,7 @@ export const assets = {
   },
 
   bannerImages: {
-    img_1: "./banner/HFKC-Banner.png",
+    img_1: "./banner/HFKC-Banner.jpg",
     img_2: "./banner/RPMRacingCircuit.jpg",
     img_3: "./banner/Iss5Banner.jpg",
     img_4: "./banner/IEBC-25.jpg",

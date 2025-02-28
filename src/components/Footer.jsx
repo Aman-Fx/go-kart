@@ -110,7 +110,7 @@ const Footer = () => {
                 />
               </svg>
 
-              <div> 700-018-0509</div>
+              <div> +91 920-278-4505</div>
             </a>
             <div className="sm:block hidden">|</div>
             <a
@@ -133,7 +133,7 @@ const Footer = () => {
                 />
               </svg>
 
-              <div> 626-733-6735</div>
+              <div>+91 700-0180-509</div>
             </a>
             <div className="sm:block hidden">|</div>
 
